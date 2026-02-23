@@ -3,1290 +3,982 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Acadiana Pest Solutions in Lafayette, LA. Call (337) 555-0199 for pest control services. We serve Lafayette, Scott, Broussard, Youngsville, Carencro, Duson, and Breaux Bridge.">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Contact Us | Acadiana Pest Solutions">
-  <meta property="og:description" content="Get in touch with Acadiana Pest Solutions for professional pest control in Lafayette, LA and the surrounding Acadiana region.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://acadianapestsolutions.com/contact.html">
-  <title>Contact Us | Acadiana Pest Solutions â Lafayette, LA</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <title>Contact Us | Acadiana Pest Solutions | (337) 555-0199</title>
+  <meta name="description" content="Contact Acadiana Pest Solutions in Lafayette, LA. Call (337) 555-0199 or fill out our form for a free pest control quote.">
   <link rel="stylesheet" href="css/style.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Acadiana Pest Solutions",
-    "description": "Professional pest control services in Lafayette, LA and the Acadiana region including termite control, bed bug treatment, rodent control, ant extermination, cockroach control, and mosquito control.",
-    "url": "https://acadianapestsolutions.com",
-    "telephone": "+13375550199",
-    "email": "info@acadianapest.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lafayette",
-      "addressRegion": "LA",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 30.2241,
-      "longitude": -92.0198
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "07:00",
-        "closes": "18:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "08:00",
-        "closes": "14:00"
-      }
-    ],
-    "areaServed": [
-      "Lafayette, LA",
-      "Scott, LA",
-      "Broussard, LA",
-      "Youngsville, LA",
-      "Carencro, LA",
-      "Duson, LA",
-      "Breaux Bridge, LA"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+13375550199",
-      "contactType": "customer service",
-      "availableLanguage": "English"
-    }
-  }
-  </script>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --green-dark: #1B5E20;
-      --green-mid: #2E7D32;
-      --green-light: #388E3C;
-      --amber: #F9A825;
-      --amber-dark: #F57F17;
-      --white: #ffffff;
-      --gray-50: #F9FAFB;
-      --gray-100: #F3F4F6;
-      --gray-200: #E5E7EB;
-      --gray-300: #D1D5DB;
-      --gray-500: #6B7280;
-      --gray-700: #374151;
-      --gray-900: #111827;
-      --font-body: 'Inter', sans-serif;
-      --font-heading: 'Montserrat', sans-serif;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
-      --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
-      --shadow-lg: 0 8px 30px rgba(0,0,0,0.15);
-      --radius: 8px;
-      --radius-lg: 16px;
-    }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: var(--font-body);
-      color: var(--gray-900);
-      background: var(--white);
-      font-size: 16px;
-      line-height: 1.6;
-      padding-bottom: 80px;
-    }
-    @media (min-width: 768px) { body { padding-bottom: 0; } }
-
-    /* ===== HEADER ===== */
-    .site-header {
-      background: var(--green-dark);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: var(--shadow-md);
-    }
-    .header-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 64px;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-    }
-    .logo-icon {
-      width: 40px;
-      height: 40px;
-      background: var(--amber);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .logo-text {
-      font-family: var(--font-heading);
-      font-weight: 800;
-      font-size: 1.1rem;
-      color: var(--white);
-      line-height: 1.2;
-    }
-    .logo-text span { color: var(--amber); display: block; font-size: 0.75rem; font-weight: 600; }
-    .header-phone {
-      display: none;
-    }
-    @media (min-width: 640px) {
-      .header-phone {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--amber);
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 1.05rem;
-        font-family: var(--font-heading);
-        transition: color 0.2s;
-      }
-      .header-phone:hover { color: var(--white); }
-    }
-    .nav-toggle {
-      background: none;
-      border: 2px solid var(--amber);
-      border-radius: var(--radius);
-      width: 40px;
-      height: 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      cursor: pointer;
-      padding: 0;
-    }
-    .nav-toggle span {
-      display: block;
-      width: 20px;
-      height: 2px;
-      background: var(--white);
-      border-radius: 2px;
-      transition: all 0.3s;
-    }
-    @media (min-width: 1024px) { .nav-toggle { display: none; } }
-    .main-nav {
-      display: none;
-      position: fixed;
-      top: 64px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: var(--green-dark);
-      flex-direction: column;
-      padding: 24px 16px;
-      overflow-y: auto;
-      z-index: 999;
-    }
-    .main-nav.open { display: flex; }
-    @media (min-width: 1024px) {
-      .main-nav {
-        display: flex !important;
-        position: static;
-        flex-direction: row;
-        align-items: center;
-        background: transparent;
-        padding: 0;
-        gap: 4px;
-        bottom: auto;
-        left: auto;
-        right: auto;
-        overflow: visible;
-      }
-    }
-    .nav-item { position: relative; }
-    .nav-link {
-      display: block;
-      color: var(--white);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-      padding: 12px 14px;
-      border-radius: var(--radius);
-      transition: background 0.2s, color 0.2s;
-      white-space: nowrap;
-    }
-    .nav-link:hover, .nav-link.active { background: rgba(255,255,255,0.15); color: var(--amber); }
-    .nav-link.active { color: var(--amber); }
-    .dropdown-toggle {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      cursor: pointer;
-    }
-    .dropdown-toggle::after {
-      content: '';
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      border-right: 2px solid currentColor;
-      border-bottom: 2px solid currentColor;
-      transform: rotate(45deg);
-      margin-top: -3px;
-      transition: transform 0.2s;
-    }
-    .nav-item.open .dropdown-toggle::after { transform: rotate(-135deg); margin-top: 2px; }
-    .dropdown-menu {
-      display: none;
-      list-style: none;
-      padding: 8px 0 8px 16px;
-    }
-    .nav-item.open .dropdown-menu { display: block; }
-    @media (min-width: 1024px) {
-      .dropdown-menu {
-        position: absolute;
-        top: calc(100% + 4px);
-        left: 0;
-        background: var(--green-dark);
-        border: 1px solid rgba(255,255,255,0.1);
-        border-radius: var(--radius);
-        padding: 8px 0;
-        min-width: 200px;
-        box-shadow: var(--shadow-lg);
-        z-index: 100;
-      }
-    }
-    .dropdown-menu li a {
-      display: block;
-      color: var(--white);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      padding: 9px 20px;
-      transition: background 0.2s, color 0.2s;
-    }
-    .dropdown-menu li a:hover { background: rgba(255,255,255,0.1); color: var(--amber); }
-
-    /* ===== BREADCRUMB ===== */
-    .breadcrumb-bar {
-      background: var(--gray-100);
-      border-bottom: 1px solid var(--gray-200);
-      padding: 10px 16px;
-    }
-    .breadcrumb-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .breadcrumb {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      list-style: none;
-      font-size: 0.85rem;
-      color: var(--gray-500);
-    }
-    .breadcrumb li { display: flex; align-items: center; gap: 8px; }
-    .breadcrumb li::after { content: '/'; color: var(--gray-300); }
-    .breadcrumb li:last-child::after { display: none; }
-    .breadcrumb a { color: var(--green-dark); text-decoration: none; font-weight: 500; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .breadcrumb li:last-child { color: var(--gray-700); font-weight: 600; }
-
-    /* ===== PAGE HERO ===== */
-    .page-hero {
-      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-light) 100%);
-      padding: 48px 16px;
+    /* Contact page specific styles */
+    .contact-hero {
+      background: linear-gradient(135deg, #1a3a1a 0%, #2d5a27 60%, #3a7a32 100%);
+      color: #fff;
+      padding: 64px 0 48px;
       text-align: center;
-      position: relative;
-      overflow: hidden;
     }
-    .page-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-    .page-hero-inner { position: relative; max-width: 700px; margin: 0 auto; }
-    .page-hero h1 {
-      font-family: var(--font-heading);
-      font-size: clamp(1.75rem, 4vw, 2.75rem);
+    .contact-hero h1 {
+      font-size: 2.6rem;
       font-weight: 800;
-      color: var(--white);
       margin-bottom: 12px;
-      line-height: 1.2;
+      color: #fff;
     }
-    .page-hero p {
-      color: rgba(255,255,255,0.85);
-      font-size: 1.05rem;
-      max-width: 560px;
-      margin: 0 auto;
+    .contact-hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.88);
+      max-width: 580px;
+      margin: 0 auto 18px;
     }
-
-    /* ===== MAIN LAYOUT ===== */
+    .contact-hero .hero-badge {
+      display: inline-block;
+      background: #f5a623;
+      color: #1a1a1a;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
     .contact-section {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 48px 16px 64px;
+      padding: 60px 0 80px;
+      background: #f8f9f6;
     }
-    .contact-grid {
+    .contact-layout {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 40px;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
     }
-    @media (min-width: 900px) {
-      .contact-grid {
-        grid-template-columns: 1fr 1.6fr;
-        gap: 48px;
-        align-items: start;
+    @media (max-width: 800px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .contact-hero h1 {
+        font-size: 1.9rem;
       }
     }
-
-    /* ===== CONTACT INFO PANEL ===== */
-    .contact-info-panel { display: flex; flex-direction: column; gap: 24px; }
-    .info-card {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-      box-shadow: var(--shadow-sm);
+    .contact-form-box {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+      padding: 40px 36px;
     }
-    .info-card h2 {
-      font-family: var(--font-heading);
-      font-size: 1.15rem;
+    .contact-form-box h2 {
+      font-size: 1.5rem;
       font-weight: 700;
-      color: var(--green-dark);
-      margin-bottom: 16px;
-      padding-bottom: 12px;
-      border-bottom: 2px solid var(--gray-100);
-    }
-    .info-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      padding: 12px 0;
-      border-bottom: 1px solid var(--gray-100);
-    }
-    .info-item:last-child { border-bottom: none; padding-bottom: 0; }
-    .info-icon {
-      width: 40px;
-      height: 40px;
-      background: linear-gradient(135deg, var(--green-dark), var(--green-light));
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .info-icon svg { width: 18px; height: 18px; fill: var(--white); }
-    .info-content { flex: 1; }
-    .info-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--gray-500);
-      margin-bottom: 3px;
-    }
-    .info-value {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--gray-900);
-    }
-    .info-value a {
-      color: var(--green-dark);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .info-value a:hover { color: var(--amber-dark); text-decoration: underline; }
-    .info-sub { font-size: 0.82rem; color: var(--gray-500); margin-top: 2px; }
-
-    /* Hours Table */
-    .hours-table { width: 100%; border-collapse: collapse; }
-    .hours-table tr td {
-      padding: 7px 0;
-      font-size: 0.9rem;
-      border-bottom: 1px solid var(--gray-100);
-    }
-    .hours-table tr:last-child td { border-bottom: none; }
-    .hours-table td:first-child { font-weight: 600; color: var(--gray-700); width: 55%; }
-    .hours-table td:last-child { color: var(--gray-900); text-align: right; }
-    .badge-open {
-      display: inline-block;
-      background: #DCFCE7;
-      color: #166534;
-      font-size: 0.72rem;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .badge-emergency {
-      display: inline-block;
-      background: #FEF9C3;
-      color: #854D0E;
-      font-size: 0.72rem;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    /* Map Placeholder */
-    .map-placeholder {
-      background: var(--gray-100);
-      border: 2px dashed var(--gray-300);
-      border-radius: var(--radius-lg);
-      height: 220px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      color: var(--gray-500);
-      text-align: center;
-      padding: 16px;
-      position: relative;
-      overflow: hidden;
-    }
-    .map-placeholder svg { width: 48px; height: 48px; fill: var(--gray-300); }
-    .map-placeholder p { font-size: 0.9rem; font-weight: 500; }
-    .map-placeholder span { font-size: 0.78rem; }
-    .map-region-badge {
-      position: absolute;
-      top: 12px;
-      right: 12px;
-      background: var(--green-dark);
-      color: var(--white);
-      font-size: 0.72rem;
-      font-weight: 700;
-      padding: 4px 10px;
-      border-radius: 20px;
-      letter-spacing: 0.04em;
-    }
-
-    /* ===== CONTACT FORM ===== */
-    .contact-form-panel {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius-lg);
-      padding: 32px;
-      box-shadow: var(--shadow-md);
-    }
-    .form-header {
-      margin-bottom: 24px;
-    }
-    .form-header h2 {
-      font-family: var(--font-heading);
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: var(--green-dark);
+      color: #1a3a1a;
       margin-bottom: 6px;
     }
-    .form-header p { font-size: 0.9rem; color: var(--gray-500); }
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      margin-bottom: 16px;
+    .contact-form-box .form-subtext {
+      font-size: 0.97rem;
+      color: #555;
+      margin-bottom: 26px;
     }
-    @media (min-width: 540px) {
-      .form-row.cols-2 { grid-template-columns: 1fr 1fr; }
+    .form-group {
+      margin-bottom: 18px;
     }
-    .form-group { display: flex; flex-direction: column; gap: 6px; }
     .form-group label {
-      font-size: 0.85rem;
+      display: block;
+      font-size: 0.9rem;
       font-weight: 600;
-      color: var(--gray-700);
+      color: #2d3a2d;
+      margin-bottom: 6px;
     }
-    .form-group label .req { color: #DC2626; margin-left: 2px; }
-    .form-control {
+    .form-group label .required {
+      color: #c0392b;
+      margin-left: 2px;
+    }
+    .form-input,
+    .form-textarea,
+    .form-select {
       width: 100%;
       padding: 11px 14px;
-      border: 2px solid var(--gray-200);
-      border-radius: var(--radius);
-      font-size: 0.95rem;
-      font-family: var(--font-body);
-      color: var(--gray-900);
-      background: var(--white);
-      transition: border-color 0.2s, box-shadow 0.2s;
+      border: 1.5px solid #cdd8cd;
+      border-radius: 6px;
+      font-size: 0.97rem;
+      color: #222;
+      background: #fafffe;
+      box-sizing: border-box;
+      transition: border-color 0.2s;
+      font-family: inherit;
+    }
+    .form-input:focus,
+    .form-textarea:focus,
+    .form-select:focus {
       outline: none;
-      -webkit-appearance: none;
-      appearance: none;
+      border-color: #2d5a27;
+      background: #fff;
     }
-    .form-control:focus {
-      border-color: var(--green-light);
-      box-shadow: 0 0 0 3px rgba(56,142,60,0.15);
+    .form-textarea {
+      min-height: 130px;
+      resize: vertical;
     }
-    .form-control::placeholder { color: var(--gray-300); }
-    select.form-control {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B7280' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 14px center;
-      padding-right: 40px;
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
     }
-    textarea.form-control { resize: vertical; min-height: 110px; }
-    .property-types {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+    @media (max-width: 560px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .contact-form-box {
+        padding: 28px 18px;
+      }
     }
-    .property-radio { display: none; }
-    .property-label {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 9px 16px;
-      border: 2px solid var(--gray-200);
-      border-radius: 30px;
-      font-size: 0.87rem;
-      font-weight: 600;
-      color: var(--gray-700);
+    .submit-btn {
+      display: inline-block;
+      width: 100%;
+      padding: 14px 24px;
+      background: #2d5a27;
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 6px;
       cursor: pointer;
-      transition: all 0.2s;
-      user-select: none;
+      text-align: center;
+      letter-spacing: 0.03em;
+      transition: background 0.2s, transform 0.1s;
+      margin-top: 6px;
     }
-    .property-label svg { width: 16px; height: 16px; flex-shrink: 0; }
-    .property-radio:checked + .property-label {
-      border-color: var(--green-dark);
-      background: #E8F5E9;
-      color: var(--green-dark);
+    .submit-btn:hover {
+      background: #1a3a1a;
+      transform: translateY(-1px);
     }
-    .form-consent {
+    .form-disclaimer {
+      font-size: 0.81rem;
+      color: #777;
+      margin-top: 12px;
+      text-align: center;
+    }
+    .contact-info-box {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .info-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+      padding: 26px 28px;
+    }
+    .info-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1a3a1a;
+      margin-bottom: 14px;
+      border-bottom: 2px solid #e8f0e7;
+      padding-bottom: 10px;
+    }
+    .info-row {
       display: flex;
       align-items: flex-start;
-      gap: 10px;
-      margin-bottom: 20px;
+      gap: 12px;
+      margin-bottom: 12px;
     }
-    .form-consent input[type="checkbox"] {
-      margin-top: 3px;
-      width: 16px;
-      height: 16px;
+    .info-row:last-child {
+      margin-bottom: 0;
+    }
+    .info-icon {
       flex-shrink: 0;
-      accent-color: var(--green-dark);
-      cursor: pointer;
-    }
-    .form-consent label { font-size: 0.82rem; color: var(--gray-500); cursor: pointer; line-height: 1.5; }
-    .form-consent a { color: var(--green-dark); }
-    .btn-submit {
-      width: 100%;
-      padding: 15px;
-      background: linear-gradient(135deg, var(--amber) 0%, var(--amber-dark) 100%);
-      color: var(--gray-900);
-      font-family: var(--font-heading);
-      font-weight: 800;
-      font-size: 1.05rem;
-      border: none;
-      border-radius: var(--radius);
-      cursor: pointer;
-      letter-spacing: 0.02em;
-      transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
-      box-shadow: 0 4px 12px rgba(249,168,37,0.4);
-    }
-    .btn-submit:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(249,168,37,0.5);
-    }
-    .btn-submit:active { transform: translateY(0); }
-    .form-note {
-      text-align: center;
-      font-size: 0.8rem;
-      color: var(--gray-500);
-      margin-top: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-    }
-    .form-note svg { width: 14px; height: 14px; fill: var(--gray-400); }
-    .form-success {
-      display: none;
-      text-align: center;
-      padding: 32px 16px;
-    }
-    .form-success .success-icon {
-      width: 64px;
-      height: 64px;
-      background: #DCFCE7;
+      width: 38px;
+      height: 38px;
+      background: #e8f4e5;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 16px;
-    }
-    .form-success .success-icon svg { width: 32px; height: 32px; fill: #166534; }
-    .form-success h3 {
-      font-family: var(--font-heading);
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: var(--green-dark);
-      margin-bottom: 8px;
-    }
-    .form-success p { color: var(--gray-500); margin-bottom: 20px; }
-    .form-success .btn-call {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--green-dark);
-      color: var(--white);
-      text-decoration: none;
-      padding: 12px 24px;
-      border-radius: var(--radius);
-      font-weight: 700;
-      font-family: var(--font-heading);
-      transition: background 0.2s;
-    }
-    .form-success .btn-call:hover { background: var(--green-light); }
-
-    /* ===== EMERGENCY CTA ===== */
-    .emergency-section {
-      background: linear-gradient(135deg, #7F1D1D 0%, #991B1B 100%);
-      padding: 48px 16px;
-    }
-    .emergency-inner {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .emergency-badge {
-      display: inline-block;
-      background: rgba(255,255,255,0.15);
-      color: var(--white);
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 4px 14px;
-      border-radius: 20px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-      border: 1px solid rgba(255,255,255,0.25);
-    }
-    .emergency-inner h2 {
-      font-family: var(--font-heading);
-      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
-      font-weight: 800;
-      color: var(--white);
-      margin-bottom: 12px;
-    }
-    .emergency-inner p {
-      color: rgba(255,255,255,0.8);
-      font-size: 1rem;
-      margin-bottom: 28px;
-      max-width: 520px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .emergency-cta-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      justify-content: center;
-    }
-    .btn-emergency-call {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: var(--white);
-      color: #991B1B;
-      text-decoration: none;
-      padding: 14px 28px;
-      border-radius: var(--radius);
-      font-weight: 800;
-      font-family: var(--font-heading);
       font-size: 1.1rem;
-      transition: transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-    }
-    .btn-emergency-call:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,0.3); }
-    .btn-emergency-call svg { width: 20px; height: 20px; fill: #991B1B; }
-    .btn-emergency-outline {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: transparent;
-      color: var(--white);
-      text-decoration: none;
-      padding: 14px 28px;
-      border-radius: var(--radius);
       font-weight: 700;
-      font-family: var(--font-heading);
-      font-size: 1rem;
-      border: 2px solid rgba(255,255,255,0.5);
-      transition: border-color 0.2s, background 0.2s;
+      color: #2d5a27;
     }
-    .btn-emergency-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
-    .emergency-features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 28px;
+    .info-text {
+      flex: 1;
     }
-    .emergency-feature {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: rgba(255,255,255,0.85);
+    .info-text strong {
+      display: block;
       font-size: 0.88rem;
-    }
-    .emergency-feature svg { width: 16px; height: 16px; fill: #FCA5A5; flex-shrink: 0; }
-
-    /* ===== FOOTER ===== */
-    .site-footer {
-      background: #0A1F0B;
-      color: rgba(255,255,255,0.75);
-      padding: 56px 16px 24px;
-    }
-    .footer-grid {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 40px;
-      margin-bottom: 48px;
-    }
-    @media (min-width: 640px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (min-width: 1024px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; } }
-    .footer-brand .logo { margin-bottom: 14px; }
-    .footer-brand p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 16px; }
-    .footer-phone-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--amber);
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.05rem;
-      font-family: var(--font-heading);
-      transition: color 0.2s;
-    }
-    .footer-phone-link:hover { color: var(--white); }
-    .footer-phone-link svg { width: 16px; height: 16px; fill: var(--amber); }
-    .footer-col h4 {
-      font-family: var(--font-heading);
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--white);
+      color: #444;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 14px;
+      letter-spacing: 0.05em;
+      margin-bottom: 2px;
     }
-    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-    .footer-links a {
-      color: rgba(255,255,255,0.65);
+    .info-text a {
+      color: #2d5a27;
+      font-weight: 700;
+      font-size: 1.12rem;
       text-decoration: none;
-      font-size: 0.9rem;
-      transition: color 0.2s;
     }
-    .footer-links a:hover { color: var(--amber); }
-    .footer-bottom {
-      max-width: 1200px;
-      margin: 0 auto;
-      border-top: 1px solid rgba(255,255,255,0.1);
-      padding-top: 24px;
+    .info-text a:hover {
+      color: #f5a623;
+    }
+    .info-text p {
+      font-size: 0.97rem;
+      color: #333;
+      margin: 0;
+      line-height: 1.5;
+    }
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    .hours-table tr {
+      border-bottom: 1px solid #eef2ee;
+    }
+    .hours-table tr:last-child {
+      border-bottom: none;
+    }
+    .hours-table td {
+      padding: 7px 4px;
+      color: #333;
+    }
+    .hours-table td:first-child {
+      font-weight: 600;
+      color: #1a3a1a;
+      width: 50%;
+    }
+    .hours-open {
+      color: #2d5a27;
+      font-weight: 700;
+    }
+    .hours-closed {
+      color: #999;
+    }
+    .map-placeholder {
+      background: linear-gradient(135deg, #e8f4e5 0%, #d4edce 100%);
+      border-radius: 8px;
+      height: 200px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
       align-items: center;
+      justify-content: center;
+      border: 2px dashed #a8d4a0;
       text-align: center;
+      padding: 20px;
     }
-    @media (min-width: 640px) {
-      .footer-bottom { flex-direction: row; justify-content: space-between; text-align: left; }
+    .map-placeholder .map-icon {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      color: #2d5a27;
+      font-weight: 900;
     }
-    .footer-bottom p { font-size: 0.82rem; }
-    .footer-bottom-links { display: flex; gap: 16px; }
-    .footer-bottom-links a {
-      color: rgba(255,255,255,0.55);
-      text-decoration: none;
-      font-size: 0.82rem;
-      transition: color 0.2s;
+    .map-placeholder h4 {
+      font-size: 1.0rem;
+      font-weight: 700;
+      color: #1a3a1a;
+      margin-bottom: 4px;
     }
-    .footer-bottom-links a:hover { color: var(--amber); }
-
-    /* ===== STICKY MOBILE CTA ===== */
-    .sticky-cta {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: var(--green-dark);
-      padding: 10px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      z-index: 998;
-      box-shadow: 0 -4px 16px rgba(0,0,0,0.2);
+    .map-placeholder p {
+      font-size: 0.87rem;
+      color: #555;
+      margin: 0;
     }
-    @media (min-width: 768px) { .sticky-cta { display: none; } }
-    .sticky-cta-text {
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.8);
-      font-weight: 500;
-    }
-    .sticky-cta-text strong { display: block; color: var(--white); font-size: 0.9rem; }
-    .sticky-cta-btn {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--amber);
-      color: var(--gray-900);
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: var(--radius);
-      font-weight: 800;
-      font-family: var(--font-heading);
-      font-size: 0.95rem;
-      white-space: nowrap;
-      flex-shrink: 0;
-      box-shadow: 0 2px 8px rgba(249,168,37,0.4);
-      animation: pulse-cta 2.5s ease-in-out infinite;
-    }
-    .sticky-cta-btn svg { width: 16px; height: 16px; fill: var(--gray-900); }
-    @keyframes pulse-cta {
-      0%, 100% { box-shadow: 0 2px 8px rgba(249,168,37,0.4); }
-      50% { box-shadow: 0 4px 20px rgba(249,168,37,0.7); }
-    }
-
-    /* ===== TRUST BADGES ===== */
-    .trust-bar {
-      background: var(--gray-50);
-      border-top: 1px solid var(--gray-200);
-      border-bottom: 1px solid var(--gray-200);
-      padding: 16px;
-    }
-    .trust-bar-inner {
-      max-width: 1200px;
-      margin: 0 auto;
+    .service-area-list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px 32px;
+      gap: 8px;
+      margin-top: 12px;
     }
-    .trust-item {
+    .service-area-chip {
+      background: #e8f4e5;
+      color: #1a3a1a;
+      font-size: 0.83rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid #c2e0bb;
+    }
+    .trust-badges {
+      margin-top: 0;
+    }
+    .trust-badges-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 0;
+    }
+    @media (max-width: 500px) {
+      .trust-badges-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .trust-badge-item {
+      background: #fff;
+      border-radius: 8px;
+      padding: 14px 10px;
+      text-align: center;
+      border: 1.5px solid #e0eedd;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .trust-badge-item .badge-icon {
+      font-size: 1.5rem;
+      color: #2d5a27;
+      font-weight: 900;
+      margin-bottom: 5px;
+    }
+    .trust-badge-item p {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #1a3a1a;
+      margin: 0;
+      line-height: 1.3;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .cta-band {
+      background: linear-gradient(135deg, #f5a623 0%, #e8951a 100%);
+      padding: 48px 0;
+      text-align: center;
+    }
+    .cta-band__title {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+    .cta-band__text {
+      font-size: 1.05rem;
+      color: #3a2a00;
+      margin-bottom: 22px;
+    }
+    .cta-band__actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 13px 30px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, transform 0.1s;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+    .btn-primary {
+      background: #2d5a27;
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: #1a3a1a;
+    }
+    .btn-white {
+      background: #fff;
+      color: #1a3a1a;
+    }
+    .btn-white:hover {
+      background: #f0f7ee;
+    }
+    .section-intro {
+      font-size: 1.05rem;
+      color: #444;
+      max-width: 660px;
+      margin: 0 auto 36px;
+      text-align: center;
+      line-height: 1.7;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .section-header h2 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #1a3a1a;
+      margin-bottom: 8px;
+    }
+    .section-header .section-label {
+      display: inline-block;
+      background: #e8f4e5;
+      color: #2d5a27;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+    .faq-section {
+      background: #fff;
+      padding: 60px 0;
+    }
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border: 1.5px solid #e0eedd;
+      border-radius: 8px;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 22px;
+      background: #f8fdf8;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1.0rem;
+      color: #1a3a1a;
+      border: none;
+      width: 100%;
+      text-align: left;
+      gap: 12px;
+    }
+    .faq-question:hover {
+      background: #eef7ec;
+    }
+    .faq-question__icon {
+      font-size: 1.3rem;
+      color: #2d5a27;
+      flex-shrink: 0;
+    }
+    .faq-answer {
+      padding: 0 22px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      font-size: 0.97rem;
+      color: #444;
+      line-height: 1.7;
+    }
+    .faq-answer.open {
+      max-height: 400px;
+      padding: 16px 22px 20px;
+    }
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .breadcrumb {
+      background: #eef4ee;
+      padding: 10px 0;
+      font-size: 0.88rem;
+      color: #555;
+    }
+    .breadcrumb a {
+      color: #2d5a27;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    .breadcrumb span {
+      margin: 0 6px;
+      color: #999;
+    }
+    .stars {
+      color: #f5a623;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+    }
+    .star-line {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--gray-700);
+      justify-content: center;
+      margin-top: 10px;
     }
-    .trust-item svg { width: 18px; height: 18px; fill: var(--green-dark); flex-shrink: 0; }
-
-    /* ===== FORM VALIDATION STYLES ===== */
-    .form-control.invalid { border-color: #DC2626; }
-    .field-error { font-size: 0.78rem; color: #DC2626; margin-top: 3px; display: none; }
-    .field-error.show { display: block; }
+    .star-line span {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+    }
   </style>
 </head>
 <body>
 
-  <!-- SITE HEADER -->
-  <header class="site-header" role="banner">
-    <div class="header-inner">
-      <a href="index.html" class="logo" aria-label="Acadiana Pest Solutions â Home">
-        <div class="logo-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 3.54 2.61 6.47 6 6.93V17H9v2h2v1H9v2h6v-2h-2v-1h2v-2h-2v-1.07C16.39 15.47 19 12.54 19 9c0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5z" fill="#1B5E20"/>
-          </svg>
-        </div>
-        <div class="logo-text">Acadiana Pest Solutions<span>Lafayette, LA &amp; Acadiana Region</span></div>
-      </a>
-      <a href="tel:+13375550199" class="header-phone" aria-label="Call us at (337) 555-0199">
-        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/></svg>
-        (337) 555-0199
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
-      <div class="nav-item">
-        <a href="index.html" class="nav-link">Home</a>
-      </div>
-      <div class="nav-item" id="servicesDropdown">
-        <button class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="servicesMenu">Services</button>
-        <ul class="dropdown-menu" id="servicesMenu" role="menu">
-          <li role="menuitem"><a href="termite-control.html">Termite Control</a></li>
-          <li role="menuitem"><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
-          <li role="menuitem"><a href="rodent-control.html">Rodent Control</a></li>
-          <li role="menuitem"><a href="ant-extermination.html">Ant Extermination</a></li>
-          <li role="menuitem"><a href="cockroach-control.html">Cockroach Control</a></li>
-          <li role="menuitem"><a href="mosquito-control.html">Mosquito Control</a></li>
-        </ul>
-      </div>
-      <div class="nav-item" id="areasDropdown">
-        <button class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="areasMenu">Areas We Serve</button>
-        <ul class="dropdown-menu" id="areasMenu" role="menu">
-          <li role="menuitem"><a href="scott.html">Scott</a></li>
-          <li role="menuitem"><a href="broussard.html">Broussard</a></li>
-          <li role="menuitem"><a href="youngsville.html">Youngsville</a></li>
-          <li role="menuitem"><a href="carencro.html">Carencro</a></li>
-          <li role="menuitem"><a href="duson.html">Duson</a></li>
-          <li role="menuitem"><a href="breaux-bridge.html">Breaux Bridge</a></li>
-        </ul>
-      </div>
-      <div class="nav-item">
-        <a href="blog.html" class="nav-link">Blog</a>
-      </div>
-      <div class="nav-item">
-        <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
-      </div>
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <span>Serving All of Acadiana &mdash; Call Now for Same-Day Service:</span>
+    <a href="tel:3375550199" class="top-bar-phone">(337) 555-0199</a>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Acadiana Pest Solutions</a>
+    <nav class="site-nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false">Services <span class="arrow" aria-hidden="true">&#9662;</span></a>
+          <ul class="dropdown">
+            <li><a href="termite-control.html">Termite Control</a></li>
+            <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+            <li><a href="rodent-control.html">Rodent Control</a></li>
+            <li><a href="ant-extermination.html">Ant Extermination</a></li>
+            <li><a href="cockroach-control.html">Cockroach Control</a></li>
+            <li><a href="mosquito-control.html">Mosquito Control</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false">Areas <span class="arrow" aria-hidden="true">&#9662;</span></a>
+          <ul class="dropdown">
+            <li><a href="scott.html">Scott</a></li>
+            <li><a href="broussard.html">Broussard</a></li>
+            <li><a href="youngsville.html">Youngsville</a></li>
+            <li><a href="carencro.html">Carencro</a></li>
+            <li><a href="duson.html">Duson</a></li>
+            <li><a href="breaux-bridge.html">Breaux Bridge</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
-  </header>
+    <a href="tel:3375550199" class="header-phone-btn" aria-label="Call (337) 555-0199">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 4.2 2 2 0 0 1 5.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L9 9.9a16 16 0 0 0 6 6l1.5-1.3a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7A2 2 0 0 1 22 16.9z"/></svg>
+      (337) 555-0199
+    </a>
+    <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-overlay">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+  <button class="nav-overlay-close" aria-label="Close navigation menu">&times;</button>
+  <ul class="nav-overlay-list">
+    <li><a href="index.html">Home</a></li>
+    <li><strong>Services</strong>
+      <ul>
+        <li><a href="termite-control.html">Termite Control</a></li>
+        <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+        <li><a href="rodent-control.html">Rodent Control</a></li>
+        <li><a href="ant-extermination.html">Ant Extermination</a></li>
+        <li><a href="cockroach-control.html">Cockroach Control</a></li>
+        <li><a href="mosquito-control.html">Mosquito Control</a></li>
+      </ul>
+    </li>
+    <li><strong>Areas</strong>
+      <ul>
+        <li><a href="scott.html">Scott</a></li>
+        <li><a href="broussard.html">Broussard</a></li>
+        <li><a href="youngsville.html">Youngsville</a></li>
+        <li><a href="carencro.html">Carencro</a></li>
+        <li><a href="duson.html">Duson</a></li>
+        <li><a href="breaux-bridge.html">Breaux Bridge</a></li>
+      </ul>
+    </li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
 
-  <!-- BREADCRUMB -->
-  <div class="breadcrumb-bar" aria-label="Breadcrumb">
-    <div class="breadcrumb-inner">
-      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="index.html" itemprop="item"><span itemprop="name">Home</span></a>
-          <meta itemprop="position" content="1">
-        </li>
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <span itemprop="name">Contact Us</span>
-          <meta itemprop="position" content="2">
-        </li>
-      </ol>
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <div class="container">
+    <a href="index.html">Home</a>
+    <span>&#9656;</span>
+    <strong>Contact Us</strong>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="contact-hero">
+  <div class="container">
+    <span class="hero-badge">Free Estimates &mdash; No Obligation</span>
+    <h1>Contact Acadiana Pest Solutions</h1>
+    <p>Ready to get rid of pests for good? Our friendly team is standing by to answer your questions and schedule a free inspection. Reach us by phone, email, or our quick contact form.</p>
+    <div class="star-line">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span>Rated 5 Stars by Hundreds of Acadiana Homeowners</span>
     </div>
   </div>
+</section>
 
-  <!-- PAGE HERO -->
-  <div class="page-hero" role="banner">
-    <div class="page-hero-inner">
-      <h1>Contact Acadiana Pest Solutions</h1>
-      <p>Have a pest problem? We're ready to help. Reach out by phone or fill out the form below and we'll be in touch promptly.</p>
+<!-- Main Contact Section -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Left: Contact Form -->
+      <div class="contact-form-box reveal">
+        <h2>Request a Free Quote</h2>
+        <p class="form-subtext">Fill out the form below and a member of our team will get back to you within 1 business hour during normal operating hours. For immediate assistance, call us directly at <a href="tel:3375550199" style="color:#2d5a27;font-weight:700;">(337) 555-0199</a>.</p>
+        <form class="contact-form" id="contact-form" action="#" method="post" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name <span class="required">*</span></label>
+              <input type="text" id="first-name" name="first_name" class="form-input" placeholder="John" required autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name <span class="required">*</span></label>
+              <input type="text" id="last-name" name="last_name" class="form-input" placeholder="Guidry" required autocomplete="family-name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="(337) 555-____" required autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="address">Street Address or City</label>
+            <input type="text" id="address" name="address" class="form-input" placeholder="Lafayette, Broussard, Scott, etc." autocomplete="street-address">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed <span class="required">*</span></label>
+            <select id="service" name="service" class="form-select" required>
+              <option value="" disabled selected>-- Select a Service --</option>
+              <option value="termite-control">Termite Control &amp; Inspections</option>
+              <option value="bed-bug-treatment">Bed Bug Treatment</option>
+              <option value="rodent-control">Rodent Control</option>
+              <option value="ant-extermination">Ant Extermination</option>
+              <option value="cockroach-control">Cockroach Control</option>
+              <option value="mosquito-control">Mosquito Control</option>
+              <option value="general-pest-control">General Pest Control</option>
+              <option value="commercial">Commercial Pest Services</option>
+              <option value="other">Other / Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="best-time">Best Time to Call</label>
+            <select id="best-time" name="best_time" class="form-select">
+              <option value="" disabled selected>-- Select a Time --</option>
+              <option value="morning">Morning (7am &mdash; 11am)</option>
+              <option value="midday">Midday (11am &mdash; 2pm)</option>
+              <option value="afternoon">Afternoon (2pm &mdash; 5pm)</option>
+              <option value="evening">Evening (5pm &mdash; 7pm)</option>
+              <option value="anytime">Anytime During Business Hours</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Describe Your Pest Problem <span class="required">*</span></label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Tell us what you are dealing with. For example: We have seen cockroaches in our kitchen and bathroom for the past 2 weeks. We live in a 3-bedroom home in Broussard, LA..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-weight:400;">
+              <input type="checkbox" name="agree" required style="margin-top:3px;flex-shrink:0;">
+              <span style="font-size:0.87rem;color:#555;">I agree to be contacted by Acadiana Pest Solutions by phone or email regarding my pest control inquiry. I understand my information will not be shared with third parties.</span>
+            </label>
+          </div>
+          <button type="submit" class="submit-btn">Send My Free Quote Request &#9658;</button>
+          <p class="form-disclaimer">&#128274; Your information is secure and will never be sold or shared. We respond within 1 business hour.</p>
+        </form>
+      </div>
+
+      <!-- Right: Contact Info -->
+      <div class="contact-info-box reveal">
+
+        <!-- Phone & Email Card -->
+        <div class="info-card">
+          <h3>Get In Touch Directly</h3>
+          <div class="info-row">
+            <div class="info-icon">P</div>
+            <div class="info-text">
+              <strong>Main Phone Line</strong>
+              <a href="tel:3375550199">(337) 555-0199</a>
+              <p>Call or text for same-day service scheduling. Our team answers fast.</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">E</div>
+            <div class="info-text">
+              <strong>Email Us</strong>
+              <a href="mailto:info@acadianapestsolutions.com" style="font-size:0.98rem;">info@acadianapestsolutions.com</a>
+              <p>We respond to all emails within 1 business hour during normal hours.</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">L</div>
+            <div class="info-text">
+              <strong>Office Location</strong>
+              <p>Lafayette, Louisiana 70508<br>Serving all of Acadiana and surrounding parishes</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hours Card -->
+        <div class="info-card">
+          <h3>Business Hours</h3>
+          <table class="hours-table">
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td class="hours-open">7:00 AM &mdash; 7:00 PM</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td class="hours-open">7:00 AM &mdash; 7:00 PM</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td class="hours-open">7:00 AM &mdash; 7:00 PM</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td class="hours-open">7:00 AM &mdash; 7:00 PM</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td class="hours-open">7:00 AM &mdash; 7:00 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td class="hours-open">8:00 AM &mdash; 5:00 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td class="hours-closed">Closed (Emergency On-Call)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="margin-top:12px;font-size:0.88rem;color:#555;"><strong style="color:#2d5a27;">Same-day appointments available</strong> Monday through Friday when you call before noon. Emergency pest control available 7 days a week for urgent situations.</p>
+        </div>
+
+        <!-- Service Area Map Placeholder -->
+        <div class="info-card">
+          <h3>Our Service Area</h3>
+          <div class="map-placeholder">
+            <div class="map-icon">[MAP]</div>
+            <h4>Acadiana &amp; Surrounding Parishes</h4>
+            <p>Lafayette Parish and all surrounding communities within 40 miles</p>
+          </div>
+          <div class="service-area-list">
+            <span class="service-area-chip">Lafayette</span>
+            <span class="service-area-chip">Scott</span>
+            <span class="service-area-chip">Broussard</span>
+            <span class="service-area-chip">Youngsville</span>
+            <span class="service-area-chip">Carencro</span>
+            <span class="service-area-chip">Duson</span>
+            <span class="service-area-chip">Breaux Bridge</span>
+            <span class="service-area-chip">Opelousas</span>
+            <span class="service-area-chip">New Iberia</span>
+            <span class="service-area-chip">Abbeville</span>
+            <span class="service-area-chip">Crowley</span>
+            <span class="service-area-chip">Eunice</span>
+          </div>
+          <p style="margin-top:14px;font-size:0.87rem;color:#555;">Not sure if we serve your area? Call us at <a href="tel:3375550199" style="color:#2d5a27;font-weight:700;">(337) 555-0199</a> and we will let you know right away.</p>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="info-card">
+          <h3>Why Acadiana Trusts Us</h3>
+          <div class="trust-badges-grid">
+            <div class="trust-badge-item">
+              <div class="badge-icon">LIC</div>
+              <p>Licensed &amp; Insured</p>
+            </div>
+            <div class="trust-badge-item">
+              <div class="badge-icon">LOC</div>
+              <p>Locally Owned</p>
+            </div>
+            <div class="trust-badge-item">
+              <div class="badge-icon">GTD</div>
+              <p>100% Guarantee</p>
+            </div>
+            <div class="trust-badge-item">
+              <div class="badge-icon">ECO</div>
+              <p>Eco-Friendly Options</p>
+            </div>
+            <div class="trust-badge-item">
+              <div class="badge-icon">FREE</div>
+              <p>Free Inspections</p>
+            </div>
+            <div class="trust-badge-item">
+              <div class="badge-icon">SAME</div>
+              <p>Same-Day Service</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- end contact info -->
     </div>
   </div>
+</section>
 
-  <!-- TRUST BAR -->
-  <div class="trust-bar" aria-label="Why choose us">
-    <div class="trust-bar-inner">
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-        Licensed &amp; Insured
+<!-- What Happens Next Section -->
+<section class="section" style="background:#fff;padding:60px 0;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Simple Process</span>
+      <h2>What Happens After You Contact Us</h2>
+      <p class="section-intro">Getting pest-free has never been easier. Here is exactly what to expect when you reach out to Acadiana Pest Solutions.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;max-width:960px;margin:0 auto;">
+      <div style="text-align:center;padding:28px 20px;border:1.5px solid #e0eedd;border-radius:10px;background:#f8fdf8;">
+        <div style="width:56px;height:56px;background:#2d5a27;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:#fff;font-size:1.4rem;font-weight:900;">1</div>
+        <h3 style="font-size:1.05rem;font-weight:700;color:#1a3a1a;margin-bottom:8px;">You Contact Us</h3>
+        <p style="font-size:0.93rem;color:#555;line-height:1.6;">Call <a href="tel:3375550199" style="color:#2d5a27;font-weight:700;">(337) 555-0199</a>, email us, or fill out the form on this page. Whichever method is easiest for you.</p>
       </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
-        Same-Day Service Available
+      <div style="text-align:center;padding:28px 20px;border:1.5px solid #e0eedd;border-radius:10px;background:#f8fdf8;">
+        <div style="width:56px;height:56px;background:#2d5a27;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:#fff;font-size:1.4rem;font-weight:900;">2</div>
+        <h3 style="font-size:1.05rem;font-weight:700;color:#1a3a1a;margin-bottom:8px;">We Respond Quickly</h3>
+        <p style="font-size:0.93rem;color:#555;line-height:1.6;">A knowledgeable team member will respond within 1 business hour to discuss your situation and answer questions at no charge.</p>
       </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        Serving All Acadiana
+      <div style="text-align:center;padding:28px 20px;border:1.5px solid #e0eedd;border-radius:10px;background:#f8fdf8;">
+        <div style="width:56px;height:56px;background:#2d5a27;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:#fff;font-size:1.4rem;font-weight:900;">3</div>
+        <h3 style="font-size:1.05rem;font-weight:700;color:#1a3a1a;margin-bottom:8px;">Free Inspection</h3>
+        <p style="font-size:0.93rem;color:#555;line-height:1.6;">We schedule a free, no-obligation inspection of your property. Our licensed technician identifies the pest, extent of infestation, and entry points.</p>
       </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
-        Free Estimates
-      </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z"/></svg>
-        24/7 Emergency Service
+      <div style="text-align:center;padding:28px 20px;border:1.5px solid #e0eedd;border-radius:10px;background:#f8fdf8;">
+        <div style="width:56px;height:56px;background:#2d5a27;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:#fff;font-size:1.4rem;font-weight:900;">4</div>
+        <h3 style="font-size:1.05rem;font-weight:700;color:#1a3a1a;margin-bottom:8px;">Custom Treatment Plan</h3>
+        <p style="font-size:0.93rem;color:#555;line-height:1.6;">We present a clear, upfront quote with a customized treatment plan. No hidden fees, no pushy sales tactics &mdash; just honest recommendations.</p>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- MAIN CONTENT -->
-  <main id="main-content">
-    <section class="contact-section" aria-labelledby="contact-heading">
-      <h2 id="contact-heading" class="sr-only">Contact Information and Form</h2>
-      <div class="contact-grid">
-
-        <!-- LEFT: INFO PANEL -->
-        <aside class="contact-info-panel">
-
-          <!-- Contact Details Card -->
-          <div class="info-card">
-            <h2>Get In Touch</h2>
-            <div class="info-item">
-              <div class="info-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-              </div>
-              <div class="info-content">
-                <div class="info-label">Phone</div>
-                <div class="info-value"><a href="tel:+13375550199">(337) 555-0199</a></div>
-                <div class="info-sub">Call or text anytime</div>
-              </div>
-            </div>
-            <div class="info-item">
-              <div class="info-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-              </div>
-              <div class="info-content">
-                <div class="info-label">Email</div>
-                <div class="info-value"><a href="mailto:info@acadianapest.com">info@acadianapest.com</a></div>
-                <div class="info-sub">We respond within 2 business hours</div>
-              </div>
-            </div>
-            <div class="info-item">
-              <div class="info-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="info-content">
-                <div class="info-label">Location</div>
-                <div class="info-value">Lafayette, Louisiana</div>
-                <div class="info-sub">Serving the entire Acadiana region</div>
-              </div>
-            </div>
-            <div class="info-item">
-              <div class="info-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
-              </div>
-              <div class="info-content">
-                <div class="info-label">Service Areas</div>
-                <div class="info-value">Lafayette, Scott, Broussard</div>
-                <div class="info-sub">Youngsville, Carencro, Duson, Breaux Bridge</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Hours Card -->
-          <div class="info-card">
-            <h2>Service Hours</h2>
-            <table class="hours-table" aria-label="Business hours">
-              <tbody>
-                <tr>
-                  <td>Monday â Friday</td>
-                  <td>7:00 AM â 6:00 PM <span class="badge-open">Open</span></td>
-                </tr>
-                <tr>
-                  <td>Saturday</td>
-                  <td>8:00 AM â 2:00 PM</td>
-                </tr>
-                <tr>
-                  <td>Sunday</td>
-                  <td>By Appointment</td>
-                </tr>
-                <tr>
-                  <td>Emergencies</td>
-                  <td>24/7 <span class="badge-emergency">Always Available</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Map Placeholder -->
-          <div class="map-placeholder" role="img" aria-label="Service area map covering Lafayette LA and surrounding Acadiana communities">
-            <div class="map-region-badge">Acadiana Region</div>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-            </svg>
-            <p>Service Area Map</p>
-            <span>Lafayette &amp; Surrounding Acadiana Communities</span>
-          </div>
-
-        </aside>
-
-        <!-- RIGHT: FORM PANEL -->
-        <div class="contact-form-panel">
-          <div class="form-header">
-            <h2>Send Us a Message</h2>
-            <p>Fill out the form and one of our pest control specialists will contact you shortly. For urgent issues, please call us directly.</p>
-          </div>
-
-          <!-- Success State (hidden by default) -->
-          <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
-            <div class="success-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            </div>
-            <h3>Message Sent!</h3>
-            <p>Thank you for reaching out. We'll be in touch within 2 business hours. For immediate assistance, give us a call.</p>
-            <a href="tel:+13375550199" class="btn-call">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-              Call (337) 555-0199
-            </a>
-          </div>
-
-          <!-- Contact Form -->
-          <form id="contactForm" novalidate aria-label="Contact form">
-            <div class="form-row cols-2">
-              <div class="form-group">
-                <label for="firstName">First Name <span class="req" aria-hidden="true">*</span></label>
-                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="John" autocomplete="given-name" required aria-required="true">
-                <span class="field-error" id="firstNameError" role="alert">Please enter your first name.</span>
-              </div>
-              <div class="form-group">
-                <label for="lastName">Last Name <span class="req" aria-hidden="true">*</span></label>
-                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Doe" autocomplete="family-name" required aria-required="true">
-                <span class="field-error" id="lastNameError" role="alert">Please enter your last name.</span>
-              </div>
-            </div>
-
-            <div class="form-row cols-2">
-              <div class="form-group">
-                <label for="phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
-                <input type="tel" id="phone" name="phone" class="form-control" placeholder="(337) 000-0000" autocomplete="tel" required aria-required="true">
-                <span class="field-error" id="phoneError" role="alert">Please enter a valid phone number.</span>
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" autocomplete="email">
-                <span class="field-error" id="emailError" role="alert">Please enter a valid email address.</span>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="service">Service Needed <span class="req" aria-hidden="true">*</span></label>
-                <select id="service" name="service" class="form-control" required aria-required="true">
-                  <option value="" disabled selected>Select a serviceâ¦</option>
-                  <option value="termite-control">Termite Control</option>
-                  <option value="bed-bug-treatment">Bed Bug Treatment</option>
-                  <option value="rodent-control">Rodent Control</option>
-                  <option value="ant-extermination">Ant Extermination</option>
-                  <option value="cockroach-control">Cockroach Control</option>
-                  <option value="mosquito-control">Mosquito Control</option>
-                  <option value="inspection">General Inspection</option>
-                  <option value="other">Other / Not Sure</option>
-                </select>
-                <span class="field-error" id="serviceError" role="alert">Please select a service.</span>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label>Property Type</label>
-                <div class="property-types" role="group" aria-label="Select property type">
-                  <input type="radio" id="propResidential" name="propertyType" value="residential" class="property-radio" checked>
-                  <label for="propResidential" class="property-label">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-                    Residential
-                  </label>
-                  <input type="radio" id="propCommercial" name="propertyType" value="commercial" class="property-radio">
-                  <label for="propCommercial" class="property-label">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17 11V3H7v4H3v14h8v-4h2v4h8V11h-4zM7 19H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5v-2h2v2zm4 4H9v-2h2v2zm0-4H9v-2h2v2zm0-4H9V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2z"/></svg>
-                    Commercial
-                  </label>
-                  <input type="radio" id="propRental" name="propertyType" value="rental" class="property-radio">
-                  <label for="propRental" class="property-label">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 3L2 12h3v9h14v-9h3L12 3zm5 16H7v-7.81l5-4.5 5 4.5V19z"/></svg>
-                    Rental
-                  </label>
-                  <input type="radio" id="propIndustrial" name="propertyType" value="industrial" class="property-radio">
-                  <label for="propIndustrial" class="property-label">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M22 9V7h-2V5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2zm-4 10H4V5h14v14z"/></svg>
-                    Industrial
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="address">Property Address or City</label>
-                <input type="text" id="address" name="address" class="form-control" placeholder="e.g. 123 Main St, Lafayette, LA" autocomplete="street-address">
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="message">Tell Us More <span class="req" aria-hidden="true">*</span></label>
-                <textarea id="message" name="message" class="form-control" placeholder="Describe the pest issue, how long it's been happening, any other details that might help usâ¦" required aria-required="true"></textarea>
-                <span class="field-error" id="messageError" role="alert">Please provide a brief description of your issue.</span>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="howHeard">How Did You Hear About Us?</label>
-                <select id="howHeard" name="howHeard" class="form-control">
-                  <option value="" disabled selected>Select an optionâ¦</option>
-                  <option value="google">Google Search</option>
-                  <option value="facebook">Facebook / Social Media</option>
-                  <option value="referral">Friend or Family Referral</option>
-                  <option value="nextdoor">Nextdoor</option>
-                  <option value="yard-sign">Yard Sign / Truck</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-consent">
-              <input type="checkbox" id="consent" name="consent" required aria-required="true">
-              <label for="consent">
-                By submitting this form, I agree to be contacted by Acadiana Pest Solutions via phone, email, or text regarding my pest control inquiry. I understand I can opt out at any time. View our <a href="#">Privacy Policy</a>.
-              </label>
-            </div>
-
-            <button type="submit" class="btn-submit" id="submitBtn">
-              <span id="submitText">Send Message â Get a Free Estimate</span>
-              <span id="submitLoading" style="display:none;">Sendingâ¦</span>
-            </button>
-
-            <p class="form-note">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-              Your information is secure and will never be shared or sold.
-            </p>
-          </form>
+<!-- FAQ Section -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Common Questions</span>
+      <h2>Frequently Asked Questions</h2>
+      <p class="section-intro">Have questions before reaching out? Here are answers to the things our customers ask most often.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you really offer free inspections? Is there a catch?
+          <span class="faq-question__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely no catch. We provide free, no-obligation inspections for all residential and most commercial properties throughout Acadiana. Our technician will assess your pest situation, identify the species, locate entry points, and recommend a treatment plan. You are never under any obligation to purchase anything, and there is no pressure to sign up on the spot. We believe in earning your business through quality service and honest pricing, not high-pressure sales tactics.</p>
         </div>
-
       </div>
-    </section>
-  </main>
-
-  <!-- EMERGENCY CTA SECTION -->
-  <section class="emergency-section" aria-labelledby="emergency-heading">
-    <div class="emergency-inner">
-      <div class="emergency-badge">ð¨ Emergency Service</div>
-      <h2 id="emergency-heading">Dealing with a Pest Emergency?</h2>
-      <p>Don't wait â pest infestations can escalate quickly. Our emergency response team is available 24 hours a day, 7 days a week across the entire Acadiana region.</p>
-      <div class="emergency-cta-buttons">
-        <a href="tel:+13375550199" class="btn-emergency-call">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-          Call Now: (337) 555-0199
-        </a>
-        <a href="#contactForm" class="btn-emergency-outline">
-          Send a Message Instead
-        </a>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How quickly can you come out to my home?
+          <span class="faq-question__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We offer same-day service for most pest control needs when you call before noon on Monday through Friday. For weekend appointments, we typically have availability within 24 to 48 hours. For urgent pest emergencies &mdash; such as a large wasp nest, a confirmed termite swarm, or an active rodent infestation &mdash; we prioritize your situation and do our best to arrive as quickly as possible. Call <a href="tel:3375550199" style="color:#2d5a27;font-weight:700;">(337) 555-0199</a> and we will give you an honest time estimate right away.</p>
+        </div>
       </div>
-      <div class="emergency-features">
-        <div class="emergency-feature">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
-          Fast Response Times
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Are your pest control treatments safe for children and pets?
+          <span class="faq-question__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>The safety of your family and pets is our top priority. We use EPA-registered products applied by licensed technicians who follow all safety guidelines. We also offer eco-friendly and low-toxicity treatment options for families with young children, pregnant women, or multiple pets. During your inspection, our technician will discuss which products will be used, how long you should stay out of treated areas (typically 1 to 4 hours), and any specific precautions for your household. We are always transparent about what we apply and why.</p>
         </div>
-        <div class="emergency-feature">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-          Licensed Technicians
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What areas of Acadiana do you service?
+          <span class="faq-question__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We serve all of Lafayette Parish and the surrounding Acadiana region including Scott, Broussard, Youngsville, Carencro, Duson, Breaux Bridge, Opelousas, New Iberia, Abbeville, Crowley, Eunice, and many more communities. If you are within approximately 40 miles of Lafayette, chances are very good that we can help you. If you are unsure whether we cover your specific address, simply call us at <a href="tel:3375550199" style="color:#2d5a27;font-weight:700;">(337) 555-0199</a> and we will confirm your service area coverage immediately.</p>
         </div>
-        <div class="emergency-feature">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
-          No Hidden Fees
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you offer any guarantees on your pest control services?
+          <span class="faq-question__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, we stand behind every treatment we perform with a satisfaction guarantee. If pests return between scheduled service visits, we will come back and re-treat at no additional charge. For our recurring service plans, this guarantee is built in automatically. For one-time treatments, we offer a 30-day re-treatment guarantee. Our goal is simple: we are not satisfied until you are completely pest-free. Ask our team about the specific guarantee that applies to your treatment plan when you call or schedule your free inspection.</p>
         </div>
-        <div class="emergency-feature">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-          Local Acadiana Team
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How much does pest control cost in Lafayette, LA?
+          <span class="faq-question__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Pest control pricing varies depending on the type of pest, the size of your property, the severity of the infestation, and the treatment method required. We provide fully transparent, itemized quotes before any work begins so you know exactly what you are paying for. Our recurring prevention plans start at very competitive rates for the Acadiana area, and we offer flexible payment options. Single treatments for common pests like cockroaches, ants, and mosquitoes are often quite affordable. Call us or fill out our contact form for a free estimate tailored to your specific needs.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Are you licensed and insured to perform pest control in Louisiana?
+          <span class="faq-question__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, absolutely. Acadiana Pest Solutions is fully licensed by the Louisiana Department of Agriculture and Forestry (LDAF) to perform structural pest control services in the state of Louisiana. We carry comprehensive general liability insurance and workers compensation coverage. All of our field technicians hold current Louisiana commercial pesticide applicator licenses and complete ongoing continuing education training to stay current with best practices, new treatment technologies, and industry safety standards. You can have complete confidence that you are working with a legitimate, professional pest control company.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SITE FOOTER -->
-  <footer class="site-footer" role="contentinfo">
+<!-- Testimonials Strip -->
+<section class="section" style="background:#f8f9f6;padding:60px 0;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Customer Reviews</span>
+      <h2>What Our Customers Are Saying</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">
+      <div class="testimonial-card" style="background:#fff;border-radius:10px;padding:28px;box-shadow:0 4px 16px rgba(0,0,0,0.07);border:1.5px solid #e8f0e7;">
+        <div class="stars" style="color:#f5a623;font-size:1.05rem;margin-bottom:10px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p style="font-size:0.97rem;color:#333;line-height:1.7;margin-bottom:14px;">&ldquo;I called Acadiana Pest Solutions at 9am about a cockroach problem in my kitchen and they had a technician at my door by 1pm the same day. Professional, thorough, and very reasonably priced. The roaches were completely gone within a week.&rdquo;</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:42px;height:42px;background:#2d5a27;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">MR</div>
+          <div>
+            <strong style="font-size:0.93rem;color:#1a3a1a;">Michelle R.</strong>
+            <p style="font-size:0.83rem;color:#777;margin:0;">Lafayette, LA</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card" style="background:#fff;border-radius:10px;padding:28px;box-shadow:0 4px 16px rgba(0,0,0,0.07);border:1.5px solid #e8f0e7;">
+        <div class="stars" style="color:#f5a623;font-size:1.05rem;margin-bottom:10px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p style="font-size:0.97rem;color:#333;line-height:1.7;margin-bottom:14px;">&ldquo;These guys found termite damage in my pier-and-beam house that two other companies completely missed. They were honest about the extent of the problem and gave me a fair quote. Their termite treatment has given me total peace of mind.&rdquo;</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:42px;height:42px;background:#2d5a27;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">TB</div>
+          <div>
+            <strong style="font-size:0.93rem;color:#1a3a1a;">Thomas B.</strong>
+            <p style="font-size:0.83rem;color:#777;margin:0;">Breaux Bridge, LA</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card" style="background:#fff;border-radius:10px;padding:28px;box-shadow:0 4px 16px rgba(0,0,0,0.07);border:1.5px solid #e8f0e7;">
+        <div class="stars" style="color:#f5a623;font-size:1.05rem;margin-bottom:10px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p style="font-size:0.97rem;color:#333;line-height:1.7;margin-bottom:14px;">&ldquo;We signed up for the quarterly pest prevention plan and have not seen a single ant or roach inside our home since. Great communication, always on time, and the technician takes the time to explain what they are doing and why.&rdquo;</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:42px;height:42px;background:#2d5a27;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">LC</div>
+          <div>
+            <strong style="font-size:0.93rem;color:#1a3a1a;">Lisa C.</strong>
+            <p style="font-size:0.83rem;color:#777;margin:0;">Youngsville, LA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Band -->
+<section class="cta-band">
+  <div class="container">
+    <h2 class="cta-band__title">Ready to Get Rid of Pests for Good?</h2>
+    <p class="cta-band__text">Acadiana homeowners and businesses have trusted us for years. Call now for same-day service or fill out our form above for a free quote. No obligation, no hassle.</p>
+    <div class="cta-band__actions">
+      <a href="tel:3375550199" class="btn btn-primary btn-lg">Call (337) 555-0199 Now</a>
+      <a href="#contact-form" class="btn btn-white btn-lg">Fill Out Our Free Quote Form</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="logo" aria-label="Acadiana Pest Solutions home">
-          <div class="logo-icon" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 3.54 2.61 6.47 6 6.93V17H9v2h2v1H9v2h6v-2h-2v-1h2v-2h-2v-1.07C16.39 15.47 19 12.54 19 9c0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5z" fill="#1B5E20"/>
-            </svg>
-          </div>
-          <div class="logo-text">Acadiana Pest Solutions<span>Lafayette, LA</span></div>
-        </a>
-        <p>Professional pest control services for homes and businesses throughout Lafayette and the Acadiana region. Licensed, insured, and locally owned.</p>
-        <a href="tel:+13375550199" class="footer-phone-link" aria-label="Call us at (337) 555-0199">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-          (337) 555-0199
-        </a>
+      <div class="footer-col">
+        <h3>Acadiana Pest Solutions</h3>
+        <p>Protecting homes and businesses across all of Acadiana. Licensed, insured, and locally owned.</p>
       </div>
       <div class="footer-col">
-        <h4>Our Services</h4>
-        <ul class="footer-links">
+        <h4>Services</h4>
+        <ul>
           <li><a href="termite-control.html">Termite Control</a></li>
           <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
           <li><a href="rodent-control.html">Rodent Control</a></li>
@@ -1297,208 +989,68 @@
       </div>
       <div class="footer-col">
         <h4>Areas We Serve</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Lafayette, LA</a></li>
-          <li><a href="scott.html">Scott, LA</a></li>
-          <li><a href="broussard.html">Broussard, LA</a></li>
-          <li><a href="youngsville.html">Youngsville, LA</a></li>
-          <li><a href="carencro.html">Carencro, LA</a></li>
-          <li><a href="duson.html">Duson, LA</a></li>
-          <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
+        <ul>
+          <li><a href="scott.html">Scott</a></li>
+          <li><a href="broussard.html">Broussard</a></li>
+          <li><a href="youngsville.html">Youngsville</a></li>
+          <li><a href="carencro.html">Carencro</a></li>
+          <li><a href="duson.html">Duson</a></li>
+          <li><a href="breaux-bridge.html">Breaux Bridge</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-        </ul>
+        <h4>Contact Us</h4>
+        <p><a href="tel:3375550199">(337) 555-0199</a></p>
+        <p>Mon &mdash; Sat: 7am &mdash; 7pm</p>
+        <p>Same-Day Service Available</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span id="footerYear">2024</span> Acadiana Pest Solutions. All rights reserved. Lafayette, LA.</p>
-      <div class="footer-bottom-links">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="sitemap.xml">Sitemap</a>
-      </div>
+      <p>&copy; 2026 Acadiana Pest Solutions. All rights reserved.</p>
     </div>
-  </footer>
-
-  <!-- STICKY MOBILE CTA BAR -->
-  <div class="sticky-cta" role="complementary" aria-label="Quick call to action">
-    <div class="sticky-cta-text">
-      <strong>Got a Pest Problem?</strong>
-      Free estimates available
-    </div>
-    <a href="tel:+13375550199" class="sticky-cta-btn" aria-label="Call Acadiana Pest Solutions at (337) 555-0199">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-      Call Now
-    </a>
   </div>
-
-  <script>
-    // ===== YEAR =====
-    document.getElementById('footerYear').textContent = new Date().getFullYear();
-
-    // ===== NAVIGATION TOGGLE =====
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
-    navToggle.addEventListener('click', function() {
-      const isOpen = mainNav.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-
-    // ===== DROPDOWN MENUS =====
-    const dropdownItems = document.querySelectorAll('.nav-item');
-    dropdownItems.forEach(function(item) {
-      const toggle = item.querySelector('.dropdown-toggle');
-      if (!toggle) return;
-      toggle.addEventListener('click', function(e) {
-        e.stopPropagation();
-        const isOpen = item.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        // Close other dropdowns
-        dropdownItems.forEach(function(other) {
-          if (other !== item && other.classList.contains('open')) {
-            other.classList.remove('open');
-            const otherToggle = other.querySelector('.dropdown-toggle');
-            if (otherToggle) otherToggle.setAttribute('aria-expanded', 'false');
-          }
-        });
+</footer>
+<div class="mobile-cta-bar">
+  <a href="tel:3375550199" class="btn btn-call">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 4.2 2 2 0 0 1 5.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L9 9.9a16 16 0 0 0 6 6l1.5-1.3a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7A2 2 0 0 1 22 16.9z"/></svg>
+    Call Now
+  </a>
+  <a href="contact.html" class="btn btn-quote">Free Quote</a>
+</div>
+<script src="js/main.js"></script>
+<script>
+  // Simple FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var answer = this.nextElementSibling;
+      var isOpen = answer.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-answer').forEach(function(a) {
+        a.classList.remove('open');
       });
-    });
-
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', function() {
-      dropdownItems.forEach(function(item) {
-        if (item.classList.contains('open')) {
-          item.classList.remove('open');
-          const toggle = item.querySelector('.dropdown-toggle');
-          if (toggle) toggle.setAttribute('aria-expanded', 'false');
-        }
+      document.querySelectorAll('.faq-question').forEach(function(b) {
+        b.setAttribute('aria-expanded', 'false');
+        b.querySelector('.faq-question__icon').textContent = '+';
       });
-    });
-
-    // ===== PHONE FORMATTING =====
-    const phoneInput = document.getElementById('phone');
-    if (phoneInput) {
-      phoneInput.addEventListener('input', function(e) {
-        let v = e.target.value.replace(/\D/g, '');
-        if (v.length >= 10) v = v.substring(0, 10);
-        let formatted = '';
-        if (v.length > 0) formatted = '(' + v.substring(0, 3);
-        if (v.length >= 4) formatted += ') ' + v.substring(3, 6);
-        if (v.length >= 7) formatted += '-' + v.substring(6, 10);
-        e.target.value = formatted;
-      });
-    }
-
-    // ===== FORM VALIDATION =====
-    const contactForm = document.getElementById('contactForm');
-    const formSuccess = document.getElementById('formSuccess');
-
-    function showError(inputId, errorId, show) {
-      var input = document.getElementById(inputId);
-      var error = document.getElementById(errorId);
-      if (!input || !error) return;
-      if (show) {
-        input.classList.add('invalid');
-        error.classList.add('show');
-      } else {
-        input.classList.remove('invalid');
-        error.classList.remove('show');
+      if (!isOpen) {
+        answer.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+        this.querySelector('.faq-question__icon').textContent = '-';
       }
-    }
-
-    function isValidEmail(email) {
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    }
-
-    function isValidPhone(phone) {
-      return phone.replace(/\D/g, '').length >= 10;
-    }
-
-    function validateForm() {
-      var valid = true;
-      var firstName = document.getElementById('firstName').value.trim();
-      var lastName = document.getElementById('lastName').value.trim();
-      var phone = document.getElementById('phone').value.trim();
-      var email = document.getElementById('email').value.trim();
-      var service = document.getElementById('service').value;
-      var message = document.getElementById('message').value.trim();
-
-      if (!firstName) { showError('firstName', 'firstNameError', true); valid = false; } else { showError('firstName', 'firstNameError', false); }
-      if (!lastName) { showError('lastName', 'lastNameError', true); valid = false; } else { showError('lastName', 'lastNameError', false); }
-      if (!phone || !isValidPhone(phone)) { showError('phone', 'phoneError', true); valid = false; } else { showError('phone', 'phoneError', false); }
-      if (email && !isValidEmail(email)) { showError('email', 'emailError', true); valid = false; } else { showError('email', 'emailError', false); }
-      if (!service) { showError('service', 'serviceError', true); valid = false; } else { showError('service', 'serviceError', false); }
-      if (!message) { showError('message', 'messageError', true); valid = false; } else { showError('message', 'messageError', false); }
-
-      return valid;
-    }
-
-    // Real-time validation
-    ['firstName', 'lastName', 'phone', 'email', 'service', 'message'].forEach(function(id) {
-      var el = document.getElementById(id);
-      if (!el) return;
-      el.addEventListener('blur', validateForm);
-      el.addEventListener('input', function() {
-        el.classList.remove('invalid');
-      });
     });
+  });
 
-    if (contactForm) {
-      contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        if (!validateForm()) {
-          // Focus first invalid field
-          var firstInvalid = contactForm.querySelector('.invalid');
-          if (firstInvalid) firstInvalid.focus();
-          return;
-        }
-
-        // Check consent
-        var consent = document.getElementById('consent');
-        if (!consent.checked) {
-          alert('Please agree to be contacted before submitting.');
-          consent.focus();
-          return;
-        }
-
-        // Show loading state
-        var submitBtn = document.getElementById('submitBtn');
-        var submitText = document.getElementById('submitText');
-        var submitLoading = document.getElementById('submitLoading');
-        submitBtn.disabled = true;
-        submitText.style.display = 'none';
-        submitLoading.style.display = 'inline';
-
-        // Simulate submission (replace with actual form handler)
-        setTimeout(function() {
-          contactForm.style.display = 'none';
-          formSuccess.style.display = 'block';
-          formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          submitBtn.disabled = false;
-          submitText.style.display = 'inline';
-          submitLoading.style.display = 'none';
-        }, 1500);
-      });
-    }
-
-    // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
-    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
-      link.addEventListener('click', function(e) {
-        var target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
+  // Contact form basic validation feedback
+  var form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = form.querySelector('.submit-btn');
+      btn.textContent = 'Thank You! We Will Be In Touch Shortly.';
+      btn.style.background = '#1a3a1a';
+      btn.disabled = true;
     });
-  </script>
+  }
+</script>
 </body>
 </html>
