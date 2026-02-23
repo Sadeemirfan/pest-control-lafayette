@@ -89,7 +89,7 @@
     /* ===== BREADCRUMB ===== */
     .breadcrumb-bar { background: var(--gray-light); border-bottom: 1px solid var(--gray-mid); padding: 10px 0; }
     .breadcrumb-bar ol { display: flex; list-style: none; gap: 6px; flex-wrap: wrap; font-size: 0.8rem; color: var(--gray-text); }
-    .breadcrumb-bar ol li + li::before { content: "âº"; margin-right: 6px; }
+    .breadcrumb-bar ol li + li::before { content: "Ã¢ÂÂº"; margin-right: 6px; }
     .breadcrumb-bar ol li a { color: var(--green-dark); font-weight: 500; }
     .breadcrumb-bar ol li a:hover { text-decoration: underline; }
 
@@ -165,7 +165,7 @@
     .prevention-list { list-style: none; margin-top: 10px; }
     .prevention-list li { display: flex; gap: 10px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--gray-mid); font-size: 0.9rem; color: var(--gray-text); }
     .prevention-list li:last-child { border-bottom: none; }
-    .prevention-list li::before { content: 'â'; color: var(--green-dark); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    .prevention-list li::before { content: 'Ã¢ÂÂ'; color: var(--green-dark); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
     .prevention-list li strong { color: var(--dark-text); display: block; margin-bottom: 2px; }
     .prevention-img-block { background: linear-gradient(135deg, #E8F5E9, #C8E6C9); border-radius: 12px; padding: 32px; display: flex; flex-direction: column; justify-content: center; }
     .prevention-img-block h3 { font-size: 1.3rem; color: var(--green-dark); margin-bottom: 16px; }
@@ -250,104 +250,68 @@
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <span>Serving All of Acadiana - Call Now for Same-Day Service:</span>
+    <a href="tel:+13375550199">(337) 555-0199</a>
+  </div>
+</div>
+
+<!-- SITE HEADER -->
 <header class="site-header">
-  <div class="header-inner">
+  <div class="container header-container">
     <a href="index.html" class="logo">
-      <span class="logo-name">Acadiana Pest Solutions</span>
-      <span class="logo-tagline">Lafayette's Trusted Pest Experts</span>
+      <span class="logo-text">Acadiana<br>Pest Solutions</span>
     </a>
-    <nav class="main-nav" aria-label="Primary navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
         <li class="has-dropdown">
-          <a href="#" aria-haspopup="true" aria-expanded="false">Services â¾</a>
-          <ul class="dropdown-menu" role="menu">
-            <li role="menuitem"><a href="termite-control.html">Termite Control</a></li>
-            <li role="menuitem"><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
-            <li role="menuitem"><a href="rodent-control.html">Rodent Control</a></li>
-            <li role="menuitem"><a href="ant-extermination.html" class="active">Ant Extermination</a></li>
-            <li role="menuitem"><a href="cockroach-control.html">Cockroach Control</a></li>
-            <li role="menuitem"><a href="mosquito-control.html">Mosquito Control</a></li>
+          <a href="#" class="nav-link dropdown-toggle">Services <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="termite-control.html">Termite Control</a></li>
+            <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+            <li><a href="rodent-control.html">Rodent Control</a></li>
+            <li><a href="ant-extermination.html">Ant Extermination</a></li>
+            <li><a href="cockroach-control.html">Cockroach Control</a></li>
+            <li><a href="mosquito-control.html">Mosquito Control</a></li>
           </ul>
         </li>
         <li class="has-dropdown">
-          <a href="#" aria-haspopup="true">Areas We Serve â¾</a>
-          <ul class="dropdown-menu" role="menu">
-            <li role="menuitem"><a href="lafayette.html">Lafayette</a></li>
-            <li role="menuitem"><a href="scott.html">Scott</a></li>
-            <li role="menuitem"><a href="broussard.html">Broussard</a></li>
-            <li role="menuitem"><a href="youngsville.html">Youngsville</a></li>
-            <li role="menuitem"><a href="carencro.html">Carencro</a></li>
-            <li role="menuitem"><a href="duson.html">Duson</a></li>
+          <a href="#" class="nav-link dropdown-toggle">Areas We Serve <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="scott.html">Scott, LA</a></li>
+            <li><a href="broussard.html">Broussard, LA</a></li>
+            <li><a href="youngsville.html">Youngsville, LA</a></li>
+            <li><a href="carencro.html">Carencro, LA</a></li>
+            <li><a href="duson.html">Duson, LA</a></li>
+            <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
           </ul>
         </li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="tel:+13375550199" class="nav-cta-btn">ð (337) 555-0199</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
     </nav>
-    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <a href="tel:+13375550199" class="header-phone">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11.4 11.4 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.5.6 3.6a1 1 0 01-.2 1L6.6 10.8z"/></svg>
+      (337) 555-0199
+    </a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
-  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Services</a></li>
-      <ul class="mobile-sub">
-        <li><a href="termite-control.html">Termite Control</a></li>
-        <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
-        <li><a href="rodent-control.html">Rodent Control</a></li>
-        <li><a href="ant-extermination.html">Ant Extermination</a></li>
-        <li><a href="cockroach-control.html">Cockroach Control</a></li>
-        <li><a href="mosquito-control.html">Mosquito Control</a></li>
-      </ul>
-      <li><a href="#">Areas We Serve</a></li>
-      <ul class="mobile-sub">
-        <li><a href="lafayette.html">Lafayette</a></li>
-        <li><a href="scott.html">Scott</a></li>
-        <li><a href="broussard.html">Broussard</a></li>
-        <li><a href="youngsville.html">Youngsville</a></li>
-        <li><a href="carencro.html">Carencro</a></li>
-        <li><a href="duson.html">Duson</a></li>
-      </ul>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="tel:+13375550199" style="color:#F9A825;font-weight:700;">ð (337) 555-0199</a></li>
-    </ul>
-  </nav>
 </header>
+<div class="nav-overlay" id="navOverlay"></div>
 
-<!-- ===== BREADCRUMB ===== -->
-<nav class="breadcrumb-bar" aria-label="Breadcrumb">
-  <div class="container">
-    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a href="index.html" itemprop="item"><span itemprop="name">Home</span></a>
-        <meta itemprop="position" content="1">
-      </li>
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a href="#" itemprop="item"><span itemprop="name">Services</span></a>
-        <meta itemprop="position" content="2">
-      </li>
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <span itemprop="name">Ant Extermination</span>
-        <meta itemprop="position" content="3">
-      </li>
-    </ol>
-  </div>
-</nav>
-
-<!-- ===== HERO ===== -->
 <section class="hero-service" aria-label="Page hero">
   <div class="container">
     <div class="hero-content">
-      <span class="hero-badge">ð Ant Extermination</span>
+      <span class="hero-badge">Ã°ÂÂÂ Ant Extermination</span>
       <h1>Ant Extermination in <span>Lafayette, LA</span></h1>
-      <p>Louisiana's warm, humid climate makes Acadiana one of the most active regions in the country for fire ants, carpenter ants, crazy ants, and other invasive species. Our licensed specialists eliminate ant colonies at the source â protecting your yard, your home, and your family.</p>
+      <p>Louisiana's warm, humid climate makes Acadiana one of the most active regions in the country for fire ants, carpenter ants, crazy ants, and other invasive species. Our licensed specialists eliminate ant colonies at the source Ã¢ÂÂ protecting your yard, your home, and your family.</p>
       <div class="hero-btns">
-        <a href="tel:+13375550199" class="btn-primary">ð Call (337) 555-0199 â Free Estimate</a>
+        <a href="tel:+13375550199" class="btn-primary">Ã°ÂÂÂ Call (337) 555-0199 Ã¢ÂÂ Free Estimate</a>
         <a href="contact.html" class="btn-outline">Schedule Inspection</a>
       </div>
       <div class="hero-stats">
@@ -369,31 +333,31 @@
     <div class="ant-types-grid">
 
       <article class="ant-card">
-        <div class="ant-icon">ð´</div>
+        <div class="ant-icon">Ã°ÂÂÂ´</div>
         <span class="ant-tag tag-danger">High Danger</span>
         <h3>Imported Red Fire Ant (Solenopsis invicta)</h3>
-        <p>The red imported fire ant is by far the most significant ant pest in Louisiana. These reddish-brown ants build distinctive dome-shaped mounds in open, sunny areas â lawns, playgrounds, parks, and along sidewalks. Fire ant mounds can reach 18 inches high and contain colonies of 100,000 to 500,000 workers. Unlike most ants, fire ants sting repeatedly, injecting a venom called solenopsin that causes an immediate burning sensation (which gave them their name), followed by a white pustule. In Lafayette's warm climate, fire ant colonies are active year-round. They are an invasive species from South America that arrived in Mobile, Alabama in the 1930s and has since spread across the entire Gulf Coast. In Louisiana, they cost the state tens of millions of dollars annually in agricultural losses and medical treatment.</p>
+        <p>The red imported fire ant is by far the most significant ant pest in Louisiana. These reddish-brown ants build distinctive dome-shaped mounds in open, sunny areas Ã¢ÂÂ lawns, playgrounds, parks, and along sidewalks. Fire ant mounds can reach 18 inches high and contain colonies of 100,000 to 500,000 workers. Unlike most ants, fire ants sting repeatedly, injecting a venom called solenopsin that causes an immediate burning sensation (which gave them their name), followed by a white pustule. In Lafayette's warm climate, fire ant colonies are active year-round. They are an invasive species from South America that arrived in Mobile, Alabama in the 1930s and has since spread across the entire Gulf Coast. In Louisiana, they cost the state tens of millions of dollars annually in agricultural losses and medical treatment.</p>
       </article>
 
       <article class="ant-card">
-        <div class="ant-icon">ð¤</div>
+        <div class="ant-icon">Ã°ÂÂÂ¤</div>
         <span class="ant-tag tag-warning">Property Risk</span>
         <h3>Carpenter Ant (Camponotus spp.)</h3>
-        <p>Carpenter ants are among the largest ants found in Louisiana, typically black or dark red-black, measuring Â¼ to Â½ inch. They do not eat wood like termites â instead, they excavate galleries in soft, damp, or decaying wood to build their nests. This makes them a serious structural threat, particularly in Acadiana where high humidity promotes wood moisture and fungal decay. Carpenter ants prefer to nest in window frames, door frames, roof eaves, wooden decks, and wall voids near moisture sources. A common sign of a carpenter ant infestation is seeing piles of sawdust-like frass near wooden structures. In the Acadiana region, the peak season for carpenter ant swarmer activity is spring through early summer, when winged reproductives emerge to establish new colonies.</p>
+        <p>Carpenter ants are among the largest ants found in Louisiana, typically black or dark red-black, measuring ÃÂ¼ to ÃÂ½ inch. They do not eat wood like termites Ã¢ÂÂ instead, they excavate galleries in soft, damp, or decaying wood to build their nests. This makes them a serious structural threat, particularly in Acadiana where high humidity promotes wood moisture and fungal decay. Carpenter ants prefer to nest in window frames, door frames, roof eaves, wooden decks, and wall voids near moisture sources. A common sign of a carpenter ant infestation is seeing piles of sawdust-like frass near wooden structures. In the Acadiana region, the peak season for carpenter ant swarmer activity is spring through early summer, when winged reproductives emerge to establish new colonies.</p>
       </article>
 
       <article class="ant-card">
-        <div class="ant-icon">â¡</div>
+        <div class="ant-icon">Ã¢ÂÂ¡</div>
         <span class="ant-tag tag-warning">Nuisance/Risk</span>
         <h3>Tawny Crazy Ant (Nylanderia fulva)</h3>
-        <p>The tawny crazy ant â sometimes called the Raspberry crazy ant â is an invasive species that arrived in Texas in 2002 and has rapidly spread across Louisiana, including the Acadiana region. These small, reddish-brown ants get their name from their erratic, non-linear movement pattern. Unlike fire ants, crazy ants don't build obvious mounds â they nest in soil, under debris, leaf litter, mulch, potted plants, and even inside electrical equipment. They are notorious for invading and shorting out electrical boxes, utility meters, and AC units in massive numbers. Crazy ant colonies are polygynal (multiple queens), making them extremely difficult to control without professional treatment. Their populations can explode to hundreds of millions of workers per acre.</p>
+        <p>The tawny crazy ant Ã¢ÂÂ sometimes called the Raspberry crazy ant Ã¢ÂÂ is an invasive species that arrived in Texas in 2002 and has rapidly spread across Louisiana, including the Acadiana region. These small, reddish-brown ants get their name from their erratic, non-linear movement pattern. Unlike fire ants, crazy ants don't build obvious mounds Ã¢ÂÂ they nest in soil, under debris, leaf litter, mulch, potted plants, and even inside electrical equipment. They are notorious for invading and shorting out electrical boxes, utility meters, and AC units in massive numbers. Crazy ant colonies are polygynal (multiple queens), making them extremely difficult to control without professional treatment. Their populations can explode to hundreds of millions of workers per acre.</p>
       </article>
 
       <article class="ant-card">
-        <div class="ant-icon">ð </div>
+        <div class="ant-icon">Ã°ÂÂÂ </div>
         <span class="ant-tag tag-moderate">Indoor Nuisance</span>
         <h3>Odorous House Ant (Tapinoma sessile)</h3>
-        <p>Odorous house ants are small (1/16 to â inch), dark brown to black ants named for the rotten coconut smell they emit when crushed. They are one of the most common indoor ant pests across all of Louisiana, frequently trailing through kitchens, bathrooms, and pantries in search of food and moisture. These ants prefer sweets, honeydew from aphids, and greasy foods. Colonies range from a few hundred to 100,000 workers and multiple queens, with nests located under floors, behind walls, beneath mulch, or under pavement. Odorous house ants are frustrating for homeowners because over-the-counter repellent sprays often cause the colony to scatter and establish multiple satellite colonies, making the problem worse. Professional bait and gel treatments are the most effective solution.</p>
+        <p>Odorous house ants are small (1/16 to Ã¢ÂÂ inch), dark brown to black ants named for the rotten coconut smell they emit when crushed. They are one of the most common indoor ant pests across all of Louisiana, frequently trailing through kitchens, bathrooms, and pantries in search of food and moisture. These ants prefer sweets, honeydew from aphids, and greasy foods. Colonies range from a few hundred to 100,000 workers and multiple queens, with nests located under floors, behind walls, beneath mulch, or under pavement. Odorous house ants are frustrating for homeowners because over-the-counter repellent sprays often cause the colony to scatter and establish multiple satellite colonies, making the problem worse. Professional bait and gel treatments are the most effective solution.</p>
       </article>
 
     </div>
@@ -407,38 +371,38 @@
       <div>
         <span class="section-label">Health &amp; Safety</span>
         <h2 class="section-title">Health Risks &amp; Property Damage</h2>
-        <p style="font-size:0.95rem;color:var(--gray-text);margin-bottom:10px;">Ants aren't just a nuisance â they pose real health and safety risks to your family, pets, and the structural integrity of your home. In Louisiana, fire ants represent a particular public health concern recognized by state health agencies.</p>
+        <p style="font-size:0.95rem;color:var(--gray-text);margin-bottom:10px;">Ants aren't just a nuisance Ã¢ÂÂ they pose real health and safety risks to your family, pets, and the structural integrity of your home. In Louisiana, fire ants represent a particular public health concern recognized by state health agencies.</p>
         <ul class="risk-list">
           <li>
-            <div class="risk-icon risk-icon-red">ð¥</div>
+            <div class="risk-icon risk-icon-red">Ã°ÂÂÂ¥</div>
             <div class="risk-text">
               <strong>Fire Ant Stings &amp; Anaphylaxis</strong>
-              <span>Fire ant stings cause burning pain and white pustules for most people. However, approximately 1â2% of the population is severely allergic and can experience life-threatening anaphylactic shock. Children, the elderly, and pets are especially vulnerable. In Louisiana, hundreds of ER visits are attributed to fire ant stings each year.</span>
+              <span>Fire ant stings cause burning pain and white pustules for most people. However, approximately 1Ã¢ÂÂ2% of the population is severely allergic and can experience life-threatening anaphylactic shock. Children, the elderly, and pets are especially vulnerable. In Louisiana, hundreds of ER visits are attributed to fire ant stings each year.</span>
             </div>
           </li>
           <li>
-            <div class="risk-icon risk-icon-red">ð¶</div>
+            <div class="risk-icon risk-icon-red">Ã°ÂÂÂ¶</div>
             <div class="risk-text">
               <strong>Danger to Children &amp; Pets</strong>
               <span>Young children playing in yards and pets exploring lawns are at high risk of disturbing fire ant mounds and receiving hundreds of stings simultaneously. Small children and puppies have been seriously harmed by fire ant attacks in Acadiana's backyards and parks. Fire ant mounds frequently appear in playgrounds, athletic fields, and schoolyards throughout Lafayette Parish.</span>
             </div>
           </li>
           <li>
-            <div class="risk-icon risk-icon-amber">ðï¸</div>
+            <div class="risk-icon risk-icon-amber">Ã°ÂÂÂÃ¯Â¸Â</div>
             <div class="risk-text">
               <strong>Structural Damage from Carpenter Ants</strong>
               <span>Carpenter ants can cause significant structural damage over time, hollowing out load-bearing wood members, floor joists, and wall studs. In the humid Acadiana climate, moisture-damaged wood is common, creating ideal nesting conditions. Damage from carpenter ants is often not discovered until renovation or repair work exposes the hollowed galleries within walls and ceilings.</span>
             </div>
           </li>
           <li>
-            <div class="risk-icon risk-icon-amber">â¡</div>
+            <div class="risk-icon risk-icon-amber">Ã¢ÂÂ¡</div>
             <div class="risk-text">
               <strong>Electrical Damage from Crazy Ants</strong>
               <span>Tawny crazy ants are attracted to electrical equipment and have been responsible for shorting out AC compressors, electrical panels, utility boxes, and vehicles across Louisiana. When a crazy ant is electrocuted, it releases a pheromone that attracts other workers, causing mass aggregation in electrical units. Replacement of damaged equipment can cost thousands of dollars.</span>
             </div>
           </li>
           <li>
-            <div class="risk-icon risk-icon-amber">ð¦ </div>
+            <div class="risk-icon risk-icon-amber">Ã°ÂÂ¦Â </div>
             <div class="risk-text">
               <strong>Food Contamination</strong>
               <span>Odorous house ants and fire ants that invade kitchens and pantries can contaminate food supplies. Ants travel through sewers, garbage, and decaying matter before crossing food preparation surfaces, potentially spreading Salmonella and other pathogens. A trail of ants through your kitchen is a serious sanitation concern that requires immediate professional attention.</span>
@@ -446,42 +410,42 @@
           </li>
         </ul>
         <div class="warning-box">
-          <h4>â ï¸ Fire Ant Alert for Acadiana Residents</h4>
-          <p>Louisiana law requires landowners to manage fire ant populations on their properties in certain agricultural contexts. If a family member or pet shows signs of an allergic reaction â including swelling, difficulty breathing, dizziness, or hives â after ant stings, seek emergency medical care immediately and call 911. Keep an EpiPen on hand if your doctor has prescribed one for known ant allergies.</p>
+          <h4>Ã¢ÂÂ Ã¯Â¸Â Fire Ant Alert for Acadiana Residents</h4>
+          <p>Louisiana law requires landowners to manage fire ant populations on their properties in certain agricultural contexts. If a family member or pet shows signs of an allergic reaction Ã¢ÂÂ including swelling, difficulty breathing, dizziness, or hives Ã¢ÂÂ after ant stings, seek emergency medical care immediately and call 911. Keep an EpiPen on hand if your doctor has prescribed one for known ant allergies.</p>
         </div>
       </div>
       <div>
         <div class="info-box" style="margin-top:0;">
-          <h4>ð¡ï¸ Why Lafayette Is a Hot Spot for Fire Ants</h4>
-          <p>South Louisiana's subtropical climate â characterized by mild winters, extremely hot and humid summers, and high annual rainfall â creates near-perfect conditions for fire ants. Lafayette rarely experiences the sustained hard freezes that can naturally reduce fire ant populations. As a result, colonies survive year-round and can grow to exceptional sizes. The clay-heavy soils of Acadiana also drain poorly, which fire ants actually prefer for mound construction. Studies from LSU AgCenter have documented some of the highest fire ant population densities in North America right here in south Louisiana.</p>
+          <h4>Ã°ÂÂÂ¡Ã¯Â¸Â Why Lafayette Is a Hot Spot for Fire Ants</h4>
+          <p>South Louisiana's subtropical climate Ã¢ÂÂ characterized by mild winters, extremely hot and humid summers, and high annual rainfall Ã¢ÂÂ creates near-perfect conditions for fire ants. Lafayette rarely experiences the sustained hard freezes that can naturally reduce fire ant populations. As a result, colonies survive year-round and can grow to exceptional sizes. The clay-heavy soils of Acadiana also drain poorly, which fire ants actually prefer for mound construction. Studies from LSU AgCenter have documented some of the highest fire ant population densities in North America right here in south Louisiana.</p>
         </div>
         <div style="background:var(--gray-light);border-radius:10px;padding:28px;margin-top:24px;">
           <h3 style="font-size:1.1rem;color:var(--green-dark);margin-bottom:16px;font-family:'Montserrat',sans-serif;">Seasonal Fire Ant Activity in Acadiana</h3>
           <div class="seasonal-grid">
             <div class="season-card">
-              <div class="season-icon">ð¸</div>
+              <div class="season-icon">Ã°ÂÂÂ¸</div>
               <h4>Spring</h4>
               <p>Peak swarming season. Queens disperse to form new colonies. Mounds appear rapidly after spring rains across lawns and gardens.</p>
             </div>
             <div class="season-card">
-              <div class="season-icon">âï¸</div>
+              <div class="season-icon">Ã¢ÂÂÃ¯Â¸Â</div>
               <h4>Summer</h4>
               <p>Intense heat pushes colonies deep underground or into shaded areas. Activity spikes in evening hours. Mounds move toward moisture.</p>
             </div>
             <div class="season-card">
-              <div class="season-icon">ð</div>
+              <div class="season-icon">Ã°ÂÂÂ</div>
               <h4>Fall</h4>
               <p>Colony expansion resumes as temperatures moderate. New mounds appear across the landscape. One of the most active visible periods.</p>
             </div>
             <div class="season-card">
-              <div class="season-icon">âï¸</div>
+              <div class="season-icon">Ã¢ÂÂÃ¯Â¸Â</div>
               <h4>Winter</h4>
               <p>In Lafayette's mild winters, fire ants remain active, unlike northern states. Colonies move deeper but continue foraging during warm spells.</p>
             </div>
           </div>
         </div>
         <div style="background:linear-gradient(135deg,#1B5E20,#2E7D32);border-radius:10px;padding:28px;margin-top:24px;color:white;">
-          <h3 style="font-family:'Montserrat',sans-serif;font-size:1.05rem;margin-bottom:12px;color:#F9A825;">Don't Wait â Colonies Grow Fast</h3>
+          <h3 style="font-family:'Montserrat',sans-serif;font-size:1.05rem;margin-bottom:12px;color:#F9A825;">Don't Wait Ã¢ÂÂ Colonies Grow Fast</h3>
           <p style="font-size:0.875rem;opacity:0.9;margin-bottom:18px;">A fire ant colony can grow from a newly mated queen to 10,000 workers within its first year. By year three, a colony may contain 500,000 workers. The longer you wait, the more dangerous and widespread the infestation becomes.</p>
           <a href="tel:+13375550199" style="display:inline-block;background:#F9A825;color:#1B5E20;font-family:'Montserrat',sans-serif;font-weight:700;padding:13px 24px;border-radius:6px;font-size:0.95rem;">Call Now: (337) 555-0199</a>
         </div>
@@ -495,51 +459,51 @@
   <div class="container">
     <span class="section-label">Our Process</span>
     <h2 class="section-title">Our Ant Extermination Treatment Approach</h2>
-    <p class="section-intro">Effective ant control is not a one-size-fits-all solution. Different species require different treatment methods, and long-term success depends on treating colonies at the source â not just the ants you can see. Here's our comprehensive, science-based approach to ant extermination in Lafayette and across Acadiana.</p>
+    <p class="section-intro">Effective ant control is not a one-size-fits-all solution. Different species require different treatment methods, and long-term success depends on treating colonies at the source Ã¢ÂÂ not just the ants you can see. Here's our comprehensive, science-based approach to ant extermination in Lafayette and across Acadiana.</p>
     <div class="steps-grid">
 
       <div class="step-card">
         <div class="step-number">1</div>
         <h3>Thorough Property Inspection</h3>
-        <p>Our licensed technician begins with a comprehensive inspection of your entire property â both inside and outside. We identify the specific ant species present, locate all visible mounds and nesting sites, and trace ant foraging trails back to entry points. We also assess conducive conditions like moisture damage, landscape mulch placement, wood-to-soil contact, and food sources that are attracting and sustaining ant colonies on your property. Documentation of findings is shared with you before treatment begins.</p>
+        <p>Our licensed technician begins with a comprehensive inspection of your entire property Ã¢ÂÂ both inside and outside. We identify the specific ant species present, locate all visible mounds and nesting sites, and trace ant foraging trails back to entry points. We also assess conducive conditions like moisture damage, landscape mulch placement, wood-to-soil contact, and food sources that are attracting and sustaining ant colonies on your property. Documentation of findings is shared with you before treatment begins.</p>
       </div>
 
       <div class="step-card">
         <div class="step-number">2</div>
         <h3>Targeted Mound Treatments</h3>
-        <p>For fire ant mounds, we use either direct mound injection with a fast-acting liquid insecticide, or mound drench applications, depending on mound size and location. For accessible mounds in open lawn areas, individual mound treatments provide fast knockdown â often eliminating a colony within hours. This is especially important near play areas, gardens, and pet areas where rapid fire ant elimination is critical for safety. We treat every visible mound on your property, not just the most obvious ones.</p>
+        <p>For fire ant mounds, we use either direct mound injection with a fast-acting liquid insecticide, or mound drench applications, depending on mound size and location. For accessible mounds in open lawn areas, individual mound treatments provide fast knockdown Ã¢ÂÂ often eliminating a colony within hours. This is especially important near play areas, gardens, and pet areas where rapid fire ant elimination is critical for safety. We treat every visible mound on your property, not just the most obvious ones.</p>
       </div>
 
       <div class="step-card">
         <div class="step-number">3</div>
         <h3>Broadcast Bait Applications</h3>
-        <p>For long-term fire ant and crazy ant control across larger yard areas, we apply slow-acting granular insecticide baits across the lawn. Worker ants carry bait particles back to the colony and share them with the queen and brood, eventually killing the entire colony including the queen. Because the bait is slow-acting, it allows time for the insecticide to spread throughout the colony before the workers detect a problem. This two-phase approach â direct mound treatment plus broadcast bait â delivers the most thorough and lasting results for fire ant control in Acadiana.</p>
+        <p>For long-term fire ant and crazy ant control across larger yard areas, we apply slow-acting granular insecticide baits across the lawn. Worker ants carry bait particles back to the colony and share them with the queen and brood, eventually killing the entire colony including the queen. Because the bait is slow-acting, it allows time for the insecticide to spread throughout the colony before the workers detect a problem. This two-phase approach Ã¢ÂÂ direct mound treatment plus broadcast bait Ã¢ÂÂ delivers the most thorough and lasting results for fire ant control in Acadiana.</p>
       </div>
 
       <div class="step-card">
         <div class="step-number">4</div>
         <h3>Perimeter &amp; Interior Barrier Treatment</h3>
-        <p>To prevent ant species like odorous house ants and carpenter ants from entering your home, we apply a liquid residual insecticide treatment along the full exterior perimeter of your foundation, around doors and windows, pipe entry points, eaves, and weep holes. This chemical barrier kills ants that attempt to cross it and remains active for weeks to months. For indoor infestations, we apply targeted gel baits and liquid treatments in wall voids, under appliances, and along plumbing where ants are trailing â without using broad, unnecessary indoor sprays that can be disruptive to your family.</p>
+        <p>To prevent ant species like odorous house ants and carpenter ants from entering your home, we apply a liquid residual insecticide treatment along the full exterior perimeter of your foundation, around doors and windows, pipe entry points, eaves, and weep holes. This chemical barrier kills ants that attempt to cross it and remains active for weeks to months. For indoor infestations, we apply targeted gel baits and liquid treatments in wall voids, under appliances, and along plumbing where ants are trailing Ã¢ÂÂ without using broad, unnecessary indoor sprays that can be disruptive to your family.</p>
       </div>
 
       <div class="step-card">
         <div class="step-number">5</div>
         <h3>Carpenter Ant Nest Elimination</h3>
-        <p>Carpenter ant treatment goes beyond surface spraying. Our technicians use moisture meters and acoustic detection methods to locate carpenter ant galleries within wall voids, attic spaces, and wooden structural members. We inject borate-based treatments and residual dusts directly into galleries and void spaces. We also identify and address the moisture conditions driving carpenter ant activity â recommending repairs to leaking pipes, poor drainage, and damaged wood that need to be corrected to prevent future infestations. Sealing entry points is part of every carpenter ant treatment plan.</p>
+        <p>Carpenter ant treatment goes beyond surface spraying. Our technicians use moisture meters and acoustic detection methods to locate carpenter ant galleries within wall voids, attic spaces, and wooden structural members. We inject borate-based treatments and residual dusts directly into galleries and void spaces. We also identify and address the moisture conditions driving carpenter ant activity Ã¢ÂÂ recommending repairs to leaking pipes, poor drainage, and damaged wood that need to be corrected to prevent future infestations. Sealing entry points is part of every carpenter ant treatment plan.</p>
       </div>
 
       <div class="step-card">
         <div class="step-number">6</div>
         <h3>Follow-Up &amp; Monitoring</h3>
-        <p>Ant control â especially for fire ants and crazy ants â often requires follow-up visits to ensure the initial treatment achieved full colony elimination and to treat any newly established mounds. Our service plans include scheduled follow-up visits 30 days after initial treatment, with additional inspections each season. We provide monitoring and documentation so you can see the progress of your treatment program. Our goal is complete, long-term elimination â not a temporary fix that leaves your family dealing with recurring ant problems every few months.</p>
+        <p>Ant control Ã¢ÂÂ especially for fire ants and crazy ants Ã¢ÂÂ often requires follow-up visits to ensure the initial treatment achieved full colony elimination and to treat any newly established mounds. Our service plans include scheduled follow-up visits 30 days after initial treatment, with additional inspections each season. We provide monitoring and documentation so you can see the progress of your treatment program. Our goal is complete, long-term elimination Ã¢ÂÂ not a temporary fix that leaves your family dealing with recurring ant problems every few months.</p>
       </div>
 
     </div>
     <div class="treatment-note">
-      <div class="treatment-note-icon">ð¡ï¸</div>
+      <div class="treatment-note-icon">Ã°ÂÂÂ¡Ã¯Â¸Â</div>
       <div class="treatment-note-text">
-        <h4>Child &amp; Pet Safety â Our Top Priority</h4>
-        <p>We use EPA-registered, professionally applied insecticides following all label directions. Before treatment, we provide clear guidance on re-entry times and any precautions needed for children, pets, and garden spaces. Many of the baits we use have extremely low toxicity to mammals â they're specifically designed to attract ants, not harm people or pets. Our technicians are trained to apply treatments in the most targeted, responsible way possible, minimizing your household's exposure while maximizing ant colony elimination.</p>
+        <h4>Child &amp; Pet Safety Ã¢ÂÂ Our Top Priority</h4>
+        <p>We use EPA-registered, professionally applied insecticides following all label directions. Before treatment, we provide clear guidance on re-entry times and any precautions needed for children, pets, and garden spaces. Many of the baits we use have extremely low toxicity to mammals Ã¢ÂÂ they're specifically designed to attract ants, not harm people or pets. Our technicians are trained to apply treatments in the most targeted, responsible way possible, minimizing your household's exposure while maximizing ant colony elimination.</p>
       </div>
     </div>
   </div>
@@ -555,18 +519,18 @@
       <div>
         <h3 style="font-size:1.1rem;color:var(--green-dark);font-family:'Montserrat',sans-serif;margin-bottom:4px;">Outdoor Prevention</h3>
         <ul class="prevention-list">
-          <li><div><strong>Keep mulch 12â18 inches from the foundation</strong> Deep landscape mulch retains moisture and warmth â perfect conditions for ant nesting. Pull mulch back from your foundation and exterior walls.</div></li>
+          <li><div><strong>Keep mulch 12Ã¢ÂÂ18 inches from the foundation</strong> Deep landscape mulch retains moisture and warmth Ã¢ÂÂ perfect conditions for ant nesting. Pull mulch back from your foundation and exterior walls.</div></li>
           <li><div><strong>Eliminate standing water and drainage issues</strong> Fire ants and carpenter ants are attracted to moisture. Correct drainage grading, fix leaking irrigation, and empty any standing water around the yard after rain.</div></li>
           <li><div><strong>Remove wood-to-soil contact</strong> Firewood stacks, lumber piles, tree stumps, and wooden landscape timbers in direct contact with soil are prime carpenter ant nesting sites. Store firewood at least 20 feet from your home on a raised rack.</div></li>
           <li><div><strong>Trim vegetation away from the home</strong> Tree branches, shrubs, and vines touching your roofline or siding create ant highways into your home. Keep vegetation at least 18 inches from all exterior walls.</div></li>
           <li><div><strong>Monitor your lawn regularly</strong> Walk your yard after rain events when fire ant mounds become most visible. Early detection of new mounds allows for faster treatment before colonies grow large.</div></li>
-          <li><div><strong>Treat new mounds immediately</strong> Don't step on or disturb a fire ant mound â call us or apply a labeled mound treatment right away. Disturbing a mound without treatment just disperses the colony, making it harder to eliminate.</div></li>
+          <li><div><strong>Treat new mounds immediately</strong> Don't step on or disturb a fire ant mound Ã¢ÂÂ call us or apply a labeled mound treatment right away. Disturbing a mound without treatment just disperses the colony, making it harder to eliminate.</div></li>
         </ul>
       </div>
       <div>
         <h3 style="font-size:1.1rem;color:var(--green-dark);font-family:'Montserrat',sans-serif;margin-bottom:4px;">Indoor Prevention</h3>
         <ul class="prevention-list">
-          <li><div><strong>Seal all entry points</strong> Caulk gaps around window frames, door frames, pipe penetrations, and utility lines entering the home. Even tiny cracks â as small as 1/32 inch â are large enough for odorous house ants to enter.</div></li>
+          <li><div><strong>Seal all entry points</strong> Caulk gaps around window frames, door frames, pipe penetrations, and utility lines entering the home. Even tiny cracks Ã¢ÂÂ as small as 1/32 inch Ã¢ÂÂ are large enough for odorous house ants to enter.</div></li>
           <li><div><strong>Store food in airtight containers</strong> Ants are attracted to sugars, proteins, and greasy foods. Keep all pantry items in sealed containers and never leave pet food out overnight.</div></li>
           <li><div><strong>Clean up food residue promptly</strong> Wipe down counters after cooking, sweep up crumbs, and don't let dirty dishes sit in the sink. Even the residue inside a recycling bin can attract foraging ants.</div></li>
           <li><div><strong>Fix moisture problems inside</strong> Leaking pipes under sinks, high bathroom humidity, and wet wood around HVAC condensation drains attract carpenter ants indoors. Repair leaks promptly and use a dehumidifier in damp areas.</div></li>
@@ -575,7 +539,7 @@
         </ul>
         <div class="prevention-img-block" style="margin-top:24px;">
           <h3>Louisiana's Climate = Year-Round Ant Pressure</h3>
-          <p>Unlike homeowners in northern states who get a winter reprieve from ant pressure, Lafayette homeowners must contend with ant activity virtually every month of the year. Our subtropical climate means fire ants never fully go dormant, and indoor species like odorous house ants actively seek warmth and food inside your home whenever outdoor conditions are unfavorable. This makes a year-round prevention plan â not just a one-time treatment â essential for Acadiana households. Ask us about our quarterly service programs designed specifically for south Louisiana's climate.</p>
+          <p>Unlike homeowners in northern states who get a winter reprieve from ant pressure, Lafayette homeowners must contend with ant activity virtually every month of the year. Our subtropical climate means fire ants never fully go dormant, and indoor species like odorous house ants actively seek warmth and food inside your home whenever outdoor conditions are unfavorable. This makes a year-round prevention plan Ã¢ÂÂ not just a one-time treatment Ã¢ÂÂ essential for Acadiana households. Ask us about our quarterly service programs designed specifically for south Louisiana's climate.</p>
         </div>
       </div>
     </div>
@@ -592,32 +556,32 @@
     </div>
     <div class="why-grid">
       <div class="why-card">
-        <div class="why-icon">ð</div>
+        <div class="why-icon">Ã°ÂÂÂ</div>
         <h3>Licensed &amp; Certified Technicians</h3>
         <p>All our pest control technicians are fully licensed by the Louisiana Department of Agriculture and hold current continuing education certifications. We stay current with the latest fire ant biology research from LSU AgCenter and IPM best practices recommended for south Louisiana.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">ð</div>
+        <div class="why-icon">Ã°ÂÂÂ</div>
         <h3>True Local Expertise</h3>
         <p>We've been treating ant infestations across Lafayette, Scott, Broussard, Youngsville, Carencro, Duson, and Breaux Bridge for over 15 years. We know the specific soil types, seasonal patterns, and ant species that are most common in each neighborhood and subdivision throughout Acadiana.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">ð§ª</div>
+        <div class="why-icon">Ã°ÂÂ§Âª</div>
         <h3>Science-Based Treatment Methods</h3>
-        <p>We don't rely on generic spray-and-pray approaches. Our treatment protocols are based on Integrated Pest Management (IPM) principles â using the right product, in the right place, at the right time. This means more effective results, fewer chemical applications, and better long-term outcomes for your property.</p>
+        <p>We don't rely on generic spray-and-pray approaches. Our treatment protocols are based on Integrated Pest Management (IPM) principles Ã¢ÂÂ using the right product, in the right place, at the right time. This means more effective results, fewer chemical applications, and better long-term outcomes for your property.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">ð°</div>
+        <div class="why-icon">Ã°ÂÂÂ°</div>
         <h3>Transparent, Fair Pricing</h3>
-        <p>We provide free, no-obligation estimates before any work begins. Our pricing is straightforward â no hidden fees, no high-pressure upsells. We explain exactly what we're doing and why, so you can make an informed decision about your ant treatment plan.</p>
+        <p>We provide free, no-obligation estimates before any work begins. Our pricing is straightforward Ã¢ÂÂ no hidden fees, no high-pressure upsells. We explain exactly what we're doing and why, so you can make an informed decision about your ant treatment plan.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">â</div>
+        <div class="why-icon">Ã¢ÂÂ</div>
         <h3>Satisfaction Guarantee</h3>
-        <p>We stand behind every treatment we perform. If ants return within the warranty period after your treatment, we'll come back at no additional charge. Our goal is your complete satisfaction and a genuinely ant-free property â not just a temporary reduction in visible ants.</p>
+        <p>We stand behind every treatment we perform. If ants return within the warranty period after your treatment, we'll come back at no additional charge. Our goal is your complete satisfaction and a genuinely ant-free property Ã¢ÂÂ not just a temporary reduction in visible ants.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">â¡</div>
+        <div class="why-icon">Ã¢ÂÂ¡</div>
         <h3>Fast Response Times</h3>
         <p>We understand that a fire ant infestation near a child's play area or a massive crazy ant invasion in your electrical panel can't wait weeks for an appointment. We offer same-day and next-day service for urgent ant problems throughout the Lafayette metro area and surrounding parishes.</p>
       </div>
@@ -641,7 +605,7 @@
           <div class="faq-toggle" aria-hidden="true">+</div>
         </div>
         <div class="faq-answer">
-          <p>Fire ant stings are painful for everyone â they cause an immediate burning sensation and typically develop into a white, fluid-filled pustule within 24 hours. For most healthy adults, stings are painful but manageable with over-the-counter antihistamines and topical treatments. However, about 1â2% of people are severely allergic to fire ant venom (solenopsin) and can experience anaphylaxis â a potentially life-threatening allergic reaction that includes rapid swelling, difficulty breathing, drop in blood pressure, and loss of consciousness. Children and small pets are at higher risk simply because of their smaller body size â even a moderate number of stings can be dangerous for a toddler or a small dog. If someone shows signs of a severe reaction after fire ant stings, call 911 immediately. If you or a family member has a known allergy, consult your doctor about carrying an epinephrine auto-injector (EpiPen). The best protection is proactive fire ant elimination from your property before an incident occurs. Call us at (337) 555-0199 to schedule a yard treatment.</p>
+          <p>Fire ant stings are painful for everyone Ã¢ÂÂ they cause an immediate burning sensation and typically develop into a white, fluid-filled pustule within 24 hours. For most healthy adults, stings are painful but manageable with over-the-counter antihistamines and topical treatments. However, about 1Ã¢ÂÂ2% of people are severely allergic to fire ant venom (solenopsin) and can experience anaphylaxis Ã¢ÂÂ a potentially life-threatening allergic reaction that includes rapid swelling, difficulty breathing, drop in blood pressure, and loss of consciousness. Children and small pets are at higher risk simply because of their smaller body size Ã¢ÂÂ even a moderate number of stings can be dangerous for a toddler or a small dog. If someone shows signs of a severe reaction after fire ant stings, call 911 immediately. If you or a family member has a known allergy, consult your doctor about carrying an epinephrine auto-injector (EpiPen). The best protection is proactive fire ant elimination from your property before an incident occurs. Call us at (337) 555-0199 to schedule a yard treatment.</p>
         </div>
       </div>
 
@@ -651,7 +615,7 @@
           <div class="faq-toggle" aria-hidden="true">+</div>
         </div>
         <div class="faq-answer">
-          <p>Over-the-counter fire ant products â including granular baits, mound drench granules, and contact kill dusts â are available at Lafayette hardware stores and can provide some temporary reduction in mound activity. However, DIY treatments have significant limitations. First, they rarely kill the queen, which means the colony rebuilds within weeks. Second, disturbing a mound without proper treatment causes fire ants to scatter and form satellite colonies in nearby locations, spreading the infestation. Third, most homeowners miss hidden mounds, especially in mulched beds, along fence lines, and under landscaping where fire ants frequently nest. And finally, for crazy ant or carpenter ant infestations, consumer-grade products are almost completely ineffective because these species require specialized bait formulations not available to the general public. Professional treatment with prescription-strength products, proper mound injection techniques, and broadcast bait programs delivers far superior, longer-lasting results. Many homeowners who try DIY solutions end up calling us anyway â often after the problem has gotten significantly worse.</p>
+          <p>Over-the-counter fire ant products Ã¢ÂÂ including granular baits, mound drench granules, and contact kill dusts Ã¢ÂÂ are available at Lafayette hardware stores and can provide some temporary reduction in mound activity. However, DIY treatments have significant limitations. First, they rarely kill the queen, which means the colony rebuilds within weeks. Second, disturbing a mound without proper treatment causes fire ants to scatter and form satellite colonies in nearby locations, spreading the infestation. Third, most homeowners miss hidden mounds, especially in mulched beds, along fence lines, and under landscaping where fire ants frequently nest. And finally, for crazy ant or carpenter ant infestations, consumer-grade products are almost completely ineffective because these species require specialized bait formulations not available to the general public. Professional treatment with prescription-strength products, proper mound injection techniques, and broadcast bait programs delivers far superior, longer-lasting results. Many homeowners who try DIY solutions end up calling us anyway Ã¢ÂÂ often after the problem has gotten significantly worse.</p>
         </div>
       </div>
 
@@ -661,7 +625,7 @@
           <div class="faq-toggle" aria-hidden="true">+</div>
         </div>
         <div class="faq-answer">
-          <p>Treatment timelines vary by ant species and method used. For fire ant mound treatments using contact insecticides, you'll typically see a significant reduction in fire ant activity within 24â48 hours, with full mound elimination within 3â7 days. Broadcast granular baits take longer â usually 1â3 weeks â because the slow-acting chemistry is designed to spread through the colony before killing it. This slower action is actually what makes baits so effective for complete colony elimination, including the queen. For carpenter ants and crazy ants, results may take 2â4 weeks as bait acceptance and colony suppression takes time. Regarding pet safety: we use EPA-registered products applied by trained professionals following all label requirements. Before treatment, we'll ask you to remove pets from treated areas and provide specific guidance on when it's safe for your animals to return â typically once treated surfaces have dried, usually 1â2 hours. The granular baits we use have very low mammalian toxicity; however, we still recommend keeping pets off treated grass until the bait granules have been taken by ants or have dissolved into the soil. We're happy to discuss any specific concerns about your pets before treatment begins.</p>
+          <p>Treatment timelines vary by ant species and method used. For fire ant mound treatments using contact insecticides, you'll typically see a significant reduction in fire ant activity within 24Ã¢ÂÂ48 hours, with full mound elimination within 3Ã¢ÂÂ7 days. Broadcast granular baits take longer Ã¢ÂÂ usually 1Ã¢ÂÂ3 weeks Ã¢ÂÂ because the slow-acting chemistry is designed to spread through the colony before killing it. This slower action is actually what makes baits so effective for complete colony elimination, including the queen. For carpenter ants and crazy ants, results may take 2Ã¢ÂÂ4 weeks as bait acceptance and colony suppression takes time. Regarding pet safety: we use EPA-registered products applied by trained professionals following all label requirements. Before treatment, we'll ask you to remove pets from treated areas and provide specific guidance on when it's safe for your animals to return Ã¢ÂÂ typically once treated surfaces have dried, usually 1Ã¢ÂÂ2 hours. The granular baits we use have very low mammalian toxicity; however, we still recommend keeping pets off treated grass until the bait granules have been taken by ants or have dissolved into the soil. We're happy to discuss any specific concerns about your pets before treatment begins.</p>
         </div>
       </div>
 
@@ -671,7 +635,7 @@
           <div class="faq-toggle" aria-hidden="true">+</div>
         </div>
         <div class="faq-answer">
-          <p>This is one of the most common frustrations we hear from homeowners across Acadiana. There are several reasons new mounds keep appearing after treatment. First, fire ant queens can live 5â7 years and a single colony can produce thousands of winged reproductives (alates) each year. These winged queens fly up to a mile and a half during mating flights, land, shed their wings, and start new colonies right in your yard â even if you just treated it. Second, large properties â especially those bordering untreated fields, drainage ditches, or neighboring lots with active infestations â will experience constant re-infestation pressure from surrounding areas. Third, some mound treatments only kill visible workers and don't reach the queen, so the colony rebuilds. The solution is a combination approach: direct mound treatment for immediate visible mounds, plus broadcast bait for long-term colony suppression, plus regular re-treatment intervals to address newly arriving queens. Our quarterly service program keeps treatment active year-round, which is the most effective way to manage fire ant pressure in south Louisiana's climate.</p>
+          <p>This is one of the most common frustrations we hear from homeowners across Acadiana. There are several reasons new mounds keep appearing after treatment. First, fire ant queens can live 5Ã¢ÂÂ7 years and a single colony can produce thousands of winged reproductives (alates) each year. These winged queens fly up to a mile and a half during mating flights, land, shed their wings, and start new colonies right in your yard Ã¢ÂÂ even if you just treated it. Second, large properties Ã¢ÂÂ especially those bordering untreated fields, drainage ditches, or neighboring lots with active infestations Ã¢ÂÂ will experience constant re-infestation pressure from surrounding areas. Third, some mound treatments only kill visible workers and don't reach the queen, so the colony rebuilds. The solution is a combination approach: direct mound treatment for immediate visible mounds, plus broadcast bait for long-term colony suppression, plus regular re-treatment intervals to address newly arriving queens. Our quarterly service program keeps treatment active year-round, which is the most effective way to manage fire ant pressure in south Louisiana's climate.</p>
         </div>
       </div>
 
@@ -681,7 +645,7 @@
           <div class="faq-toggle" aria-hidden="true">+</div>
         </div>
         <div class="faq-answer">
-          <p>Absolutely â we serve the entire Acadiana region, not just the city of Lafayette. Our licensed technicians regularly treat fire ant, carpenter ant, crazy ant, and odorous house ant infestations in Scott, Broussard, Youngsville, Carencro, Duson, Breaux Bridge, and surrounding communities throughout Lafayette Parish and neighboring parishes. No matter where you are in the region, you'll receive the same thorough inspection, professional treatment, and follow-up service that Lafayette homeowners count on. If you're unsure whether we service your area, just give us a call at (337) 555-0199 and we'll confirm coverage and get you scheduled for an inspection promptly. We're a local company serving local neighbors â that's what Acadiana Pest Solutions is all about.</p>
+          <p>Absolutely Ã¢ÂÂ we serve the entire Acadiana region, not just the city of Lafayette. Our licensed technicians regularly treat fire ant, carpenter ant, crazy ant, and odorous house ant infestations in Scott, Broussard, Youngsville, Carencro, Duson, Breaux Bridge, and surrounding communities throughout Lafayette Parish and neighboring parishes. No matter where you are in the region, you'll receive the same thorough inspection, professional treatment, and follow-up service that Lafayette homeowners count on. If you're unsure whether we service your area, just give us a call at (337) 555-0199 and we'll confirm coverage and get you scheduled for an inspection promptly. We're a local company serving local neighbors Ã¢ÂÂ that's what Acadiana Pest Solutions is all about.</p>
         </div>
       </div>
 
@@ -693,106 +657,73 @@
 <section class="emergency-cta" aria-labelledby="cta-heading">
   <div class="container">
     <h2 id="cta-heading">Ready to Be <span>Ant-Free?</span> We're One Call Away.</h2>
-    <p>Whether you have a yard full of fire ant mounds, carpenter ants tunneling through your walls, or a crazy ant invasion in your electrical panel â Acadiana Pest Solutions has the expertise and products to solve it fast. Serving Lafayette, Scott, Broussard, Youngsville, Carencro, Duson, and Breaux Bridge.</p>
+    <p>Whether you have a yard full of fire ant mounds, carpenter ants tunneling through your walls, or a crazy ant invasion in your electrical panel Ã¢ÂÂ Acadiana Pest Solutions has the expertise and products to solve it fast. Serving Lafayette, Scott, Broussard, Youngsville, Carencro, Duson, and Breaux Bridge.</p>
     <div class="cta-btns">
-      <a href="tel:+13375550199" class="btn-cta-amber">ð Call (337) 555-0199 Now</a>
+      <a href="tel:+13375550199" class="btn-cta-amber">Ã°ÂÂÂ Call (337) 555-0199 Now</a>
       <a href="contact.html" class="btn-cta-white">Request Free Estimate Online</a>
     </div>
-    <p style="margin-top:28px;font-size:0.8rem;opacity:0.6;">Same-day and next-day appointments available Â· Licensed & insured in Louisiana Â· 100% satisfaction guarantee</p>
+    <p style="margin-top:28px;font-size:0.8rem;opacity:0.6;">Same-day and next-day appointments available ÃÂ· Licensed & insured in Louisiana ÃÂ· 100% satisfaction guarantee</p>
   </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
-<footer class="site-footer" aria-label="Site footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="logo">
-          <span class="logo-name">Acadiana Pest Solutions</span>
-          <span class="logo-tagline" style="color:rgba(249,168,37,0.8);">Lafayette's Trusted Pest Experts</span>
-        </div>
-        <p>Professional pest control for homes and businesses throughout Lafayette and the entire Acadiana region. Licensed, insured, and locally owned.</p>
-        <a href="tel:+13375550199" class="foot-phone">ð (337) 555-0199</a>
-      </div>
-      <div class="footer-col">
-        <h4>Our Services</h4>
-        <ul>
-          <li><a href="termite-control.html">Termite Control</a></li>
-          <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
-          <li><a href="rodent-control.html">Rodent Control</a></li>
-          <li><a href="ant-extermination.html">Ant Extermination</a></li>
-          <li><a href="cockroach-control.html">Cockroach Control</a></li>
-          <li><a href="mosquito-control.html">Mosquito Control</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Areas We Serve</h4>
-        <ul>
-          <li><a href="lafayette.html">Lafayette</a></li>
-          <li><a href="scott.html">Scott</a></li>
-          <li><a href="broussard.html">Broussard</a></li>
-          <li><a href="youngsville.html">Youngsville</a></li>
-          <li><a href="carencro.html">Carencro</a></li>
-          <li><a href="duson.html">Duson</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="contact.html">Free Estimate</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Service</a></li>
-        </ul>
-      </div>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-col__title">Acadiana Pest Solutions</div>
+      <p>Professional pest control serving Lafayette and the Acadiana region. Licensed, insured, and committed to protecting your home and business.</p>
+      <a href="tel:+13375550199" class="btn btn-accent" style="margin-top:1rem;display:inline-block;">(337) 555-0199</a>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2024 Acadiana Pest Solutions. All rights reserved. Licensed by Louisiana Dept. of Agriculture &amp; Forestry.</span>
-      <span>Serving Lafayette, LA &amp; all of Acadiana | <a href="tel:+13375550199">(337) 555-0199</a></span>
+    <div class="footer-col">
+      <div class="footer-col__title">Our Services</div>
+      <ul>
+        <li><a href="termite-control.html">Termite Control</a></li>
+        <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+        <li><a href="rodent-control.html">Rodent Control</a></li>
+        <li><a href="ant-extermination.html">Ant Extermination</a></li>
+        <li><a href="cockroach-control.html">Cockroach Control</a></li>
+        <li><a href="mosquito-control.html">Mosquito Control</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col__title">Service Areas</div>
+      <ul>
+        <li><a href="scott.html">Scott, LA</a></li>
+        <li><a href="broussard.html">Broussard, LA</a></li>
+        <li><a href="youngsville.html">Youngsville, LA</a></li>
+        <li><a href="carencro.html">Carencro, LA</a></li>
+        <li><a href="duson.html">Duson, LA</a></li>
+        <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col__title">Contact</div>
+      <ul>
+        <li>Lafayette, LA</li>
+        <li><a href="tel:+13375550199">(337) 555-0199</a></li>
+        <li><a href="contact.html">Get a Free Quote</a></li>
+        <li>Mon-Fri: 7AM - 7PM</li>
+        <li>Sat: 8AM - 5PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 Acadiana Pest Solutions. All rights reserved.</p>
     </div>
   </div>
 </footer>
 
-<!-- ===== MOBILE STICKY CTA ===== -->
-<div class="mobile-cta-bar" aria-label="Mobile call to action">
-  <a href="tel:+13375550199">ð Call Now for Free Estimate â (337) 555-0199</a>
+<!-- Mobile CTA Bar -->
+<div class="mobile-cta-bar">
+  <a href="tel:+13375550199" class="mobile-cta__btn mobile-cta__btn--call">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11.4 11.4 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.5.6 3.6a1 1 0 01-.2 1L6.6 10.8z"/></svg>
+    Call Now
+  </a>
+  <a href="contact.html" class="mobile-cta__btn mobile-cta__btn--quote">Free Quote</a>
 </div>
 
 <script src="js/main.js"></script>
-<script>
-  // Hamburger toggle
-  const hamburger = document.getElementById('hamburger');
-  const mobileNav = document.getElementById('mobile-nav');
-  if (hamburger && mobileNav) {
-    hamburger.addEventListener('click', function() {
-      const isOpen = mobileNav.classList.toggle('open');
-      hamburger.setAttribute('aria-expanded', isOpen);
-    });
-  }
-
-  // FAQ accordion
-  document.querySelectorAll('.faq-question').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      const item = this.closest('.faq-item');
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(function(i) {
-        i.classList.remove('open');
-        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-      });
-      if (!isOpen) {
-        item.classList.add('open');
-        this.setAttribute('aria-expanded', 'true');
-      }
-    });
-    btn.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        this.click();
-      }
-    });
-  });
-</script>
 </body>
 </html>
