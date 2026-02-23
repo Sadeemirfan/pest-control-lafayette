@@ -101,7 +101,7 @@
     .breadcrumb { background: var(--light-gray); padding: 12px 0; font-size: 0.82rem; border-bottom: 1px solid var(--mid-gray); }
     .breadcrumb ol { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
     .breadcrumb li { display: flex; align-items: center; gap: 6px; color: var(--text-light); }
-    .breadcrumb li:not(:last-child)::after { content: 'âº'; color: var(--text-light); }
+    .breadcrumb li:not(:last-child)::after { content: 'Ã¢ÂÂº'; color: var(--text-light); }
     .breadcrumb a { color: var(--primary); font-weight: 500; }
     .breadcrumb li:last-child { color: var(--text-dark); font-weight: 600; }
 
@@ -157,7 +157,7 @@
     .checklist { margin-top: 16px; }
     .checklist li { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; font-size: 0.95rem; color: var(--text-mid); border-bottom: 1px solid var(--mid-gray); }
     .checklist li:last-child { border-bottom: none; }
-    .checklist li::before { content: 'â'; color: var(--primary); font-weight: 700; font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+    .checklist li::before { content: 'Ã¢ÂÂ'; color: var(--primary); font-weight: 700; font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
     .checklist-white li { color: rgba(255,255,255,0.88); border-bottom-color: rgba(255,255,255,0.15); }
     .checklist-white li::before { color: var(--accent); }
 
@@ -180,7 +180,7 @@
     .treatment-body { padding: 24px; }
     .treatment-body p { font-size: 0.92rem; color: var(--text-mid); margin-bottom: 16px; line-height: 1.7; }
     .treatment-body ul li { font-size: 0.88rem; color: var(--text-mid); padding: 5px 0; display: flex; gap: 8px; }
-    .treatment-body ul li::before { content: 'â'; color: var(--primary); font-weight: 700; }
+    .treatment-body ul li::before { content: 'Ã¢ÂÂ'; color: var(--primary); font-weight: 700; }
 
     /* FAQ */
     .faq { margin-top: 40px; display: flex; flex-direction: column; gap: 16px; }
@@ -265,97 +265,69 @@
 </head>
 <body>
 
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <div class="container">
-      <span>ð¦ Serving Lafayette &amp; All Acadiana &mdash; Same-Day Service Available</span>
-      <span>Call Now: <a href="tel:+13375550199">(337) 555-0199</a></span>
-    </div>
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <span>Serving All of Acadiana - Call Now for Same-Day Service:</span>
+    <a href="tel:+13375550199">(337) 555-0199</a>
   </div>
+</div>
 
-  <!-- HEADER -->
-  <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-name">Acadiana Pest Solutions</span>
-        <span class="logo-tag">Lafayette's Trusted Pest Control Experts</span>
-      </a>
-      <nav>
-        <a href="index.html" class="nav-link">Home</a>
-        <div class="dropdown">
-          <a href="#" class="nav-link" aria-haspopup="true">Services â¾</a>
-          <div class="dropdown-menu">
-            <a href="termite-control.html">Termite Control</a>
-            <a href="bed-bug-treatment.html" class="active-page">Bed Bug Treatment</a>
-            <a href="rodent-control.html">Rodent Control</a>
-            <a href="ant-extermination.html">Ant Extermination</a>
-            <a href="cockroach-control.html">Cockroach Control</a>
-            <a href="mosquito-control.html">Mosquito Control</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <a href="#" class="nav-link" aria-haspopup="true">Areas We Serve â¾</a>
-          <div class="dropdown-menu">
-            <a href="lafayette.html">Lafayette</a>
-            <a href="scott.html">Scott</a>
-            <a href="broussard.html">Broussard</a>
-            <a href="youngsville.html">Youngsville</a>
-            <a href="carencro.html">Carencro</a>
-            <a href="duson.html">Duson</a>
-          </div>
-        </div>
-        <a href="blog.html" class="nav-link">Blog</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-        <a href="tel:+13375550199" class="nav-link header-cta">ð (337) 555-0199</a>
-      </nav>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-nav" id="mobile-nav">
-      <a href="index.html">Home</a>
-      <div class="mobile-section-label">Services</div>
-      <a href="termite-control.html">Termite Control</a>
-      <a href="bed-bug-treatment.html" class="active-page">Bed Bug Treatment</a>
-      <a href="rodent-control.html">Rodent Control</a>
-      <a href="ant-extermination.html">Ant Extermination</a>
-      <a href="cockroach-control.html">Cockroach Control</a>
-      <a href="mosquito-control.html">Mosquito Control</a>
-      <div class="mobile-section-label">Areas We Serve</div>
-      <a href="lafayette.html">Lafayette</a>
-      <a href="scott.html">Scott</a>
-      <a href="broussard.html">Broussard</a>
-      <a href="youngsville.html">Youngsville</a>
-      <a href="carencro.html">Carencro</a>
-      <a href="duson.html">Duson</a>
-      <div class="mobile-section-label">More</div>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-      <a href="tel:+13375550199" style="color: var(--primary); font-weight:800;">ð (337) 555-0199</a>
-    </div>
-  </header>
+<!-- SITE HEADER -->
+<header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">
+      <span class="logo-text">Acadiana<br>Pest Solutions</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Services <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="termite-control.html">Termite Control</a></li>
+            <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+            <li><a href="rodent-control.html">Rodent Control</a></li>
+            <li><a href="ant-extermination.html">Ant Extermination</a></li>
+            <li><a href="cockroach-control.html">Cockroach Control</a></li>
+            <li><a href="mosquito-control.html">Mosquito Control</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Areas We Serve <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="scott.html">Scott, LA</a></li>
+            <li><a href="broussard.html">Broussard, LA</a></li>
+            <li><a href="youngsville.html">Youngsville, LA</a></li>
+            <li><a href="carencro.html">Carencro, LA</a></li>
+            <li><a href="duson.html">Duson, LA</a></li>
+            <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+13375550199" class="header-phone">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11.4 11.4 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.5.6 3.6a1 1 0 01-.2 1L6.6 10.8z"/></svg>
+      (337) 555-0199
+    </a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
 
-  <!-- BREADCRUMB -->
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <div class="container">
-      <ol>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li>Bed Bug Treatment</li>
-      </ol>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
+<section class="hero">
     <div class="container">
       <div class="hero-inner">
         <div class="hero-content">
-          <span class="hero-badge">ðï¸ Bed Bug Specialists</span>
+          <span class="hero-badge">Ã°ÂÂÂÃ¯Â¸Â Bed Bug Specialists</span>
           <h1>Bed Bug Treatment in <span>Lafayette, LA</span></h1>
           <p class="hero-desc">Don't let bed bugs rob you of sleep and peace of mind. Acadiana Pest Solutions delivers fast, effective bed bug elimination using proven heat treatment and chemical solutions&mdash;serving all of Acadiana with guaranteed results.</p>
           <div class="hero-actions">
-            <a href="tel:+13375550199" class="btn-primary">ð Call (337) 555-0199</a>
+            <a href="tel:+13375550199" class="btn-primary">Ã°ÂÂÂ Call (337) 555-0199</a>
             <a href="contact.html" class="btn-outline">Get Free Inspection</a>
           </div>
           <div class="hero-stats">
@@ -378,7 +350,7 @@
           </div>
         </div>
         <div class="hero-card">
-          <div class="hc-icon">ðï¸</div>
+          <div class="hc-icon">Ã°ÂÂÂÃ¯Â¸Â</div>
           <p>Bed Bug Hotline</p>
           <strong>24/7 Help</strong>
           <br><br>
@@ -401,7 +373,7 @@
           <p style="color: var(--text-mid); margin-bottom: 18px; line-height:1.8;">In Lafayette, LA, our warm, humid subtropical climate creates near-ideal conditions for bed bug activity year-round. Unlike some pests that slow down in cooler months, bed bugs thrive at room temperature and remain active throughout the year in our region. Their ability to survive for months without feeding makes them extraordinarily difficult to eliminate without professional intervention.</p>
           <p style="color: var(--text-mid); margin-bottom: 18px; line-height:1.8;">Bed bugs are nocturnal feeders. They emerge at night&mdash;typically in the hours before dawn&mdash;to feed on sleeping humans, attracted by body heat and the carbon dioxide we exhale. A single female bed bug can lay 200 to 500 eggs during her lifetime, meaning a small infestation can become a major problem in a matter of weeks.</p>
           <div class="highlight-box">
-            <h4>â ï¸ Lafayette-Specific Risk Factors</h4>
+            <h4>Ã¢ÂÂ Ã¯Â¸Â Lafayette-Specific Risk Factors</h4>
             <p>Lafayette's position along the I-10 corridor makes it a high-traffic travel hub. University of Louisiana Lafayette brings thousands of students moving in and out of apartments annually. Major hotels along Ambassador Caffery and Evangeline Thruway serve tens of thousands of travelers each year. Each of these factors significantly elevates bed bug risk for local residents and businesses.</p>
           </div>
         </div>
@@ -419,7 +391,7 @@
             <li>Finding bugs in luggage after returning from travel, hotel stays, or visiting infested locations</li>
           </ul>
           <div class="warning-box" style="margin-top:24px;">
-            <h4>ð¨ Don't Wait &mdash; Infestations Grow Fast</h4>
+            <h4>Ã°ÂÂÂ¨ Don't Wait &mdash; Infestations Grow Fast</h4>
             <p>A single pregnant female bed bug can establish an entirely new infestation. Bed bug populations can double every 16 days under ideal conditions. If you notice even one sign of bed bugs, call us immediately at <a href="tel:+13375550199" style="color:var(--primary); font-weight:700;">(337) 555-0199</a> for a same-day inspection.</p>
           </div>
         </div>
@@ -437,32 +409,32 @@
       </div>
       <div class="card-grid">
         <div class="card">
-          <div class="card-icon">âï¸</div>
+          <div class="card-icon">Ã¢ÂÂÃ¯Â¸Â</div>
           <h3>Travel &amp; Hotels</h3>
           <p>Lafayette sits along the I-10 corridor&mdash;one of the busiest highways in the South. Business travelers, tourists visiting Acadiana's restaurants and music scene, and guests at our numerous hotels can unknowingly carry bed bugs home in their luggage. Always inspect hotel room mattresses and headboards, and keep luggage off the floor when traveling.</p>
         </div>
         <div class="card">
-          <div class="card-icon">ð</div>
+          <div class="card-icon">Ã°ÂÂÂ</div>
           <h3>University Housing</h3>
           <p>UL Lafayette's student population experiences significant turnover every semester. Dormitories, off-campus apartments, and shared housing near campus are common hotspots for bed bug activity. Students moving used furniture, sharing spaces, or sleeping in infested dorms can bring bed bugs into family homes during breaks.</p>
         </div>
         <div class="card">
-          <div class="card-icon">ðï¸</div>
+          <div class="card-icon">Ã°ÂÂÂÃ¯Â¸Â</div>
           <h3>Used Furniture &amp; Thrift Stores</h3>
           <p>Buying second-hand furniture, mattresses, or upholstered items is one of the most common ways bed bugs enter a home. Bed bugs and their eggs can remain dormant in furniture fabric and wooden joints for months. Never accept or purchase used mattresses, and thoroughly inspect any second-hand upholstered furniture before bringing it inside.</p>
         </div>
         <div class="card">
-          <div class="card-icon">ð</div>
+          <div class="card-icon">Ã°ÂÂÂ</div>
           <h3>Guests &amp; Visitors</h3>
           <p>Bed bugs can hitch rides in the clothing or bags of guests who have an active infestation in their own home. This is especially common in multi-family buildings and apartment complexes throughout Lafayette, Carencro, and the greater Acadiana area, where they can migrate through wall voids and shared plumbing spaces between units.</p>
         </div>
         <div class="card">
-          <div class="card-icon">ð¨</div>
+          <div class="card-icon">Ã°ÂÂÂ¨</div>
           <h3>Healthcare &amp; Care Facilities</h3>
           <p>Long-term care facilities, hospitals, and rehabilitation centers can harbor bed bugs that travel home with patients and visitors. Lafayette's growing healthcare sector means this is an increasingly relevant concern. Healthcare workers and frequent visitors to such facilities should inspect themselves and their belongings regularly.</p>
         </div>
         <div class="card">
-          <div class="card-icon">ð¦</div>
+          <div class="card-icon">Ã°ÂÂÂ¦</div>
           <h3>Laundromats &amp; Shared Spaces</h3>
           <p>Public laundromats, shared laundry rooms in apartment complexes, and even movie theater seats can harbor bed bugs. They can transfer from infested clothing in shared laundry carts or folding tables. Transporting laundry in sealed bags and not folding clothes on public surfaces reduces this risk significantly.</p>
         </div>
@@ -480,28 +452,28 @@
           <p style="color:var(--text-mid); margin-bottom:18px; line-height:1.8;">While bed bugs are not known to transmit infectious diseases directly, the health consequences of a bed bug infestation are real, serious, and wide-ranging. The physical and psychological toll of living with an active infestation should not be underestimated, and prompt professional treatment is always the right choice.</p>
           <p style="color:var(--text-mid); margin-bottom:18px; line-height:1.8;">Bite reactions vary significantly between individuals. Some people show no visible skin reaction at all, making infestations harder to detect early. Others develop intense allergic reactions requiring medical attention. The bites typically appear as small, raised, red welts that can be intensely itchy. Scratching can break the skin, leading to secondary bacterial infections&mdash;a real concern in Louisiana's warm, humid climate.</p>
           <p style="color:var(--text-mid); margin-bottom:24px; line-height:1.8;">The psychological impact of bed bug infestations is well-documented in medical literature. Victims often develop anxiety, hypervigilance, and insomnia&mdash;the inability to sleep knowing something is biting them at night. Chronic sleep deprivation leads to impaired cognitive function, weakened immunity, mood disorders, and reduced quality of life. Some individuals develop PTSD-like symptoms even after the infestation has been eliminated.</p>
-          <a href="tel:+13375550199" class="btn-primary" style="display:inline-flex;">ð Get Relief Today: (337) 555-0199</a>
+          <a href="tel:+13375550199" class="btn-primary" style="display:inline-flex;">Ã°ÂÂÂ Get Relief Today: (337) 555-0199</a>
         </div>
         <div>
           <div class="risk-grid" style="display:flex; flex-direction:column; gap:16px;">
             <div class="risk-card">
-              <h4>ð©º Allergic Reactions</h4>
+              <h4>Ã°ÂÂ©Âº Allergic Reactions</h4>
               <p>Bed bug bites can trigger allergic reactions ranging from mild itching and redness to severe anaphylaxis in rare cases. People with existing skin conditions like eczema may experience significantly worse reactions that require dermatological care.</p>
             </div>
             <div class="risk-card">
-              <h4>ð´ Chronic Insomnia &amp; Sleep Loss</h4>
+              <h4>Ã°ÂÂÂ´ Chronic Insomnia &amp; Sleep Loss</h4>
               <p>Fear of being bitten during sleep disrupts normal sleep patterns. Chronic sleep deprivation caused by bed bug anxiety weakens the immune system, impairs memory and concentration, and contributes to depression and irritability&mdash;significantly impacting daily functioning.</p>
             </div>
             <div class="risk-card">
-              <h4>ð§  Psychological Distress</h4>
+              <h4>Ã°ÂÂ§Â  Psychological Distress</h4>
               <p>The stigma, shame, and helplessness associated with bed bug infestations can lead to anxiety disorders, social isolation, and depression. Many sufferers avoid having guests, fear going to work, and develop compulsive cleaning behaviors. Professional treatment restores normalcy and peace of mind.</p>
             </div>
             <div class="risk-card">
-              <h4>ð  Property &amp; Financial Loss</h4>
+              <h4>Ã°ÂÂÂ  Property &amp; Financial Loss</h4>
               <p>Beyond health impacts, untreated infestations spread throughout a home or apartment building, potentially requiring replacement of mattresses, furniture, and bedding. For landlords and property managers in Lafayette, unaddressed infestations can lead to legal liability, tenant disputes, and costly remediation at scale.</p>
             </div>
             <div class="risk-card">
-              <h4>ð¦  Secondary Infections</h4>
+              <h4>Ã°ÂÂ¦Â  Secondary Infections</h4>
               <p>Excessive scratching of bite sites can break the skin and introduce bacteria, leading to impetigo, cellulitis, and other skin infections. In Louisiana's warm, humid climate, these infections can develop and worsen more rapidly than in drier climates, necessitating antibiotic treatment.</p>
             </div>
           </div>
@@ -521,11 +493,11 @@
       <div class="treatment-grid">
         <div class="treatment-card featured">
           <div class="treatment-header">
-            <h3>ð¥ Heat Treatment</h3>
+            <h3>Ã°ÂÂÂ¥ Heat Treatment</h3>
             <span class="badge">MOST EFFECTIVE &mdash; ONE-DAY SOLUTION</span>
           </div>
           <div class="treatment-body">
-            <p>Heat treatment is the gold standard for bed bug elimination and our most highly recommended option. We use specialized industrial heating equipment to raise the temperature in your home or affected rooms to between 120Â°F and 140Â°F&mdash;temperatures that are lethal to bed bugs at all life stages, including eggs.</p>
+            <p>Heat treatment is the gold standard for bed bug elimination and our most highly recommended option. We use specialized industrial heating equipment to raise the temperature in your home or affected rooms to between 120ÃÂ°F and 140ÃÂ°F&mdash;temperatures that are lethal to bed bugs at all life stages, including eggs.</p>
             <p>Unlike chemical treatments, heat penetrates deep into mattresses, walls, furniture, and clothing where bugs and eggs hide. The entire process typically takes 6 to 8 hours, and you can return to your home the same day. There are no chemical residues, and it's safe for families, pets, and the environment.</p>
             <ul>
               <li>Kills all life stages including eggs in a single treatment</li>
@@ -539,7 +511,7 @@
         </div>
         <div class="treatment-card">
           <div class="treatment-header">
-            <h3>ð§ª Chemical Treatment</h3>
+            <h3>Ã°ÂÂ§Âª Chemical Treatment</h3>
             <span class="badge">RESIDUAL PROTECTION</span>
           </div>
           <div class="treatment-body">
@@ -557,7 +529,7 @@
         </div>
         <div class="treatment-card">
           <div class="treatment-header">
-            <h3>â¡ Combination Treatment</h3>
+            <h3>Ã¢ÂÂ¡ Combination Treatment</h3>
             <span class="badge">MAXIMUM RESULTS</span>
           </div>
           <div class="treatment-body">
@@ -637,18 +609,18 @@
           <p style="color:var(--text-mid); margin-bottom:18px; line-height:1.8;">Proper preparation before your bed bug treatment is critical to the success of the service. Inadequate preparation is one of the most common reasons bed bug treatments fail or require additional visits. Our technicians will provide you with a detailed preparation checklist specific to your treatment type, but here are the general guidelines for most chemical treatment protocols.</p>
           <p style="color:var(--text-mid); margin-bottom:24px; line-height:1.8;">For heat treatment, preparation requirements are considerably simpler. The primary tasks involve removing or protecting heat-sensitive items that could be damaged by high temperatures. Your Acadiana Pest Solutions technician will provide a specific list for your situation.</p>
           <div class="highlight-box">
-            <h4>ð¡ Pro Tip for Lafayette Residents</h4>
+            <h4>Ã°ÂÂÂ¡ Pro Tip for Lafayette Residents</h4>
             <p>Do NOT throw out your furniture before treatment. Discarding infested mattresses or furniture and replacing them before treatment is completed can actually spread bed bugs to other parts of your home or to your neighbors. Let us treat first, then decide on furniture replacement with our guidance.</p>
           </div>
           <div class="highlight-box" style="margin-top:16px;">
-            <h4>ð« What NOT to Do</h4>
+            <h4>Ã°ÂÂÂ« What NOT to Do</h4>
             <p>Never apply over-the-counter sprays or bug bombs before a professional treatment. These often drive bed bugs deeper into wall voids and further into furniture, making them harder to reach with professional treatments. They can also create chemical resistance issues. Call a professional first.</p>
           </div>
         </div>
         <div>
           <h3 style="font-family:'Montserrat',sans-serif; font-weight:800; color:var(--primary); font-size:1.2rem; margin-bottom:18px;">Chemical Treatment Preparation Checklist</h3>
           <ul class="checklist">
-            <li>Wash all bedding, linens, pillowcases, and clothing in hot water (130Â°F+) and dry on high heat for at least 30 minutes</li>
+            <li>Wash all bedding, linens, pillowcases, and clothing in hot water (130ÃÂ°F+) and dry on high heat for at least 30 minutes</li>
             <li>Place all washed items in sealed plastic bags immediately after drying and store in an untreated area</li>
             <li>Remove all items from under beds, from closet floors, and from furniture drawers</li>
             <li>Vacuum all carpeted areas, mattresses, and upholstered furniture thoroughly, then seal and dispose of the vacuum bag outside immediately</li>
@@ -674,32 +646,32 @@
       </div>
       <div class="card-grid">
         <div class="card">
-          <div class="card-icon">ð§³</div>
+          <div class="card-icon">Ã°ÂÂ§Â³</div>
           <h3>Smart Travel Habits</h3>
           <p>When staying at hotels along Ambassador Caffery, the I-10 corridor, or anywhere else&mdash;inspect the mattress seams, headboard, and nightstands before unpacking. Keep luggage on luggage racks, not the floor or bed. When you return home, unpack your suitcase outside or in the garage, wash all clothing immediately on hot, and inspect your bags before storing them.</p>
         </div>
         <div class="card">
-          <div class="card-icon">ð¡ï¸</div>
+          <div class="card-icon">Ã°ÂÂÂ¡Ã¯Â¸Â</div>
           <h3>Mattress Encasements</h3>
           <p>Install quality mattress and box spring encasements specifically labeled for bed bugs. These zippered covers trap any existing bed bugs inside (where they eventually die) and make future detection much easier&mdash;bed bugs are visible on a white encasement surface. Once installed, leave them on permanently. They also protect against moisture and allergens in our humid Louisiana climate.</p>
         </div>
         <div class="card">
-          <div class="card-icon">ð</div>
+          <div class="card-icon">Ã°ÂÂÂ</div>
           <h3>Inspect Secondhand Items</h3>
           <p>Before bringing any used furniture, mattress, or upholstered item into your home, conduct a thorough inspection of all seams, joints, and crevices. Use a flashlight and a credit card to check all folds. Better yet, avoid secondhand upholstered furniture entirely if you're in an area with known bed bug activity. Wooden furniture can be treated with a steamer before bringing inside.</p>
         </div>
         <div class="card">
-          <div class="card-icon">ð¢</div>
+          <div class="card-icon">Ã°ÂÂÂ¢</div>
           <h3>Report &amp; Communicate</h3>
           <p>If you live in an apartment building in Lafayette or Carencro, report any signs of bed bugs to your property manager immediately. In multi-unit buildings, bed bugs spread quickly between units through shared walls, electrical conduit, and plumbing chases. Early reporting enables building-wide treatment that protects everyone. Tenants have legal rights to pest-free habitation in Louisiana.</p>
         </div>
         <div class="card">
-          <div class="card-icon">ð </div>
+          <div class="card-icon">Ã°ÂÂÂ </div>
           <h3>Reduce Clutter</h3>
           <p>Clutter provides additional hiding places for bed bugs and makes inspections and treatments significantly less effective. Keep bedrooms organized, reduce piles of clothing and bedding on floors, and store off-season items in sealed plastic bins rather than cardboard boxes. Regular vacuuming of mattress surfaces and carpet edges can catch early-stage infestations.</p>
         </div>
         <div class="card">
-          <div class="card-icon">ð</div>
+          <div class="card-icon">Ã°ÂÂÂ</div>
           <h3>Schedule Regular Inspections</h3>
           <p>For high-risk properties&mdash;rental units, university-area apartments, Airbnb rentals, and homes with frequent guests&mdash;schedule periodic professional bed bug inspections. Early detection is dramatically cheaper and easier to treat than a widespread infestation. Acadiana Pest Solutions offers preventive inspection programs for property managers throughout the Lafayette area.</p>
         </div>
@@ -717,32 +689,32 @@
       </div>
       <div class="why-grid">
         <div class="why-item">
-          <div class="why-icon">ð</div>
+          <div class="why-icon">Ã°ÂÂÂ</div>
           <h3>Licensed &amp; Certified Specialists</h3>
           <p>All technicians are Louisiana state-licensed pest control professionals with specialized training in bed bug biology, behavior, and treatment protocols. We stay current with the latest research and treatment techniques through ongoing professional development.</p>
         </div>
         <div class="why-item">
-          <div class="why-icon">ð¬</div>
+          <div class="why-icon">Ã°ÂÂÂ¬</div>
           <h3>Proven Treatment Technology</h3>
           <p>We invest in professional-grade heat treatment equipment and use only EPA-registered chemical products. We don't cut corners with inadequate equipment or discount products that compromise treatment efficacy and your safety.</p>
         </div>
         <div class="why-item">
-          <div class="why-icon">ð</div>
+          <div class="why-icon">Ã°ÂÂÂ</div>
           <h3>Complete Elimination Guarantee</h3>
           <p>We stand behind our work. If bed bugs return within our guarantee period after treatment, we come back and re-treat at no additional charge. We're not satisfied until your home is completely bed bug-free.</p>
         </div>
         <div class="why-item">
-          <div class="why-icon">â¡</div>
+          <div class="why-icon">Ã¢ÂÂ¡</div>
           <h3>Same-Day &amp; Emergency Response</h3>
           <p>Bed bugs are a crisis situation. We offer same-day inspections and priority scheduling for active infestations throughout Lafayette, Scott, Broussard, Youngsville, Carencro, Duson, and Breaux Bridge. Call and we'll get to you fast.</p>
         </div>
         <div class="why-item">
-          <div class="why-icon">ð¬</div>
+          <div class="why-icon">Ã°ÂÂÂ¬</div>
           <h3>Discreet &amp; Professional Service</h3>
           <p>We understand the stigma associated with bed bugs and treat every client interaction with complete discretion. Our unmarked service vehicles, professional communication, and respectful technicians ensure your privacy is protected throughout the process.</p>
         </div>
         <div class="why-item">
-          <div class="why-icon">ð</div>
+          <div class="why-icon">Ã°ÂÂÂ</div>
           <h3>Local Acadiana Expertise</h3>
           <p>We're not a national franchise. We're your neighbors&mdash;a locally operated business deeply familiar with Lafayette's neighborhoods, housing stock, and the specific bed bug pressure points in our region. Local expertise means faster response and better results.</p>
         </div>
@@ -803,96 +775,70 @@
       <a href="tel:+13375550199" class="phone-big">(337) 555-0199</a>
       <p style="opacity:0.8; font-size:0.95rem; margin-bottom:0;">Call or tap to speak with a bed bug specialist now &mdash; Available 7 days a week</p>
       <div style="margin-top:28px; display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
-        <a href="tel:+13375550199" class="btn-primary" style="background:var(--accent);">ð Call Now &mdash; Same-Day Service</a>
+        <a href="tel:+13375550199" class="btn-primary" style="background:var(--accent);">Ã°ÂÂÂ Call Now &mdash; Same-Day Service</a>
         <a href="contact.html" class="btn-outline" style="border-color:rgba(255,255,255,0.5); color:#fff;">Schedule Online Inspection</a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <span class="logo-name">Acadiana Pest Solutions</span>
-          <span class="logo-tag">Lafayette's Trusted Pest Control Experts</span>
-          <p>Professional pest control serving Lafayette and all of Acadiana since 2008. Licensed, insured, and committed to safe, effective pest elimination for homes and businesses throughout the region.</p>
-          <a href="tel:+13375550199" class="footer-phone">ð (337) 555-0199</a>
-        </div>
-        <div class="footer-col">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="termite-control.html">Termite Control</a></li>
-            <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
-            <li><a href="rodent-control.html">Rodent Control</a></li>
-            <li><a href="ant-extermination.html">Ant Extermination</a></li>
-            <li><a href="cockroach-control.html">Cockroach Control</a></li>
-            <li><a href="mosquito-control.html">Mosquito Control</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Areas We Serve</h4>
-          <ul>
-            <li><a href="lafayette.html">Lafayette</a></li>
-            <li><a href="scott.html">Scott</a></li>
-            <li><a href="broussard.html">Broussard</a></li>
-            <li><a href="youngsville.html">Youngsville</a></li>
-            <li><a href="carencro.html">Carencro</a></li>
-            <li><a href="duson.html">Duson</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Pest Control Blog</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="contact.html">Free Inspection</a></li>
-            <li><a href="tel:+13375550199">Emergency Service</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Acadiana Pest Solutions. All rights reserved. Serving Lafayette, LA &amp; all of Acadiana.</p>
-        <div style="display:flex; gap:16px;">
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
-          <a href="sitemap.html">Sitemap</a>
-        </div>
-      </div>
+  
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-col__title">Acadiana Pest Solutions</div>
+      <p>Professional pest control serving Lafayette and the Acadiana region. Licensed, insured, and committed to protecting your home and business.</p>
+      <a href="tel:+13375550199" class="btn btn-accent" style="margin-top:1rem;display:inline-block;">(337) 555-0199</a>
     </div>
-  </footer>
-
-  <!-- MOBILE STICKY CTA BAR -->
-  <div class="mobile-cta-bar" aria-label="Call now sticky bar">
-    <a href="tel:+13375550199">
-      ð Tap to Call: (337) 555-0199
-    </a>
+    <div class="footer-col">
+      <div class="footer-col__title">Our Services</div>
+      <ul>
+        <li><a href="termite-control.html">Termite Control</a></li>
+        <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+        <li><a href="rodent-control.html">Rodent Control</a></li>
+        <li><a href="ant-extermination.html">Ant Extermination</a></li>
+        <li><a href="cockroach-control.html">Cockroach Control</a></li>
+        <li><a href="mosquito-control.html">Mosquito Control</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col__title">Service Areas</div>
+      <ul>
+        <li><a href="scott.html">Scott, LA</a></li>
+        <li><a href="broussard.html">Broussard, LA</a></li>
+        <li><a href="youngsville.html">Youngsville, LA</a></li>
+        <li><a href="carencro.html">Carencro, LA</a></li>
+        <li><a href="duson.html">Duson, LA</a></li>
+        <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col__title">Contact</div>
+      <ul>
+        <li>Lafayette, LA</li>
+        <li><a href="tel:+13375550199">(337) 555-0199</a></li>
+        <li><a href="contact.html">Get a Free Quote</a></li>
+        <li>Mon-Fri: 7AM - 7PM</li>
+        <li>Sat: 8AM - 5PM</li>
+      </ul>
+    </div>
   </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 Acadiana Pest Solutions. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
-  <script src="js/main.js"></script>
-  <script>
-    // Hamburger menu toggle
-    const hamburger = document.getElementById('hamburger');
-    const mobileNav = document.getElementById('mobile-nav');
-    if (hamburger && mobileNav) {
-      hamburger.addEventListener('click', function() {
-        const isOpen = mobileNav.classList.toggle('open');
-        hamburger.setAttribute('aria-expanded', isOpen);
-      });
-    }
-    // FAQ accordion
-    document.querySelectorAll('.faq-question').forEach(function(q) {
-      q.addEventListener('click', function() {
-        const item = this.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
-        if (!isOpen) { item.classList.add('open'); }
-      });
-      q.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
-      });
-    });
-  </script>
+<!-- Mobile CTA Bar -->
+<div class="mobile-cta-bar">
+  <a href="tel:+13375550199" class="mobile-cta__btn mobile-cta__btn--call">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11.4 11.4 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.5.6 3.6a1 1 0 01-.2 1L6.6 10.8z"/></svg>
+    Call Now
+  </a>
+  <a href="contact.html" class="mobile-cta__btn mobile-cta__btn--quote">Free Quote</a>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
