@@ -42,64 +42,61 @@
 </head>
 <body>
 
-  <!-- STICKY MOBILE CTA BAR -->
-  <div class="mobile-cta-bar" id="mobileCta">
-    <a href="tel:+13375550199" class="mobile-cta-call">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-      Call Now: (337) 555-0199
-    </a>
-    <a href="contact.html" class="mobile-cta-quote">Free Quote</a>
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <span>Serving All of Acadiana - Call Now for Same-Day Service:</span>
+    <a href="tel:+13375550199">(337) 555-0199</a>
   </div>
+</div>
 
-  <!-- HEADER / NAV -->
-  <header class="site-header" id="siteHeader">
-    <div class="header-inner container">
-      <a href="index.html" class="logo" aria-label="Acadiana Pest Solutions Home">
-        <span class="logo-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="#F9A825"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
-        </span>
-        <span class="logo-text">Acadiana<strong>Pest</strong></span>
-      </a>
+<!-- SITE HEADER -->
+<header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">
+      <span class="logo-text">Acadiana<br>Pest Solutions</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Services <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="termite-control.html">Termite Control</a></li>
+            <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+            <li><a href="rodent-control.html">Rodent Control</a></li>
+            <li><a href="ant-extermination.html">Ant Extermination</a></li>
+            <li><a href="cockroach-control.html">Cockroach Control</a></li>
+            <li><a href="mosquito-control.html">Mosquito Control</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Areas We Serve <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="scott.html">Scott, LA</a></li>
+            <li><a href="broussard.html">Broussard, LA</a></li>
+            <li><a href="youngsville.html">Youngsville, LA</a></li>
+            <li><a href="carencro.html">Carencro, LA</a></li>
+            <li><a href="duson.html">Duson, LA</a></li>
+            <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+13375550199" class="header-phone">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11.4 11.4 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.5.6 3.6a1 1 0 01-.2 1L6.6 10.8z"/></svg>
+      (337) 555-0199
+    </a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
 
-      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
-        <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li class="has-dropdown">
-            <a href="#" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services <span class="caret">&#9660;</span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="termite-control.html" role="menuitem">Termite Control</a></li>
-              <li><a href="bed-bug-treatment.html" role="menuitem">Bed Bug Treatment</a></li>
-              <li><a href="rodent-control.html" role="menuitem" class="active">Rodent Control</a></li>
-              <li><a href="ant-extermination.html" role="menuitem">Ant Extermination</a></li>
-              <li><a href="cockroach-control.html" role="menuitem">Cockroach Control</a></li>
-              <li><a href="mosquito-control.html" role="menuitem">Mosquito Control</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <a href="#" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Areas We Serve <span class="caret">&#9660;</span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="lafayette.html" role="menuitem">Lafayette</a></li>
-              <li><a href="scott.html" role="menuitem">Scott</a></li>
-              <li><a href="broussard.html" role="menuitem">Broussard</a></li>
-              <li><a href="youngsville.html" role="menuitem">Youngsville</a></li>
-              <li><a href="carencro.html" role="menuitem">Carencro</a></li>
-              <li><a href="duson.html" role="menuitem">Duson</a></li>
-            </ul>
-          </li>
-          <li><a href="blog.html" class="nav-link">Blog</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <a href="tel:+13375550199" class="header-phone">&#9742; (337) 555-0199</a>
-
-      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <main>
+<main>
 
     <!-- HERO SECTION -->
     <section class="service-hero rodent-hero">
@@ -136,26 +133,26 @@
           <div class="col-main">
             <span class="section-label">Know Your Enemy</span>
             <h2>Identifying Rodents Common to Lafayette &amp; Acadiana</h2>
-            <p>Lafayette and the broader Acadiana region's warm, humid subtropical climate creates ideal conditions for rodent populations to thrive year-round. Unlike colder northern states where harsh winters naturally suppress rodent activity, Louisiana's mild temperatures and abundant moisture mean rats and mice can breed continuously â producing several litters per year. If you suspect a rodent problem in your Lafayette home or business, identifying which species you're dealing with is the critical first step toward effective control.</p>
+            <p>Lafayette and the broader Acadiana region's warm, humid subtropical climate creates ideal conditions for rodent populations to thrive year-round. Unlike colder northern states where harsh winters naturally suppress rodent activity, Louisiana's mild temperatures and abundant moisture mean rats and mice can breed continuously Ã¢ÂÂ producing several litters per year. If you suspect a rodent problem in your Lafayette home or business, identifying which species you're dealing with is the critical first step toward effective control.</p>
 
             <h3>Norway Rats (Rattus norvegicus)</h3>
-            <p>Also called brown rats or sewer rats, Norway rats are the largest commensal rodent you're likely to encounter in Acadiana. Adults typically weigh 7â18 ounces and measure 13â18 inches from nose to tail tip. Their blunt muzzles, small ears, and scaly tails shorter than their body length distinguish them from other species. Norway rats are exceptional burrowers â they excavate tunnels beneath slabs, along foundation walls, under garden sheds, and throughout crawl spaces. In Lafayette neighborhoods, they're frequently found along drainage ditches, beneath concrete pads, and burrowing into the embankments adjacent to the Vermilion River and its tributaries. Norway rats are neophobic, meaning they're cautious around new objects, which makes baiting and trapping them somewhat more challenging.</p>
+            <p>Also called brown rats or sewer rats, Norway rats are the largest commensal rodent you're likely to encounter in Acadiana. Adults typically weigh 7Ã¢ÂÂ18 ounces and measure 13Ã¢ÂÂ18 inches from nose to tail tip. Their blunt muzzles, small ears, and scaly tails shorter than their body length distinguish them from other species. Norway rats are exceptional burrowers Ã¢ÂÂ they excavate tunnels beneath slabs, along foundation walls, under garden sheds, and throughout crawl spaces. In Lafayette neighborhoods, they're frequently found along drainage ditches, beneath concrete pads, and burrowing into the embankments adjacent to the Vermilion River and its tributaries. Norway rats are neophobic, meaning they're cautious around new objects, which makes baiting and trapping them somewhat more challenging.</p>
 
             <h3>Roof Rats (Rattus rattus)</h3>
-            <p>Roof rats â also called black rats or ship rats â are the dominant rat species across south Louisiana and arguably the most problematic for homeowners throughout Acadiana. Slender and agile, roof rats have pointed muzzles, large ears, and long tails that exceed their body length. They are exceptional climbers, ascending trees, power lines, fence rails, and downspouts with ease before gaining entry to attics, soffits, and wall voids through openings as small as a half-inch in diameter. Lafayette's mature oak and magnolia canopies, combined with dense shrubbery common in residential neighborhoods, create perfect highways for roof rats to move between properties. They are largely nocturnal, and homeowners most frequently become aware of them through scratching, scurrying, and rolling sounds in attics and ceilings during the night hours.</p>
+            <p>Roof rats Ã¢ÂÂ also called black rats or ship rats Ã¢ÂÂ are the dominant rat species across south Louisiana and arguably the most problematic for homeowners throughout Acadiana. Slender and agile, roof rats have pointed muzzles, large ears, and long tails that exceed their body length. They are exceptional climbers, ascending trees, power lines, fence rails, and downspouts with ease before gaining entry to attics, soffits, and wall voids through openings as small as a half-inch in diameter. Lafayette's mature oak and magnolia canopies, combined with dense shrubbery common in residential neighborhoods, create perfect highways for roof rats to move between properties. They are largely nocturnal, and homeowners most frequently become aware of them through scratching, scurrying, and rolling sounds in attics and ceilings during the night hours.</p>
 
             <h3>House Mice (Mus musculus)</h3>
-            <p>The house mouse is the smallest of the three primary commensal rodents but arguably the most prolific breeder. A single female house mouse can produce 5â10 litters of 5â6 pups per year, meaning a small initial infestation can rapidly escalate into a significant colony. House mice are dusty gray to brown in color, with large ears relative to their body size, pointed muzzles, and semi-hairless tails. They require very little water, obtaining most of their moisture from food sources, and can squeeze through gaps as small as a quarter-inch â roughly the diameter of a pencil. In Lafayette homes, mice commonly inhabit kitchen cabinets, pantries, utility closets, garage areas, and wall voids near heat sources like water heaters and HVAC equipment.</p>
+            <p>The house mouse is the smallest of the three primary commensal rodents but arguably the most prolific breeder. A single female house mouse can produce 5Ã¢ÂÂ10 litters of 5Ã¢ÂÂ6 pups per year, meaning a small initial infestation can rapidly escalate into a significant colony. House mice are dusty gray to brown in color, with large ears relative to their body size, pointed muzzles, and semi-hairless tails. They require very little water, obtaining most of their moisture from food sources, and can squeeze through gaps as small as a quarter-inch Ã¢ÂÂ roughly the diameter of a pencil. In Lafayette homes, mice commonly inhabit kitchen cabinets, pantries, utility closets, garage areas, and wall voids near heat sources like water heaters and HVAC equipment.</p>
 
             <h3>Warning Signs of a Rodent Infestation</h3>
             <p>Recognizing the early signs of rodent activity is essential for preventing a minor issue from becoming a serious infestation. Look for these indicators in your Lafayette home or business:</p>
             <ul class="styled-list">
-              <li><strong>Droppings:</strong> Rat droppings are roughly Â¾ inch long and capsule-shaped; mouse droppings are smaller, about Â¼ inch, and resemble black rice grains. Fresh droppings are dark and moist; older ones are dry and gray.</li>
+              <li><strong>Droppings:</strong> Rat droppings are roughly ÃÂ¾ inch long and capsule-shaped; mouse droppings are smaller, about ÃÂ¼ inch, and resemble black rice grains. Fresh droppings are dark and moist; older ones are dry and gray.</li>
               <li><strong>Gnaw marks:</strong> Rodents must continuously gnaw to control the growth of their incisors. Look for chew marks on food packaging, wooden structures, electrical wiring insulation, PVC pipes, and drywall.</li>
               <li><strong>Grease trails and rub marks:</strong> Rodents travel the same paths repeatedly, leaving dark, greasy smudge marks along walls, baseboards, and pipes from the oils and dirt in their fur.</li>
               <li><strong>Nesting materials:</strong> Shredded paper, insulation fibers, fabric, and plant material gathered into hidden nesting areas in attics, behind appliances, and inside walls.</li>
               <li><strong>Tracks and footprints:</strong> In dusty areas such as attics or crawl spaces, look for four-toed front prints and five-toed rear prints, along with tail drag marks.</li>
-              <li><strong>Sounds:</strong> Scratching, gnawing, squeaking, and scurrying sounds â particularly at night â originating from walls, ceilings, or beneath floors.</li>
+              <li><strong>Sounds:</strong> Scratching, gnawing, squeaking, and scurrying sounds Ã¢ÂÂ particularly at night Ã¢ÂÂ originating from walls, ceilings, or beneath floors.</li>
               <li><strong>Urine odor:</strong> A persistent, musky ammonia-like odor indicates a significant or long-standing rodent population.</li>
               <li><strong>Disturbed food products:</strong> Chewed corners on cereal boxes, rice bags, pet food containers, or fruit on countertops.</li>
             </ul>
@@ -163,7 +160,7 @@
           <div class="col-sidebar">
             <div class="sidebar-card cta-card">
               <h3>Rodent Problem?</h3>
-              <p>Don't wait â rodent populations grow fast. Call us today for a professional inspection and free estimate.</p>
+              <p>Don't wait Ã¢ÂÂ rodent populations grow fast. Call us today for a professional inspection and free estimate.</p>
               <a href="tel:+13375550199" class="btn btn-accent btn-block">&#9742; (337) 555-0199</a>
               <a href="contact.html" class="btn btn-outline-green btn-block">Schedule Inspection</a>
             </div>
@@ -171,11 +168,11 @@
               <h4>Rodent Fast Facts</h4>
               <ul class="fact-list">
                 <li><strong>Breeding rate:</strong> A pair of mice can produce 200+ offspring in one year</li>
-                <li><strong>Entry gap:</strong> Mice enter through holes as small as Â¼ inch</li>
+                <li><strong>Entry gap:</strong> Mice enter through holes as small as ÃÂ¼ inch</li>
                 <li><strong>Teeth strength:</strong> Rats can gnaw through aluminum, lead, and concrete</li>
-                <li><strong>Activity:</strong> Mostly nocturnal â rarely seen during daylight</li>
+                <li><strong>Activity:</strong> Mostly nocturnal Ã¢ÂÂ rarely seen during daylight</li>
                 <li><strong>Range:</strong> House mice rarely travel more than 30 feet from nests</li>
-                <li><strong>Lifespan:</strong> Wild rats typically live 12â18 months</li>
+                <li><strong>Lifespan:</strong> Wild rats typically live 12Ã¢ÂÂ18 months</li>
               </ul>
             </div>
             <div class="sidebar-card service-areas-card">
@@ -208,17 +205,17 @@
           <div class="risk-card">
             <div class="risk-icon danger">&#9888;</div>
             <h3>Hantavirus Pulmonary Syndrome</h3>
-            <p>Hantavirus is transmitted primarily through contact with the urine, droppings, or saliva of infected rodents â particularly deer mice, though multiple species can carry the virus. Even inhaling dust contaminated with rodent excreta can transmit the disease. Hantavirus Pulmonary Syndrome (HPS) has a mortality rate of approximately 38% and causes severe respiratory distress. While cases in Louisiana are less common than in western states, the risk is real and should not be dismissed, particularly during attic cleanouts or when disturbing areas of heavy rodent activity.</p>
+            <p>Hantavirus is transmitted primarily through contact with the urine, droppings, or saliva of infected rodents Ã¢ÂÂ particularly deer mice, though multiple species can carry the virus. Even inhaling dust contaminated with rodent excreta can transmit the disease. Hantavirus Pulmonary Syndrome (HPS) has a mortality rate of approximately 38% and causes severe respiratory distress. While cases in Louisiana are less common than in western states, the risk is real and should not be dismissed, particularly during attic cleanouts or when disturbing areas of heavy rodent activity.</p>
           </div>
           <div class="risk-card">
             <div class="risk-icon danger">&#9888;</div>
             <h3>Salmonellosis</h3>
-            <p>Rodents are prolific carriers of Salmonella bacteria, contaminating food preparation surfaces, stored pantry items, and cooking utensils with their droppings, urine, and fur. In Louisiana, where food culture is deeply embedded in daily life, the contamination of kitchens by rodents is a particularly serious concern. A single mouse produces approximately 50â75 droppings per day, and they urinate constantly as they travel â making any area they inhabit heavily contaminated. Symptoms of Salmonellosis include severe diarrhea, abdominal cramps, fever, and vomiting, and the illness can be life-threatening for young children, elderly individuals, and immunocompromised persons.</p>
+            <p>Rodents are prolific carriers of Salmonella bacteria, contaminating food preparation surfaces, stored pantry items, and cooking utensils with their droppings, urine, and fur. In Louisiana, where food culture is deeply embedded in daily life, the contamination of kitchens by rodents is a particularly serious concern. A single mouse produces approximately 50Ã¢ÂÂ75 droppings per day, and they urinate constantly as they travel Ã¢ÂÂ making any area they inhabit heavily contaminated. Symptoms of Salmonellosis include severe diarrhea, abdominal cramps, fever, and vomiting, and the illness can be life-threatening for young children, elderly individuals, and immunocompromised persons.</p>
           </div>
           <div class="risk-card">
             <div class="risk-icon danger">&#9888;</div>
             <h3>Leptospirosis</h3>
-            <p>Leptospirosis is a bacterial disease spread through contact with water, soil, or food contaminated by the urine of infected animals â most commonly rats. Given that Lafayette and Acadiana experience frequent flooding and have abundant bayous, drainage canals, and low-lying areas, leptospirosis is a genuine local health concern. After significant rain events or flooding, the risk increases substantially as rising water disperses rat urine across previously uncontaminated surfaces. Leptospirosis can cause kidney damage, meningitis, liver failure, and respiratory complications, and in severe cases (Weil's disease) can be fatal.</p>
+            <p>Leptospirosis is a bacterial disease spread through contact with water, soil, or food contaminated by the urine of infected animals Ã¢ÂÂ most commonly rats. Given that Lafayette and Acadiana experience frequent flooding and have abundant bayous, drainage canals, and low-lying areas, leptospirosis is a genuine local health concern. After significant rain events or flooding, the risk increases substantially as rising water disperses rat urine across previously uncontaminated surfaces. Leptospirosis can cause kidney damage, meningitis, liver failure, and respiratory complications, and in severe cases (Weil's disease) can be fatal.</p>
           </div>
           <div class="risk-card">
             <div class="risk-icon danger">&#9888;</div>
@@ -228,12 +225,12 @@
           <div class="risk-card">
             <div class="risk-icon warning">&#9889;</div>
             <h3>Electrical Fire Risk</h3>
-            <p>One of the most underappreciated dangers of rodent infestations is the risk of electrical fires. Rats and mice must constantly gnaw to maintain their ever-growing incisors, and they frequently target electrical wiring â stripping insulation from wires throughout attics, walls, and crawl spaces. The National Pest Management Association estimates that rodents may be responsible for 20â25% of fires of undetermined origin in the United States. In older Lafayette homes where wiring may already be aging, rodent damage to electrical systems creates a compounded risk. Many homeowners discover rat-damaged wiring only after a professional pest inspection or during renovation work.</p>
+            <p>One of the most underappreciated dangers of rodent infestations is the risk of electrical fires. Rats and mice must constantly gnaw to maintain their ever-growing incisors, and they frequently target electrical wiring Ã¢ÂÂ stripping insulation from wires throughout attics, walls, and crawl spaces. The National Pest Management Association estimates that rodents may be responsible for 20Ã¢ÂÂ25% of fires of undetermined origin in the United States. In older Lafayette homes where wiring may already be aging, rodent damage to electrical systems creates a compounded risk. Many homeowners discover rat-damaged wiring only after a professional pest inspection or during renovation work.</p>
           </div>
           <div class="risk-card">
             <div class="risk-icon warning">&#9889;</div>
             <h3>Structural &amp; Property Damage</h3>
-            <p>Beyond electrical systems, rodents cause extensive structural damage throughout Acadiana homes. Norway rats burrow beneath foundations and slabs, compromising structural integrity over time. Roof rats shred attic insulation to build nests, dramatically reducing thermal efficiency and increasing energy costs. Both species gnaw through PVC plumbing pipes, causing water leaks and the associated mold risks that are already a significant concern in Louisiana's humid climate. Mice and rats contaminate insulation with urine and feces to the point where full attic remediation â including removal and replacement of all insulation â becomes necessary. These remediation costs typically run into thousands of dollars and are often not covered by standard homeowner's insurance policies.</p>
+            <p>Beyond electrical systems, rodents cause extensive structural damage throughout Acadiana homes. Norway rats burrow beneath foundations and slabs, compromising structural integrity over time. Roof rats shred attic insulation to build nests, dramatically reducing thermal efficiency and increasing energy costs. Both species gnaw through PVC plumbing pipes, causing water leaks and the associated mold risks that are already a significant concern in Louisiana's humid climate. Mice and rats contaminate insulation with urine and feces to the point where full attic remediation Ã¢ÂÂ including removal and replacement of all insulation Ã¢ÂÂ becomes necessary. These remediation costs typically run into thousands of dollars and are often not covered by standard homeowner's insurance policies.</p>
           </div>
         </div>
       </div>
@@ -253,42 +250,42 @@
             <div class="step-number">01</div>
             <div class="step-content">
               <h3>Thorough Inspection &amp; Assessment</h3>
-              <p>Every rodent control engagement begins with a comprehensive property inspection conducted by one of our licensed Acadiana pest professionals. We inspect the entire structure from foundation to roofline, including attic spaces, crawl spaces, basement areas, garage, utility rooms, and exterior perimeter. Our technicians are specifically trained to identify the signs that many homeowners miss â subtle grease trails along baseboards, tiny gnaw marks on door frames, smudge marks on rafters from repeated travel paths, and the musky odor characteristic of significant rodent activity. We identify which species are present, estimate the population size, locate active nesting sites, and map all potential and confirmed entry points. This detailed baseline assessment drives every subsequent decision in your treatment plan.</p>
+              <p>Every rodent control engagement begins with a comprehensive property inspection conducted by one of our licensed Acadiana pest professionals. We inspect the entire structure from foundation to roofline, including attic spaces, crawl spaces, basement areas, garage, utility rooms, and exterior perimeter. Our technicians are specifically trained to identify the signs that many homeowners miss Ã¢ÂÂ subtle grease trails along baseboards, tiny gnaw marks on door frames, smudge marks on rafters from repeated travel paths, and the musky odor characteristic of significant rodent activity. We identify which species are present, estimate the population size, locate active nesting sites, and map all potential and confirmed entry points. This detailed baseline assessment drives every subsequent decision in your treatment plan.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">02</div>
             <div class="step-content">
               <h3>Strategic Trapping Program</h3>
-              <p>For active infestations inside structures, we deploy a carefully designed network of traps as the primary population reduction tool. We use snap traps, live capture traps, and electronic kill traps depending on the situation, placement location, and whether pets or children are present in the home. Our technicians position traps along confirmed travel corridors â typically flush against walls, in dark corners, behind appliances, and along attic joists and rafters. Proper trap placement is critical: even the best traps will fail if positioned incorrectly. We check and reset traps on a regular schedule, remove captured rodents, and adjust placement as needed based on ongoing activity patterns. Trapping is preferred over rodenticide baiting inside structures because it eliminates the risk of rodents dying within walls and creating secondary odor and fly infestation problems.</p>
+              <p>For active infestations inside structures, we deploy a carefully designed network of traps as the primary population reduction tool. We use snap traps, live capture traps, and electronic kill traps depending on the situation, placement location, and whether pets or children are present in the home. Our technicians position traps along confirmed travel corridors Ã¢ÂÂ typically flush against walls, in dark corners, behind appliances, and along attic joists and rafters. Proper trap placement is critical: even the best traps will fail if positioned incorrectly. We check and reset traps on a regular schedule, remove captured rodents, and adjust placement as needed based on ongoing activity patterns. Trapping is preferred over rodenticide baiting inside structures because it eliminates the risk of rodents dying within walls and creating secondary odor and fly infestation problems.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">03</div>
             <div class="step-content">
               <h3>Targeted Exterior Baiting</h3>
-              <p>For exterior Norway rat populations â particularly burrow systems around perimeter foundations, beneath outbuildings, and along fence lines â we deploy tamper-resistant bait stations containing EPA-registered rodenticide formulations. These locked, weather-resistant stations are positioned along active runways and near burrow entrances. All exterior bait placements adhere strictly to Louisiana Department of Agriculture and Forestry regulations and EPA label requirements. Tamper-resistant stations protect children, pets, and non-target wildlife from accidental exposure. We monitor and replenish bait stations during follow-up visits and adjust placement as populations shift. Exterior baiting complements interior trapping to address all dimensions of the infestation simultaneously.</p>
+              <p>For exterior Norway rat populations Ã¢ÂÂ particularly burrow systems around perimeter foundations, beneath outbuildings, and along fence lines Ã¢ÂÂ we deploy tamper-resistant bait stations containing EPA-registered rodenticide formulations. These locked, weather-resistant stations are positioned along active runways and near burrow entrances. All exterior bait placements adhere strictly to Louisiana Department of Agriculture and Forestry regulations and EPA label requirements. Tamper-resistant stations protect children, pets, and non-target wildlife from accidental exposure. We monitor and replenish bait stations during follow-up visits and adjust placement as populations shift. Exterior baiting complements interior trapping to address all dimensions of the infestation simultaneously.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">04</div>
             <div class="step-content">
               <h3>Exclusion &amp; Entry Point Sealing</h3>
-              <p>Exclusion is the single most important long-term element of any effective rodent control program, and it's where many DIY efforts and even some pest control companies fall short. Once active populations are reduced through trapping and baiting, our technicians systematically seal all identified entry points using materials that rodents cannot chew through. We use heavy-gauge galvanized steel mesh (hardware cloth), copper mesh packing material, concrete mortar, and professional-grade sealants to close gaps in foundations, around pipe penetrations, at utility conduit entries, along rooflines and soffits, around HVAC system entries, and anywhere else rodents have been observed entering or are likely to attempt entry. Gap sealing around roof rats' typical entry points â soffits, fascia boards, gable vents, and roof edges â is particularly important in Lafayette homes with mature tree canopies that provide arboreal access to roof level. We also trim back vegetation and tree branches that serve as rodent expressways to your roofline.</p>
+              <p>Exclusion is the single most important long-term element of any effective rodent control program, and it's where many DIY efforts and even some pest control companies fall short. Once active populations are reduced through trapping and baiting, our technicians systematically seal all identified entry points using materials that rodents cannot chew through. We use heavy-gauge galvanized steel mesh (hardware cloth), copper mesh packing material, concrete mortar, and professional-grade sealants to close gaps in foundations, around pipe penetrations, at utility conduit entries, along rooflines and soffits, around HVAC system entries, and anywhere else rodents have been observed entering or are likely to attempt entry. Gap sealing around roof rats' typical entry points Ã¢ÂÂ soffits, fascia boards, gable vents, and roof edges Ã¢ÂÂ is particularly important in Lafayette homes with mature tree canopies that provide arboreal access to roof level. We also trim back vegetation and tree branches that serve as rodent expressways to your roofline.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">05</div>
             <div class="step-content">
               <h3>Attic &amp; Crawl Space Remediation</h3>
-              <p>In cases of significant infestation â particularly when rodents have been active in attic or crawl space areas for an extended period â structural remediation is often necessary to fully resolve the problem and protect your family's health. Our remediation services include removal of contaminated insulation, sanitization of affected surfaces with EPA-registered disinfectants that neutralize rodent-borne pathogens, deodorization to eliminate attractant pheromones that can draw new rodents to previously infested areas, and restoration of insulation to bring the space back to proper efficiency levels. In Lafayette's climate, where summer heat drives significant energy costs, properly functioning attic insulation is not just a comfort issue but a meaningful financial concern. Post-remediation, the attic or crawl space is clean, sanitized, properly insulated, and sealed against future entry.</p>
+              <p>In cases of significant infestation Ã¢ÂÂ particularly when rodents have been active in attic or crawl space areas for an extended period Ã¢ÂÂ structural remediation is often necessary to fully resolve the problem and protect your family's health. Our remediation services include removal of contaminated insulation, sanitization of affected surfaces with EPA-registered disinfectants that neutralize rodent-borne pathogens, deodorization to eliminate attractant pheromones that can draw new rodents to previously infested areas, and restoration of insulation to bring the space back to proper efficiency levels. In Lafayette's climate, where summer heat drives significant energy costs, properly functioning attic insulation is not just a comfort issue but a meaningful financial concern. Post-remediation, the attic or crawl space is clean, sanitized, properly insulated, and sealed against future entry.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">06</div>
             <div class="step-content">
               <h3>Follow-Up Monitoring &amp; Ongoing Protection</h3>
-              <p>Rodent control is not a one-time event â it's an ongoing commitment, especially in Louisiana's environment. After initial treatment, we conduct scheduled follow-up visits to assess trap activity, monitor bait station consumption, check the integrity of exclusion work, and identify any new activity before it can develop into a reinfestation. We offer ongoing rodent monitoring programs that provide Lafayette homeowners with the peace of mind of continuous protection. During follow-up visits, our technicians also look for changes in the property â new construction gaps, storm damage that may have opened entry points, or vegetation changes â that could create new vulnerabilities. We document all activity and treatment actions, keeping you fully informed at every stage of the process.</p>
+              <p>Rodent control is not a one-time event Ã¢ÂÂ it's an ongoing commitment, especially in Louisiana's environment. After initial treatment, we conduct scheduled follow-up visits to assess trap activity, monitor bait station consumption, check the integrity of exclusion work, and identify any new activity before it can develop into a reinfestation. We offer ongoing rodent monitoring programs that provide Lafayette homeowners with the peace of mind of continuous protection. During follow-up visits, our technicians also look for changes in the property Ã¢ÂÂ new construction gaps, storm damage that may have opened entry points, or vegetation changes Ã¢ÂÂ that could create new vulnerabilities. We document all activity and treatment actions, keeping you fully informed at every stage of the process.</p>
             </div>
           </div>
         </div>
@@ -302,13 +299,13 @@
           <div class="col-text">
             <span class="section-label">Local Knowledge</span>
             <h2>Rodent Seasonal Patterns in Louisiana</h2>
-            <p>Understanding how rodent behavior shifts with the seasons in Louisiana is essential for effective, year-round protection. Unlike homeowners in northern states who primarily worry about rodents seeking warmth in fall and winter, Lafayette-area residents need to think about rodent pressure throughout the entire year â though the nature of that pressure does change with the seasons.</p>
-            <h3>Fall &amp; Winter (OctoberâFebruary)</h3>
-            <p>As temperatures drop in fall â even the modest drops that characterize a Louisiana winter â rodents begin actively seeking warmer shelter. This is peak season for roof rat and house mouse intrusions into attics, wall voids, and living spaces. Homeowners in Lafayette, Broussard, and Youngsville frequently notice increased rodent activity in November and December as populations that spent spring and summer outdoors begin moving indoors. Norway rats burrow deeper beneath foundations to access the thermal mass of slab-on-grade construction that is so common in Acadiana homes.</p>
-            <h3>Spring (MarchâMay)</h3>
-            <p>Warming temperatures in spring trigger rapid breeding and increased foraging activity. Populations that successfully overwintered inside structures begin expanding. Spring rains and flooding events â common in Lafayette's low-lying areas â displace Norway rat burrow colonies, often driving them into structures they hadn't previously inhabited. This is an important season for proactive inspection, particularly following major rain events.</p>
-            <h3>Summer (JuneâSeptember)</h3>
-            <p>Louisiana's intense summer heat and humidity create complex pressures. Outdoor food sources are abundant, but extreme heat in poorly ventilated spaces can push rodents to seek climate-controlled environments. Hurricane season brings additional risks â storm damage to roofs, soffits, and siding opens new entry points that rodents exploit quickly. Post-storm rodent activity spikes are well-documented in south Louisiana following significant weather events.</p>
+            <p>Understanding how rodent behavior shifts with the seasons in Louisiana is essential for effective, year-round protection. Unlike homeowners in northern states who primarily worry about rodents seeking warmth in fall and winter, Lafayette-area residents need to think about rodent pressure throughout the entire year Ã¢ÂÂ though the nature of that pressure does change with the seasons.</p>
+            <h3>Fall &amp; Winter (OctoberÃ¢ÂÂFebruary)</h3>
+            <p>As temperatures drop in fall Ã¢ÂÂ even the modest drops that characterize a Louisiana winter Ã¢ÂÂ rodents begin actively seeking warmer shelter. This is peak season for roof rat and house mouse intrusions into attics, wall voids, and living spaces. Homeowners in Lafayette, Broussard, and Youngsville frequently notice increased rodent activity in November and December as populations that spent spring and summer outdoors begin moving indoors. Norway rats burrow deeper beneath foundations to access the thermal mass of slab-on-grade construction that is so common in Acadiana homes.</p>
+            <h3>Spring (MarchÃ¢ÂÂMay)</h3>
+            <p>Warming temperatures in spring trigger rapid breeding and increased foraging activity. Populations that successfully overwintered inside structures begin expanding. Spring rains and flooding events Ã¢ÂÂ common in Lafayette's low-lying areas Ã¢ÂÂ displace Norway rat burrow colonies, often driving them into structures they hadn't previously inhabited. This is an important season for proactive inspection, particularly following major rain events.</p>
+            <h3>Summer (JuneÃ¢ÂÂSeptember)</h3>
+            <p>Louisiana's intense summer heat and humidity create complex pressures. Outdoor food sources are abundant, but extreme heat in poorly ventilated spaces can push rodents to seek climate-controlled environments. Hurricane season brings additional risks Ã¢ÂÂ storm damage to roofs, soffits, and siding opens new entry points that rodents exploit quickly. Post-storm rodent activity spikes are well-documented in south Louisiana following significant weather events.</p>
           </div>
           <div class="col-text">
             <h2>Prevention Tips for Lafayette Homeowners</h2>
@@ -316,11 +313,11 @@
             <ul class="prevention-list">
               <li>
                 <span class="prev-icon">&#128274;</span>
-                <div><strong>Seal all gaps and cracks:</strong> Inspect your home's exterior for any opening larger than Â¼ inch and seal with caulk, copper mesh, or steel wool backed by sealant. Pay particular attention to areas where pipes and conduits penetrate exterior walls.</div>
+                <div><strong>Seal all gaps and cracks:</strong> Inspect your home's exterior for any opening larger than ÃÂ¼ inch and seal with caulk, copper mesh, or steel wool backed by sealant. Pay particular attention to areas where pipes and conduits penetrate exterior walls.</div>
               </li>
               <li>
                 <span class="prev-icon">&#128465;</span>
-                <div><strong>Manage food storage:</strong> Store all food â including pet food and birdseed â in thick plastic or metal containers with tight-fitting lids. Never leave food in paper bags or cardboard boxes in pantries or garages.</div>
+                <div><strong>Manage food storage:</strong> Store all food Ã¢ÂÂ including pet food and birdseed Ã¢ÂÂ in thick plastic or metal containers with tight-fitting lids. Never leave food in paper bags or cardboard boxes in pantries or garages.</div>
               </li>
               <li>
                 <span class="prev-icon">&#128682;</span>
@@ -328,7 +325,7 @@
               </li>
               <li>
                 <span class="prev-icon">&#127807;</span>
-                <div><strong>Trim vegetation:</strong> Keep tree branches trimmed back at least 4â6 feet from your roofline and 2â3 feet from exterior walls. Remove dense ground cover, woodpiles, and debris adjacent to the foundation.</div>
+                <div><strong>Trim vegetation:</strong> Keep tree branches trimmed back at least 4Ã¢ÂÂ6 feet from your roofline and 2Ã¢ÂÂ3 feet from exterior walls. Remove dense ground cover, woodpiles, and debris adjacent to the foundation.</div>
               </li>
               <li>
                 <span class="prev-icon">&#128722;</span>
@@ -340,7 +337,7 @@
               </li>
               <li>
                 <span class="prev-icon">&#128270;</span>
-                <div><strong>Inspect regularly:</strong> Conduct periodic attic and crawl space inspections â particularly after major weather events â looking for fresh droppings, nesting materials, or gnaw damage on insulation and wiring.</div>
+                <div><strong>Inspect regularly:</strong> Conduct periodic attic and crawl space inspections Ã¢ÂÂ particularly after major weather events Ã¢ÂÂ looking for fresh droppings, nesting materials, or gnaw damage on insulation and wiring.</div>
               </li>
               <li>
                 <span class="prev-icon">&#128591;</span>
@@ -364,7 +361,7 @@
           <div class="feature-card">
             <div class="feature-icon">&#127968;</div>
             <h3>Deep Local Knowledge</h3>
-            <p>We've spent years working in Lafayette, Scott, Broussard, Youngsville, Carencro, Duson, and Breaux Bridge. We understand the specific species pressures, construction styles, flood patterns, and vegetation conditions that influence rodent activity in Acadiana â knowledge that out-of-state franchise operations simply cannot match.</p>
+            <p>We've spent years working in Lafayette, Scott, Broussard, Youngsville, Carencro, Duson, and Breaux Bridge. We understand the specific species pressures, construction styles, flood patterns, and vegetation conditions that influence rodent activity in Acadiana Ã¢ÂÂ knowledge that out-of-state franchise operations simply cannot match.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">&#128203;</div>
@@ -374,22 +371,22 @@
           <div class="feature-card">
             <div class="feature-icon">&#9989;</div>
             <h3>Comprehensive, Not Cursory</h3>
-            <p>We don't cut corners. Our rodent control program addresses every phase of the problem â inspection, trapping, baiting, exclusion, remediation, and follow-up monitoring. We won't simply set a few traps and disappear; we stay engaged until your rodent problem is fully resolved and your home is properly protected against reinfestation.</p>
+            <p>We don't cut corners. Our rodent control program addresses every phase of the problem Ã¢ÂÂ inspection, trapping, baiting, exclusion, remediation, and follow-up monitoring. We won't simply set a few traps and disappear; we stay engaged until your rodent problem is fully resolved and your home is properly protected against reinfestation.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">&#128144;</div>
             <h3>Family &amp; Pet Safe Treatments</h3>
-            <p>We use the safest, most effective treatment methods available, and we tailor our approach specifically to your household â including the presence of children, pets, or individuals with health sensitivities. We explain every product and technique we use in plain language so you're always fully informed.</p>
+            <p>We use the safest, most effective treatment methods available, and we tailor our approach specifically to your household Ã¢ÂÂ including the presence of children, pets, or individuals with health sensitivities. We explain every product and technique we use in plain language so you're always fully informed.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">&#128336;</div>
             <h3>Prompt Response Times</h3>
-            <p>We understand that a rodent infestation is an urgent matter â not something to schedule weeks out. We offer same-day inspections whenever possible and prioritize rapid response for active infestations. A single phone call to (337) 555-0199 connects you with a knowledgeable team member who can dispatch a technician quickly.</p>
+            <p>We understand that a rodent infestation is an urgent matter Ã¢ÂÂ not something to schedule weeks out. We offer same-day inspections whenever possible and prioritize rapid response for active infestations. A single phone call to (337) 555-0199 connects you with a knowledgeable team member who can dispatch a technician quickly.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">&#128176;</div>
             <h3>Transparent, Honest Pricing</h3>
-            <p>We provide detailed, written estimates before any work begins â no surprise charges and no pressure tactics. We'll explain exactly what treatment plan we recommend, why we recommend it, and what results you can realistically expect. Our goal is a long-term relationship built on trust and results, not a one-time transaction.</p>
+            <p>We provide detailed, written estimates before any work begins Ã¢ÂÂ no surprise charges and no pressure tactics. We'll explain exactly what treatment plan we recommend, why we recommend it, and what results you can realistically expect. Our goal is a long-term relationship built on trust and results, not a one-time transaction.</p>
           </div>
         </div>
       </div>
@@ -400,7 +397,7 @@
       <div class="container">
         <div class="section-header-centered">
           <span class="section-label">Common Questions</span>
-          <h2>Rodent Control FAQs â Lafayette &amp; Acadiana</h2>
+          <h2>Rodent Control FAQs Ã¢ÂÂ Lafayette &amp; Acadiana</h2>
         </div>
         <div class="faq-list" id="faqList">
 
@@ -410,7 +407,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer" hidden>
-              <p>This is one of the most common questions we receive from Lafayette homeowners, and it's an important distinction because roof rats and house mice require somewhat different control strategies. The most reliable indicators are the droppings. Roof rat droppings are approximately Â¾ inch long with pointed ends, while house mouse droppings are much smaller â about Â¼ inch â and look like small black rice grains. The sounds you hear also offer clues: roof rats tend to create heavier, more pronounced scratching and rolling sounds (they often roll nuts and debris across attic floors), while mice produce lighter, faster scurrying sounds. If you've seen the animal itself, roof rats are noticeably larger â roughly the size of a chipmunk or small squirrel â with a long tail that exceeds the body length. House mice are much smaller, about 3â4 inches body length with large ears. Our technicians can identify the species definitively during an inspection by examining droppings, tracks, gnaw marks, and nesting materials, and will tailor the control program accordingly.</p>
+              <p>This is one of the most common questions we receive from Lafayette homeowners, and it's an important distinction because roof rats and house mice require somewhat different control strategies. The most reliable indicators are the droppings. Roof rat droppings are approximately ÃÂ¾ inch long with pointed ends, while house mouse droppings are much smaller Ã¢ÂÂ about ÃÂ¼ inch Ã¢ÂÂ and look like small black rice grains. The sounds you hear also offer clues: roof rats tend to create heavier, more pronounced scratching and rolling sounds (they often roll nuts and debris across attic floors), while mice produce lighter, faster scurrying sounds. If you've seen the animal itself, roof rats are noticeably larger Ã¢ÂÂ roughly the size of a chipmunk or small squirrel Ã¢ÂÂ with a long tail that exceeds the body length. House mice are much smaller, about 3Ã¢ÂÂ4 inches body length with large ears. Our technicians can identify the species definitively during an inspection by examining droppings, tracks, gnaw marks, and nesting materials, and will tailor the control program accordingly.</p>
             </div>
           </div>
 
@@ -420,7 +417,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer" hidden>
-              <p>This is a critical safety concern that we take very seriously. When we use rodenticide baiting in homes with pets or children, we exclusively place bait inside tamper-resistant stations that are designed to prevent access by non-target animals and people. These lockable stations are positioned in locations inaccessible to children and pets â inside wall voids, in attic spaces, or secured in exterior locations that dogs and cats cannot reach. Inside occupied living areas of homes with pets, we generally prefer snap traps and electronic kill traps placed inside protective bait station enclosures, which eliminate rodents quickly without the risk of secondary poisoning. Secondary poisoning â where a pet ingests a rodent that has consumed rodenticide â is a real concern with first-generation anticoagulants and particularly with second-generation products. We select bait formulations and placements specifically to minimize any secondary poisoning risk. We'll discuss your household situation in detail before recommending any specific treatment approach.</p>
+              <p>This is a critical safety concern that we take very seriously. When we use rodenticide baiting in homes with pets or children, we exclusively place bait inside tamper-resistant stations that are designed to prevent access by non-target animals and people. These lockable stations are positioned in locations inaccessible to children and pets Ã¢ÂÂ inside wall voids, in attic spaces, or secured in exterior locations that dogs and cats cannot reach. Inside occupied living areas of homes with pets, we generally prefer snap traps and electronic kill traps placed inside protective bait station enclosures, which eliminate rodents quickly without the risk of secondary poisoning. Secondary poisoning Ã¢ÂÂ where a pet ingests a rodent that has consumed rodenticide Ã¢ÂÂ is a real concern with first-generation anticoagulants and particularly with second-generation products. We select bait formulations and placements specifically to minimize any secondary poisoning risk. We'll discuss your household situation in detail before recommending any specific treatment approach.</p>
             </div>
           </div>
 
@@ -430,7 +427,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer" hidden>
-              <p>This is one of the most frustrating experiences Lafayette homeowners face with rodent problems, and the answer almost always comes down to exclusion â or the lack of it. Trapping and baiting can reduce or even eliminate an active population, but without sealing the entry points that allowed rodents in, new animals will simply move in from outside to replace those removed. Roof rats in particular maintain significant outdoor populations in Lafayette's tree canopy and will continuously probe structures for entry opportunities. Additionally, rodents leave behind pheromone trails â scent markers in their urine â that actively attract other rodents to established entry points and travel corridors. Simply removing animals without addressing these scent trails is an invitation for reinfestation. Successful long-term rodent control in Louisiana requires a combination of population reduction through trapping/baiting, thorough physical exclusion work, and ongoing monitoring. If you've been dealing with a recurring problem, we can conduct a comprehensive inspection to identify all the entry points and develop a permanent solution.</p>
+              <p>This is one of the most frustrating experiences Lafayette homeowners face with rodent problems, and the answer almost always comes down to exclusion Ã¢ÂÂ or the lack of it. Trapping and baiting can reduce or even eliminate an active population, but without sealing the entry points that allowed rodents in, new animals will simply move in from outside to replace those removed. Roof rats in particular maintain significant outdoor populations in Lafayette's tree canopy and will continuously probe structures for entry opportunities. Additionally, rodents leave behind pheromone trails Ã¢ÂÂ scent markers in their urine Ã¢ÂÂ that actively attract other rodents to established entry points and travel corridors. Simply removing animals without addressing these scent trails is an invitation for reinfestation. Successful long-term rodent control in Louisiana requires a combination of population reduction through trapping/baiting, thorough physical exclusion work, and ongoing monitoring. If you've been dealing with a recurring problem, we can conduct a comprehensive inspection to identify all the entry points and develop a permanent solution.</p>
             </div>
           </div>
 
@@ -440,7 +437,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer" hidden>
-              <p>The cost of rodent control in Lafayette varies significantly depending on several factors: the size of the property, the extent of the infestation, the species involved, the degree of exclusion work needed, and whether attic or crawl space remediation is required. A basic inspection and initial trapping program for a single-family home may be relatively modest, while a comprehensive program that includes full exterior exclusion sealing and attic insulation remediation on a larger property will be a more significant investment. We always provide a detailed, written estimate before any work begins, so there are no surprises. We encourage Lafayette homeowners to consider the cost of professional rodent control against the potential costs of the alternative â electrical fire damage, structural repairs, contaminated insulation requiring full replacement, plumbing repairs from gnawed pipes, and health risks to family members. Prevention and early intervention are almost always far less expensive than dealing with the consequences of an uncontrolled rodent infestation. Call (337) 555-0199 to schedule your free inspection and estimate.</p>
+              <p>The cost of rodent control in Lafayette varies significantly depending on several factors: the size of the property, the extent of the infestation, the species involved, the degree of exclusion work needed, and whether attic or crawl space remediation is required. A basic inspection and initial trapping program for a single-family home may be relatively modest, while a comprehensive program that includes full exterior exclusion sealing and attic insulation remediation on a larger property will be a more significant investment. We always provide a detailed, written estimate before any work begins, so there are no surprises. We encourage Lafayette homeowners to consider the cost of professional rodent control against the potential costs of the alternative Ã¢ÂÂ electrical fire damage, structural repairs, contaminated insulation requiring full replacement, plumbing repairs from gnawed pipes, and health risks to family members. Prevention and early intervention are almost always far less expensive than dealing with the consequences of an uncontrolled rodent infestation. Call (337) 555-0199 to schedule your free inspection and estimate.</p>
             </div>
           </div>
 
@@ -450,7 +447,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer" hidden>
-              <p>Absolutely â flooding is one of the most significant drivers of rodent displacement and subsequent structural infestations in Acadiana. When bayous, drainage canals, and low-lying areas flood, Norway rat burrow colonies are completely inundated, forcing large numbers of rodents to abandon their underground homes simultaneously and seek higher ground. This often means they move toward and into elevated structures â including your home. Following significant flooding events, we strongly recommend that all Lafayette-area homeowners inspect their properties carefully for signs of new rodent activity. Look for fresh burrow entrances around the foundation perimeter, fresh droppings in previously unaffected areas of the garage or utility spaces, and any new gnaw marks on siding or foundation vents. The period immediately following a flood is also an important time to address any storm damage to your home's exterior that may have opened new entry points â damaged soffits, loose gable vents, cracked foundation vents, and shifted door frames are all common post-flood vulnerabilities that rats and mice will exploit rapidly. Contact us after any significant flooding event for a post-flood rodent risk assessment.</p>
+              <p>Absolutely Ã¢ÂÂ flooding is one of the most significant drivers of rodent displacement and subsequent structural infestations in Acadiana. When bayous, drainage canals, and low-lying areas flood, Norway rat burrow colonies are completely inundated, forcing large numbers of rodents to abandon their underground homes simultaneously and seek higher ground. This often means they move toward and into elevated structures Ã¢ÂÂ including your home. Following significant flooding events, we strongly recommend that all Lafayette-area homeowners inspect their properties carefully for signs of new rodent activity. Look for fresh burrow entrances around the foundation perimeter, fresh droppings in previously unaffected areas of the garage or utility spaces, and any new gnaw marks on siding or foundation vents. The period immediately following a flood is also an important time to address any storm damage to your home's exterior that may have opened new entry points Ã¢ÂÂ damaged soffits, loose gable vents, cracked foundation vents, and shifted door frames are all common post-flood vulnerabilities that rats and mice will exploit rapidly. Contact us after any significant flooding event for a post-flood rodent risk assessment.</p>
             </div>
           </div>
 
@@ -464,7 +461,7 @@
         <div class="cta-box">
           <div class="cta-content">
             <h2>Rodents in Your Lafayette Home? Don't Wait.</h2>
-            <p>Every day you delay allows the infestation to grow, the damage to accumulate, and the health risks to your family to increase. Acadiana Pest Solutions offers professional rodent inspections, same-day service when available, and proven, comprehensive control programs for homeowners and businesses throughout Lafayette and the Acadiana region. Call us now for your free inspection and estimate â our team is ready to help.</p>
+            <p>Every day you delay allows the infestation to grow, the damage to accumulate, and the health risks to your family to increase. Acadiana Pest Solutions offers professional rodent inspections, same-day service when available, and proven, comprehensive control programs for homeowners and businesses throughout Lafayette and the Acadiana region. Call us now for your free inspection and estimate Ã¢ÂÂ our team is ready to help.</p>
             <ul class="cta-checklist">
               <li>&#10003; Free Inspection &amp; Estimate</li>
               <li>&#10003; Same-Day Service Available</li>
@@ -484,653 +481,63 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col footer-brand">
-          <a href="index.html" class="footer-logo">Acadiana<strong>Pest</strong> Solutions</a>
-          <p class="footer-tagline">Protecting Acadiana homes and businesses from pests since day one. Licensed, insured, and locally focused.</p>
-          <a href="tel:+13375550199" class="footer-phone">&#9742; (337) 555-0199</a>
-        </div>
-        <div class="footer-col">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="termite-control.html">Termite Control</a></li>
-            <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
-            <li><a href="rodent-control.html">Rodent Control</a></li>
-            <li><a href="ant-extermination.html">Ant Extermination</a></li>
-            <li><a href="cockroach-control.html">Cockroach Control</a></li>
-            <li><a href="mosquito-control.html">Mosquito Control</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Areas We Serve</h4>
-          <ul>
-            <li><a href="lafayette.html">Lafayette, LA</a></li>
-            <li><a href="scott.html">Scott, LA</a></li>
-            <li><a href="broussard.html">Broussard, LA</a></li>
-            <li><a href="youngsville.html">Youngsville, LA</a></li>
-            <li><a href="carencro.html">Carencro, LA</a></li>
-            <li><a href="duson.html">Duson, LA</a></li>
-            <li>Breaux Bridge, LA</li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="contact.html">Free Estimate</a></li>
-          </ul>
-          <h4 style="margin-top:1.5rem;">Contact</h4>
-          <address class="footer-address">
-            Serving Lafayette, LA<br>
-            &amp; All Acadiana<br>
-            <a href="tel:+13375550199">(337) 555-0199</a>
-          </address>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; <span id="footerYear"></span> Acadiana Pest Solutions. All rights reserved.</p>
-        <p class="footer-disclaimer">Licensed by the Louisiana Department of Agriculture &amp; Forestry.</p>
-      </div>
+  
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-col__title">Acadiana Pest Solutions</div>
+      <p>Professional pest control serving Lafayette and the Acadiana region. Licensed, insured, and committed to protecting your home and business.</p>
+      <a href="tel:+13375550199" class="btn btn-accent" style="margin-top:1rem;display:inline-block;">(337) 555-0199</a>
     </div>
-  </footer>
+    <div class="footer-col">
+      <div class="footer-col__title">Our Services</div>
+      <ul>
+        <li><a href="termite-control.html">Termite Control</a></li>
+        <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+        <li><a href="rodent-control.html">Rodent Control</a></li>
+        <li><a href="ant-extermination.html">Ant Extermination</a></li>
+        <li><a href="cockroach-control.html">Cockroach Control</a></li>
+        <li><a href="mosquito-control.html">Mosquito Control</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col__title">Service Areas</div>
+      <ul>
+        <li><a href="scott.html">Scott, LA</a></li>
+        <li><a href="broussard.html">Broussard, LA</a></li>
+        <li><a href="youngsville.html">Youngsville, LA</a></li>
+        <li><a href="carencro.html">Carencro, LA</a></li>
+        <li><a href="duson.html">Duson, LA</a></li>
+        <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col__title">Contact</div>
+      <ul>
+        <li>Lafayette, LA</li>
+        <li><a href="tel:+13375550199">(337) 555-0199</a></li>
+        <li><a href="contact.html">Get a Free Quote</a></li>
+        <li>Mon-Fri: 7AM - 7PM</li>
+        <li>Sat: 8AM - 5PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 Acadiana Pest Solutions. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
-  <script src="js/main.js"></script>
-  <script>
-    document.getElementById('footerYear').textContent = new Date().getFullYear();
-  </script>
+<!-- Mobile CTA Bar -->
+<div class="mobile-cta-bar">
+  <a href="tel:+13375550199" class="mobile-cta__btn mobile-cta__btn--call">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11.4 11.4 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.5.6 3.6a1 1 0 01-.2 1L6.6 10.8z"/></svg>
+    Call Now
+  </a>
+  <a href="contact.html" class="mobile-cta__btn mobile-cta__btn--quote">Free Quote</a>
+</div>
 
-  <style>
-    /* =====================================================
-       INLINE BASE STYLES â supplement external style.css
-       ===================================================== */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --green-dark: #1B5E20;
-      --green-mid: #2E7D32;
-      --green-light: #388E3C;
-      --amber: #F9A825;
-      --amber-dark: #F57F17;
-      --white: #ffffff;
-      --gray-50: #f9fafb;
-      --gray-100: #f3f4f6;
-      --gray-200: #e5e7eb;
-      --gray-700: #374151;
-      --gray-800: #1f2937;
-      --gray-900: #111827;
-      --font-body: 'Inter', sans-serif;
-      --font-heading: 'Montserrat', sans-serif;
-      --container-max: 1200px;
-      --radius: 8px;
-      --shadow: 0 4px 24px rgba(0,0,0,0.10);
-      --shadow-lg: 0 8px 40px rgba(0,0,0,0.15);
-      --transition: 0.25s ease;
-    }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: var(--font-body);
-      color: var(--gray-800);
-      background: var(--white);
-      line-height: 1.7;
-      padding-top: 72px;
-    }
-    body.nav-open { overflow: hidden; }
-    a { color: inherit; text-decoration: none; }
-    ul { list-style: none; }
-    img { max-width: 100%; display: block; }
-    .container {
-      max-width: var(--container-max);
-      margin: 0 auto;
-      padding: 0 1.25rem;
-    }
-    /* SECTION BASICS */
-    .section { padding: 5rem 0; }
-    .section-light { background: var(--white); }
-    .section-gray { background: var(--gray-100); }
-    .section-dark-green { background: var(--green-dark); }
-    .section-label {
-      display: inline-block;
-      font-family: var(--font-heading);
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--amber);
-      background: rgba(249,168,37,0.12);
-      padding: 0.3rem 0.85rem;
-      border-radius: 50px;
-      margin-bottom: 0.85rem;
-    }
-    .section-label.light { background: rgba(249,168,37,0.2); }
-    .section-header-centered { text-align: center; max-width: 780px; margin: 0 auto 3.5rem; }
-    .section-intro { font-size: 1.05rem; color: var(--gray-700); margin-top: 1rem; }
-    .text-white { color: var(--white); }
-    .text-white-80 { color: rgba(255,255,255,0.85); }
-    h1,h2,h3,h4 { font-family: var(--font-heading); line-height: 1.25; }
-    h2 { font-size: clamp(1.6rem, 3vw, 2.25rem); margin-bottom: 1rem; color: var(--green-dark); }
-    .section-dark-green h2 { color: var(--white); }
-    h3 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; color: var(--green-dark); }
-    .section-dark-green h3 { color: var(--amber); }
-    p { margin-bottom: 1rem; }
-    /* BUTTONS */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.4rem;
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 0.95rem;
-      padding: 0.75rem 1.75rem;
-      border-radius: var(--radius);
-      cursor: pointer;
-      transition: var(--transition);
-      border: 2px solid transparent;
-      text-decoration: none;
-      white-space: nowrap;
-    }
-    .btn-accent { background: var(--amber); color: var(--gray-900); border-color: var(--amber); }
-    .btn-accent:hover { background: var(--amber-dark); border-color: var(--amber-dark); }
-    .btn-outline-white { background: transparent; color: var(--white); border-color: var(--white); }
-    .btn-outline-white:hover { background: var(--white); color: var(--green-dark); }
-    .btn-outline-green { background: transparent; color: var(--green-dark); border-color: var(--green-dark); }
-    .btn-outline-green:hover { background: var(--green-dark); color: var(--white); }
-    .btn-lg { font-size: 1rem; padding: 0.9rem 2rem; }
-    .btn-xl { font-size: 1.2rem; padding: 1.1rem 2.5rem; }
-    .btn-block { display: flex; width: 100%; margin-bottom: 0.75rem; }
-    /* HEADER */
-    .site-header {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 1000;
-      background: var(--green-dark);
-      box-shadow: 0 2px 16px rgba(0,0,0,0.18);
-      height: 72px;
-    }
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 72px;
-      gap: 1.5rem;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--white);
-      font-family: var(--font-heading);
-      font-size: 1.3rem;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-    .logo strong { color: var(--amber); }
-    .main-nav { display: flex; }
-    .nav-list {
-      display: flex;
-      align-items: center;
-      gap: 0.25rem;
-    }
-    .nav-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.25rem;
-      color: var(--white);
-      font-family: var(--font-heading);
-      font-size: 0.88rem;
-      font-weight: 600;
-      padding: 0.5rem 0.75rem;
-      border-radius: var(--radius);
-      transition: var(--transition);
-      cursor: pointer;
-      background: none;
-      border: none;
-    }
-    .nav-link:hover, .nav-link.active { color: var(--amber); background: rgba(255,255,255,0.08); }
-    .caret { font-size: 0.65rem; margin-left: 0.15rem; }
-    /* DROPDOWN */
-    .has-dropdown { position: relative; }
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      top: calc(100% + 8px);
-      left: 0;
-      min-width: 220px;
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-lg);
-      padding: 0.5rem 0;
-      z-index: 200;
-      border-top: 3px solid var(--amber);
-    }
-    .has-dropdown:hover .dropdown-menu,
-    .has-dropdown:focus-within .dropdown-menu { display: block; }
-    .dropdown-menu a {
-      display: block;
-      padding: 0.6rem 1.25rem;
-      color: var(--gray-800);
-      font-size: 0.9rem;
-      font-family: var(--font-body);
-      transition: var(--transition);
-    }
-    .dropdown-menu a:hover { background: var(--gray-100); color: var(--green-dark); }
-    .dropdown-menu a.active { color: var(--green-dark); font-weight: 700; }
-    .header-phone {
-      color: var(--amber);
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 0.95rem;
-      white-space: nowrap;
-    }
-    .header-phone:hover { color: var(--white); }
-    /* HAMBURGER */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
-    }
-    .hamburger span {
-      display: block;
-      width: 26px;
-      height: 2px;
-      background: var(--white);
-      border-radius: 2px;
-      transition: var(--transition);
-    }
-    /* MOBILE CTA BAR */
-    .mobile-cta-bar {
-      display: none;
-      position: fixed;
-      bottom: 0; left: 0; right: 0;
-      z-index: 900;
-      background: var(--green-dark);
-      padding: 0.65rem 1rem;
-      gap: 0.75rem;
-      box-shadow: 0 -2px 12px rgba(0,0,0,0.2);
-    }
-    .mobile-cta-call {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.4rem;
-      background: var(--amber);
-      color: var(--gray-900);
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 0.92rem;
-      padding: 0.7rem;
-      border-radius: var(--radius);
-    }
-    .mobile-cta-quote {
-      flex: 0 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: transparent;
-      border: 2px solid var(--white);
-      color: var(--white);
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 0.92rem;
-      padding: 0.7rem 1.25rem;
-      border-radius: var(--radius);
-    }
-    /* BREADCRUMB */
-    .breadcrumb ol {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.35rem;
-      margin-bottom: 1.25rem;
-      font-size: 0.85rem;
-    }
-    .breadcrumb a { color: rgba(255,255,255,0.8); text-decoration: underline; }
-    .breadcrumb a:hover { color: var(--amber); }
-    .breadcrumb [aria-current="page"] { color: var(--amber); font-weight: 600; }
-    .breadcrumb [aria-hidden="true"] { color: rgba(255,255,255,0.5); }
-    /* HERO */
-    .service-hero {
-      position: relative;
-      background: linear-gradient(135deg, #0a2e0c 0%, #1B5E20 50%, #2d6e20 100%);
-      padding: 4.5rem 0 4rem;
-      overflow: hidden;
-    }
-    .service-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><circle cx="40" cy="40" r="35" fill="none" stroke="rgba(249,168,37,0.05)" stroke-width="1"/></svg>') repeat;
-      background-size: 80px 80px;
-    }
-    .service-hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to right, rgba(0,0,0,0.35) 0%, transparent 100%);
-    }
-    .service-hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 780px;
-    }
-    .service-hero-h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      font-family: var(--font-heading);
-      color: var(--white);
-      font-weight: 800;
-      margin-bottom: 1.25rem;
-      line-height: 1.15;
-    }
-    .service-hero-sub {
-      font-size: 1.1rem;
-      color: rgba(255,255,255,0.9);
-      margin-bottom: 2rem;
-      max-width: 640px;
-    }
-    .hero-cta-group { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; }
-    .hero-trust-badges { display: flex; flex-wrap: wrap; gap: 1rem; }
-    .trust-badge {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.25);
-      color: var(--white);
-      font-size: 0.85rem;
-      font-weight: 600;
-      padding: 0.4rem 1rem;
-      border-radius: 50px;
-    }
-    /* TWO-COL LAYOUT */
-    .two-col-layout {
-      display: grid;
-      grid-template-columns: 1fr 340px;
-      gap: 3rem;
-      align-items: start;
-    }
-    /* SIDEBAR CARDS */
-    .sidebar-card {
-      background: var(--gray-50);
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius);
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-    .cta-card { background: var(--green-dark); color: var(--white); border: none; }
-    .cta-card h3 { color: var(--amber); margin-top: 0; }
-    .cta-card p { color: rgba(255,255,255,0.85); margin-bottom: 1.25rem; }
-    .info-card h4 { color: var(--green-dark); margin-bottom: 0.75rem; margin-top: 0; }
-    .fact-list { display: flex; flex-direction: column; gap: 0.6rem; }
-    .fact-list li { font-size: 0.9rem; line-height: 1.5; padding-left: 0; }
-    .fact-list strong { color: var(--green-dark); }
-    .service-areas-card h4 { color: var(--green-dark); margin-bottom: 0.75rem; margin-top: 0; }
-    .area-list { display: flex; flex-direction: column; gap: 0.4rem; }
-    .area-list li a { color: var(--green-mid); font-weight: 600; }
-    .area-list li a:hover { color: var(--amber-dark); }
-    /* STYLED LIST */
-    .styled-list { display: flex; flex-direction: column; gap: 0.75rem; padding-left: 0; margin-top: 1rem; }
-    .styled-list li {
-      display: flex;
-      gap: 0.5rem;
-      padding: 0.75rem 1rem;
-      background: var(--gray-50);
-      border-radius: var(--radius);
-      border-left: 3px solid var(--green-light);
-      font-size: 0.95rem;
-    }
-    /* RISK GRID */
-    .risk-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.5rem;
-    }
-    .risk-card {
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: var(--radius);
-      padding: 1.75rem;
-    }
-    .risk-icon {
-      font-size: 1.75rem;
-      margin-bottom: 0.75rem;
-    }
-    .risk-icon.danger { color: #ef5350; }
-    .risk-icon.warning { color: var(--amber); }
-    .risk-card h3 { color: var(--white); margin-top: 0; font-size: 1.05rem; }
-    .risk-card p { color: rgba(255,255,255,0.82); font-size: 0.93rem; margin: 0; }
-    /* PROCESS STEPS */
-    .process-steps { display: flex; flex-direction: column; gap: 2rem; }
-    .process-step {
-      display: flex;
-      gap: 1.75rem;
-      align-items: flex-start;
-      padding: 2rem;
-      background: var(--gray-50);
-      border-radius: var(--radius);
-      border: 1px solid var(--gray-200);
-      border-left: 4px solid var(--green-light);
-    }
-    .step-number {
-      flex-shrink: 0;
-      width: 56px;
-      height: 56px;
-      background: var(--green-dark);
-      color: var(--amber);
-      font-family: var(--font-heading);
-      font-weight: 800;
-      font-size: 1.1rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .step-content h3 { margin-top: 0; color: var(--green-dark); }
-    .step-content p { margin: 0; font-size: 0.97rem; }
-    /* PREVENTION LIST */
-    .prevention-list { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
-    .prevention-list li {
-      display: flex;
-      gap: 0.85rem;
-      align-items: flex-start;
-      font-size: 0.93rem;
-    }
-    .prev-icon {
-      flex-shrink: 0;
-      font-size: 1.25rem;
-      margin-top: 0.1rem;
-    }
-    /* FEATURES GRID */
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.75rem;
-    }
-    .feature-card {
-      background: var(--gray-50);
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius);
-      padding: 1.75rem;
-      transition: var(--transition);
-    }
-    .feature-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
-    .feature-icon { font-size: 2rem; margin-bottom: 0.75rem; }
-    .feature-card h3 { margin-top: 0; color: var(--green-dark); font-size: 1rem; }
-    .feature-card p { margin: 0; font-size: 0.92rem; color: var(--gray-700); }
-    /* FAQ */
-    .faq-list { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; }
-    .faq-item {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius);
-      overflow: hidden;
-    }
-    .faq-question {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 1.25rem 1.5rem;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-family: var(--font-heading);
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--green-dark);
-      text-align: left;
-      transition: var(--transition);
-    }
-    .faq-question:hover { background: var(--gray-50); }
-    .faq-question[aria-expanded="true"] { color: var(--green-mid); border-bottom: 1px solid var(--gray-200); }
-    .faq-icon {
-      flex-shrink: 0;
-      font-size: 1.4rem;
-      font-weight: 400;
-      color: var(--amber);
-      transition: var(--transition);
-    }
-    .faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
-    .faq-answer {
-      padding: 1.25rem 1.5rem;
-      background: var(--gray-50);
-    }
-    .faq-answer p { margin: 0; font-size: 0.95rem; color: var(--gray-700); }
-    /* CTA SECTION */
-    .cta-section { background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%); }
-    .cta-box {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 3rem;
-      align-items: center;
-    }
-    .cta-content h2 { color: var(--white); margin-bottom: 1rem; }
-    .cta-content p { color: rgba(255,255,255,0.87); margin-bottom: 1.5rem; }
-    .cta-checklist {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem 1.5rem;
-    }
-    .cta-checklist li { color: var(--amber); font-weight: 700; font-size: 0.95rem; }
-    .cta-actions { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; min-width: 260px; }
-    .cta-sub { color: rgba(255,255,255,0.7); font-size: 0.85rem; text-align: center; }
-    /* FOOTER */
-    .site-footer {
-      background: var(--gray-900);
-      color: rgba(255,255,255,0.75);
-      padding: 4rem 0 0;
-    }
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 2.5rem;
-      padding-bottom: 3rem;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    .footer-logo {
-      font-family: var(--font-heading);
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--white);
-      display: block;
-      margin-bottom: 0.85rem;
-    }
-    .footer-logo strong { color: var(--amber); }
-    .footer-tagline { font-size: 0.9rem; margin-bottom: 1rem; }
-    .footer-phone {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      color: var(--amber);
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 1.05rem;
-    }
-    .footer-col h4 {
-      font-family: var(--font-heading);
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--white);
-      margin-bottom: 1rem;
-    }
-    .footer-col ul { display: flex; flex-direction: column; gap: 0.55rem; }
-    .footer-col ul a { font-size: 0.9rem; transition: var(--transition); }
-    .footer-col ul a:hover { color: var(--amber); }
-    .footer-col ul li { font-size: 0.9rem; }
-    .footer-address { font-style: normal; font-size: 0.9rem; line-height: 1.7; }
-    .footer-address a { color: var(--amber); }
-    .footer-bottom {
-      padding: 1.5rem 0;
-      text-align: center;
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.45);
-    }
-    .footer-disclaimer { margin-top: 0.35rem; }
-    /* =====================================================
-       RESPONSIVE
-       ===================================================== */
-    @media (max-width: 1024px) {
-      .two-col-layout { grid-template-columns: 1fr; }
-      .col-sidebar { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 1.25rem; }
-      .sidebar-card { margin-bottom: 0; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-      .cta-box { grid-template-columns: 1fr; text-align: center; }
-      .cta-checklist { justify-content: center; }
-      .cta-actions { flex-direction: row; flex-wrap: wrap; justify-content: center; }
-      .cta-actions .btn-xl { flex: 1 1 auto; }
-    }
-    @media (max-width: 768px) {
-      body { padding-top: 72px; padding-bottom: 70px; }
-      .main-nav { 
-        display: none;
-        position: fixed;
-        top: 72px; left: 0; right: 0; bottom: 0;
-        background: var(--green-dark);
-        overflow-y: auto;
-        padding: 1.5rem 1.25rem;
-        flex-direction: column;
-      }
-      .main-nav.open { display: flex; }
-      .nav-list { flex-direction: column; align-items: stretch; gap: 0; width: 100%; }
-      .nav-link { padding: 0.85rem 1rem; font-size: 1rem; border-radius: 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
-      .has-dropdown .dropdown-menu {
-        position: static;
-        display: none;
-        box-shadow: none;
-        border: none;
-        border-top: none;
-        background: rgba(0,0,0,0.2);
-        border-radius: 0;
-        padding: 0;
-      }
-      .has-dropdown.open .dropdown-menu { display: block; }
-      .dropdown-menu a { padding: 0.7rem 1.5rem; color: rgba(255,255,255,0.85); font-size: 0.95rem; }
-      .dropdown-menu a:hover { background: rgba(255,255,255,0.1); color: var(--amber); }
-      .hamburger { display: flex; }
-      .header-phone { display: none; }
-      .mobile-cta-bar { display: flex; }
-      .risk-grid { grid-template-columns: 1fr; }
-      .process-step { flex-direction: column; gap: 1rem; }
-      .features-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; }
-      .hero-cta-group { flex-direction: column; }
-      .hero-cta-group .btn { width: 100%; justify-content: center; }
-      .cta-actions { flex-direction: column; width: 100%; }
-    }
-    @media (max-width: 480px) {
-      .section { padding: 3.5rem 0; }
-      .process-step { padding: 1.25rem; }
-      .faq-question { font-size: 0.92rem; padding: 1rem 1.1rem; }
-      .faq-answer { padding: 1rem 1.1rem; }
-      .step-number { width: 44px; height: 44px; font-size: 0.95rem; }
-    }
-  </style>
-
+<script src="js/main.js"></script>
 </body>
 </html>
