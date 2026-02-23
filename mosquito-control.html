@@ -41,60 +41,61 @@
 </head>
 <body>
 
-  <!-- Sticky Mobile CTA Bar -->
-  <div class="mobile-cta-bar">
-    <a href="tel:+13375550199" class="mobile-cta-call"><span class="cta-icon">&#128222;</span> Call (337) 555-0199</a>
-    <a href="contact.html" class="mobile-cta-quote">Free Estimate</a>
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <span>Serving All of Acadiana - Call Now for Same-Day Service:</span>
+    <a href="tel:+13375550199">(337) 555-0199</a>
   </div>
+</div>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-inner container">
-      <div class="logo">
-        <a href="index.html">
-          <span class="logo-main">Acadiana Pest Solutions</span>
-          <span class="logo-tagline">Lafayette's Trusted Pest Experts</span>
-        </a>
-      </div>
-      <nav class="main-nav" aria-label="Main Navigation">
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li class="has-dropdown">
-            <a href="#" aria-haspopup="true" aria-expanded="false">Services <span class="arrow">&#9660;</span></a>
-            <ul class="dropdown">
-              <li><a href="termite-control.html">Termite Control</a></li>
-              <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
-              <li><a href="rodent-control.html">Rodent Control</a></li>
-              <li><a href="ant-extermination.html">Ant Extermination</a></li>
-              <li><a href="cockroach-control.html">Cockroach Control</a></li>
-              <li><a href="mosquito-control.html" class="active">Mosquito Control</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <a href="#" aria-haspopup="true" aria-expanded="false">Areas We Serve <span class="arrow">&#9660;</span></a>
-            <ul class="dropdown">
-              <li><a href="lafayette.html">Lafayette</a></li>
-              <li><a href="scott.html">Scott</a></li>
-              <li><a href="broussard.html">Broussard</a></li>
-              <li><a href="youngsville.html">Youngsville</a></li>
-              <li><a href="carencro.html">Carencro</a></li>
-              <li><a href="duson.html">Duson</a></li>
-            </ul>
-          </li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-cta">
-        <a href="tel:+13375550199" class="btn btn-accent">&#128222; (337) 555-0199</a>
-      </div>
-    </div>
-  </header>
+<!-- SITE HEADER -->
+<header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">
+      <span class="logo-text">Acadiana<br>Pest Solutions</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Services <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="termite-control.html">Termite Control</a></li>
+            <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+            <li><a href="rodent-control.html">Rodent Control</a></li>
+            <li><a href="ant-extermination.html">Ant Extermination</a></li>
+            <li><a href="cockroach-control.html">Cockroach Control</a></li>
+            <li><a href="mosquito-control.html">Mosquito Control</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Areas We Serve <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="scott.html">Scott, LA</a></li>
+            <li><a href="broussard.html">Broussard, LA</a></li>
+            <li><a href="youngsville.html">Youngsville, LA</a></li>
+            <li><a href="carencro.html">Carencro, LA</a></li>
+            <li><a href="duson.html">Duson, LA</a></li>
+            <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+13375550199" class="header-phone">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11.4 11.4 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.5.6 3.6a1 1 0 01-.2 1L6.6 10.8z"/></svg>
+      (337) 555-0199
+    </a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
 
-  <main>
+<main>
     <!-- Breadcrumb -->
     <nav class="breadcrumb-nav" aria-label="Breadcrumb">
       <div class="container">
@@ -149,25 +150,25 @@
             <div class="pest-id-cards">
               <div class="pest-card">
                 <h3>Culex Mosquitoes (Southern House Mosquito)</h3>
-                <p>The <em>Culex quinquefasciatus</em>, commonly called the southern house mosquito, is the primary vector of <strong>West Nile virus</strong> in Louisiana. These light-brown mosquitoes are most active during the evening and overnight hours. They breed prolifically in stagnant, organically enriched water â think clogged gutters, drainage ditches along Pinhook Road, rice paddies in St. Martin Parish, and forgotten bird baths. Female Culex mosquitoes lay floating egg rafts of 100â300 eggs at a time and can complete their life cycle from egg to adult in as few as 7â10 days during peak Louisiana summer heat. Lafayette Parish consistently reports Culex activity from late March through November.</p>
+                <p>The <em>Culex quinquefasciatus</em>, commonly called the southern house mosquito, is the primary vector of <strong>West Nile virus</strong> in Louisiana. These light-brown mosquitoes are most active during the evening and overnight hours. They breed prolifically in stagnant, organically enriched water Ã¢ÂÂ think clogged gutters, drainage ditches along Pinhook Road, rice paddies in St. Martin Parish, and forgotten bird baths. Female Culex mosquitoes lay floating egg rafts of 100Ã¢ÂÂ300 eggs at a time and can complete their life cycle from egg to adult in as few as 7Ã¢ÂÂ10 days during peak Louisiana summer heat. Lafayette Parish consistently reports Culex activity from late March through November.</p>
               </div>
               <div class="pest-card">
                 <h3>Aedes Mosquitoes (Tiger &amp; Yellow Fever Mosquito)</h3>
-                <p>The <em>Aedes albopictus</em> (Asian tiger mosquito) and <em>Aedes aegypti</em> (yellow fever mosquito) are aggressive daytime biters that serve as primary vectors for <strong>Zika virus, dengue fever, and chikungunya</strong>. Unlike Culex mosquitoes, Aedes species breed in tiny amounts of water â a bottle cap, a pothole, a decorative planter saucer, or a tarp puddle is enough. The Asian tiger mosquito is boldly striped black-and-white and delivers a noticeable, immediate bite. Its aggressive daytime activity pattern makes outdoor life in Lafayette neighborhoods like River Ranch, Couret Farms, and Shadowbrook particularly challenging during summer.</p>
+                <p>The <em>Aedes albopictus</em> (Asian tiger mosquito) and <em>Aedes aegypti</em> (yellow fever mosquito) are aggressive daytime biters that serve as primary vectors for <strong>Zika virus, dengue fever, and chikungunya</strong>. Unlike Culex mosquitoes, Aedes species breed in tiny amounts of water Ã¢ÂÂ a bottle cap, a pothole, a decorative planter saucer, or a tarp puddle is enough. The Asian tiger mosquito is boldly striped black-and-white and delivers a noticeable, immediate bite. Its aggressive daytime activity pattern makes outdoor life in Lafayette neighborhoods like River Ranch, Couret Farms, and Shadowbrook particularly challenging during summer.</p>
               </div>
             </div>
-            <p>Lafayette's proximity to the Atchafalaya Basin â one of the largest wetland ecosystems in North America â means that natural mosquito populations are constantly being replenished from wild areas regardless of neighborhood-level efforts. Professional, recurring treatment programs are the only sustainable way to maintain meaningful population control around your home.</p>
+            <p>Lafayette's proximity to the Atchafalaya Basin Ã¢ÂÂ one of the largest wetland ecosystems in North America Ã¢ÂÂ means that natural mosquito populations are constantly being replenished from wild areas regardless of neighborhood-level efforts. Professional, recurring treatment programs are the only sustainable way to maintain meaningful population control around your home.</p>
           </div>
           <div class="section-sidebar">
             <div class="quick-facts-box">
               <h3>Mosquito Fast Facts</h3>
               <ul>
-                <li><strong>Life Cycle:</strong> 7â14 days egg to adult</li>
+                <li><strong>Life Cycle:</strong> 7Ã¢ÂÂ14 days egg to adult</li>
                 <li><strong>Peak Season:</strong> March through October in Lafayette</li>
                 <li><strong>Breeding Water:</strong> As little as 1 tablespoon</li>
                 <li><strong>Flight Range:</strong> Culex up to 1 mile; Aedes 150 yards</li>
                 <li><strong>Active Hours:</strong> Culex: dusk to dawn; Aedes: day and dusk</li>
-                <li><strong>Eggs per Female:</strong> 100â500 per batch</li>
+                <li><strong>Eggs per Female:</strong> 100Ã¢ÂÂ500 per batch</li>
                 <li><strong>Louisiana Season:</strong> Year-round in warm winters</li>
               </ul>
               <a href="tel:+13375550199" class="btn btn-primary btn-block">Free Yard Inspection</a>
@@ -183,7 +184,7 @@
         <div class="section-header">
           <span class="section-label">Health &amp; Safety</span>
           <h2>Mosquito-Borne Disease Risks in Louisiana</h2>
-          <p>Mosquitoes are not merely a nuisance in Acadiana â they represent a genuine and recurring public health threat. Louisiana consistently ranks among the highest states in the nation for mosquito-borne disease transmission, and Lafayette Parish has reported confirmed cases of several serious illnesses.</p>
+          <p>Mosquitoes are not merely a nuisance in Acadiana Ã¢ÂÂ they represent a genuine and recurring public health threat. Louisiana consistently ranks among the highest states in the nation for mosquito-borne disease transmission, and Lafayette Parish has reported confirmed cases of several serious illnesses.</p>
         </div>
         <div class="risks-grid">
           <div class="risk-card risk-high">
@@ -194,17 +195,17 @@
           <div class="risk-card risk-medium">
             <div class="risk-icon">&#128683;</div>
             <h3>Zika Virus</h3>
-            <p>While the 2015â2016 Zika epidemic primarily affected travelers returning to Louisiana, local transmission by <em>Aedes aegypti</em> mosquitoes remains a real possibility. Zika is of particular concern for pregnant women, as infection during pregnancy can cause severe birth defects including microcephaly. Louisiana's health department maintains ongoing Zika surveillance, and Lafayette's warm climate supports the <em>Aedes</em> mosquito populations capable of local transmission. Protecting your yard from Aedes breeding is a critical preventive measure for families planning pregnancies.</p>
+            <p>While the 2015Ã¢ÂÂ2016 Zika epidemic primarily affected travelers returning to Louisiana, local transmission by <em>Aedes aegypti</em> mosquitoes remains a real possibility. Zika is of particular concern for pregnant women, as infection during pregnancy can cause severe birth defects including microcephaly. Louisiana's health department maintains ongoing Zika surveillance, and Lafayette's warm climate supports the <em>Aedes</em> mosquito populations capable of local transmission. Protecting your yard from Aedes breeding is a critical preventive measure for families planning pregnancies.</p>
           </div>
           <div class="risk-card risk-medium">
             <div class="risk-icon">&#128137;</div>
             <h3>Eastern Equine Encephalitis (EEE)</h3>
-            <p>Eastern Equine Encephalitis is a rare but extremely dangerous mosquito-borne illness with a mortality rate of 30â50% in humans who develop brain inflammation. Louisiana is endemic for EEE, and cases are periodically reported in rural areas adjacent to swamps and marshes â exactly the kind of terrain that borders communities like Breaux Bridge, Duson, and the outskirts of Scott. Horse owners in Acadiana are particularly familiar with this disease, as equine EEE cases occur more frequently than human cases.</p>
+            <p>Eastern Equine Encephalitis is a rare but extremely dangerous mosquito-borne illness with a mortality rate of 30Ã¢ÂÂ50% in humans who develop brain inflammation. Louisiana is endemic for EEE, and cases are periodically reported in rural areas adjacent to swamps and marshes Ã¢ÂÂ exactly the kind of terrain that borders communities like Breaux Bridge, Duson, and the outskirts of Scott. Horse owners in Acadiana are particularly familiar with this disease, as equine EEE cases occur more frequently than human cases.</p>
           </div>
           <div class="risk-card risk-low">
             <div class="risk-icon">&#128056;</div>
             <h3>Dog Heartworm</h3>
-            <p>Heartworm disease, transmitted by mosquito bites, is hyperendemic in Louisiana â meaning it occurs at rates far above the national average. The American Heartworm Society lists Louisiana as one of the highest-risk states in the country. While preventive medications exist, the Louisiana climate allows mosquitoes to transmit heartworm larvae virtually year-round. Reducing the mosquito burden around your home directly reduces heartworm transmission risk for your dogs and cats.</p>
+            <p>Heartworm disease, transmitted by mosquito bites, is hyperendemic in Louisiana Ã¢ÂÂ meaning it occurs at rates far above the national average. The American Heartworm Society lists Louisiana as one of the highest-risk states in the country. While preventive medications exist, the Louisiana climate allows mosquitoes to transmit heartworm larvae virtually year-round. Reducing the mosquito burden around your home directly reduces heartworm transmission risk for your dogs and cats.</p>
           </div>
           <div class="risk-card risk-low">
             <div class="risk-icon">&#128565;</div>
@@ -214,7 +215,7 @@
           <div class="risk-card risk-low">
             <div class="risk-icon">&#128534;</div>
             <h3>Quality of Life Impact</h3>
-            <p>Beyond disease risk, mosquito infestations severely impact everyday life in Acadiana. Lafayette is famous for its outdoor culture â from backyard crawfish boils and Festivals Acadiens et CrÃ©oles to Little League games and evening walks along the Heymann Performing Arts Center grounds. Heavy mosquito pressure drives families indoors, reduces outdoor dining, and can diminish property values in neighborhoods perceived as having poor mosquito control. A professional treatment program restores your ability to enjoy Louisiana's outdoor lifestyle without constant swatting and DEET application.</p>
+            <p>Beyond disease risk, mosquito infestations severely impact everyday life in Acadiana. Lafayette is famous for its outdoor culture Ã¢ÂÂ from backyard crawfish boils and Festivals Acadiens et CrÃÂ©oles to Little League games and evening walks along the Heymann Performing Arts Center grounds. Heavy mosquito pressure drives families indoors, reduces outdoor dining, and can diminish property values in neighborhoods perceived as having poor mosquito control. A professional treatment program restores your ability to enjoy Louisiana's outdoor lifestyle without constant swatting and DEET application.</p>
           </div>
         </div>
       </div>
@@ -226,42 +227,42 @@
         <div class="section-header">
           <span class="section-label">Our Method</span>
           <h2>Our Professional Mosquito Control Approach</h2>
-          <p>Acadiana Pest Solutions uses an integrated, multi-stage mosquito management strategy that addresses mosquitoes at every stage of their life cycle. We don't just spray and leave â we build a sustained protective barrier around your property using the most effective and family-safe methods available.</p>
+          <p>Acadiana Pest Solutions uses an integrated, multi-stage mosquito management strategy that addresses mosquitoes at every stage of their life cycle. We don't just spray and leave Ã¢ÂÂ we build a sustained protective barrier around your property using the most effective and family-safe methods available.</p>
         </div>
         <div class="steps-container">
           <div class="step">
             <div class="step-number">01</div>
             <div class="step-content">
               <h3>Comprehensive Property Inspection &amp; Breeding Site Audit</h3>
-              <p>Every mosquito control program begins with a thorough walk-around inspection of your property by a trained Acadiana Pest Solutions technician. We identify and document every potential mosquito breeding site â not just the obvious ones. This includes clogged gutters, low-lying areas that retain water after Lafayette's frequent afternoon thunderstorms, ornamental ponds, French drain outlets, AC condensate lines, and even small depressions in tree bark. We map the vegetation structure of your yard, identifying the dense shrubs, ground cover, and shaded areas where adult mosquitoes rest during the heat of the day. This resting-site analysis is critical because adult mosquitoes spend 80â90% of their lives in vegetation, not flying. Your inspection also assesses neighboring conditions â fence lines, adjacent drainage canals, and proximity to bayou corridors that may be contributing to your mosquito load.</p>
+              <p>Every mosquito control program begins with a thorough walk-around inspection of your property by a trained Acadiana Pest Solutions technician. We identify and document every potential mosquito breeding site Ã¢ÂÂ not just the obvious ones. This includes clogged gutters, low-lying areas that retain water after Lafayette's frequent afternoon thunderstorms, ornamental ponds, French drain outlets, AC condensate lines, and even small depressions in tree bark. We map the vegetation structure of your yard, identifying the dense shrubs, ground cover, and shaded areas where adult mosquitoes rest during the heat of the day. This resting-site analysis is critical because adult mosquitoes spend 80Ã¢ÂÂ90% of their lives in vegetation, not flying. Your inspection also assesses neighboring conditions Ã¢ÂÂ fence lines, adjacent drainage canals, and proximity to bayou corridors that may be contributing to your mosquito load.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-number">02</div>
             <div class="step-content">
               <h3>Larvicide Treatment of Standing Water Sources</h3>
-              <p>Where standing water cannot be eliminated â drainage swales, retention ponds, ornamental water features, tree holes, or low spots â we apply targeted larvicide treatments to kill mosquito larvae before they reach adulthood. We use <strong>Bacillus thuringiensis israelensis (Bti)</strong>, a naturally occurring soil bacteria that is specifically toxic to mosquito and fly larvae but completely harmless to fish, birds, pets, beneficial insects including honeybees, and humans. Bti products like Mosquito Dunks are placed in persistent water sources and provide 30 days of larvicidal activity per treatment. For larger or more heavily infested water bodies, we may apply liquid Bti formulations or other EPA-registered larvicides. This step alone can eliminate up to 50% of the mosquito pressure around your home by breaking the life cycle before adults ever emerge.</p>
+              <p>Where standing water cannot be eliminated Ã¢ÂÂ drainage swales, retention ponds, ornamental water features, tree holes, or low spots Ã¢ÂÂ we apply targeted larvicide treatments to kill mosquito larvae before they reach adulthood. We use <strong>Bacillus thuringiensis israelensis (Bti)</strong>, a naturally occurring soil bacteria that is specifically toxic to mosquito and fly larvae but completely harmless to fish, birds, pets, beneficial insects including honeybees, and humans. Bti products like Mosquito Dunks are placed in persistent water sources and provide 30 days of larvicidal activity per treatment. For larger or more heavily infested water bodies, we may apply liquid Bti formulations or other EPA-registered larvicides. This step alone can eliminate up to 50% of the mosquito pressure around your home by breaking the life cycle before adults ever emerge.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-number">03</div>
             <div class="step-content">
-              <h3>Barrier Treatment â Foliage, Shrubs &amp; Perimeter</h3>
-              <p>The cornerstone of our mosquito reduction program is the barrier spray application. Using backpack mist blowers and professional-grade equipment, our technicians apply a fine mist of EPA-registered adulticide and residual repellent to the underside of all leaves, shrubs, ornamental plants, tree trunks, fence lines, and shaded resting areas throughout your property. Adult mosquitoes contact the treated foliage when they land to rest, taking in a lethal dose of the active ingredient. We use pyrethrin/pyrethroid-based products as well as plant-derived alternatives including oil of lemon eucalyptus and garlic oil barrier products for clients who prefer botanical-based approaches. Our barrier treatments create a protective zone that typically reduces mosquito populations by 75â90% within 24â48 hours and maintains effectiveness for 21â30 days, depending on rainfall and temperature. For Lafayette's mosquito season (March through October), we recommend monthly service visits to maintain continuous protection.</p>
+              <h3>Barrier Treatment Ã¢ÂÂ Foliage, Shrubs &amp; Perimeter</h3>
+              <p>The cornerstone of our mosquito reduction program is the barrier spray application. Using backpack mist blowers and professional-grade equipment, our technicians apply a fine mist of EPA-registered adulticide and residual repellent to the underside of all leaves, shrubs, ornamental plants, tree trunks, fence lines, and shaded resting areas throughout your property. Adult mosquitoes contact the treated foliage when they land to rest, taking in a lethal dose of the active ingredient. We use pyrethrin/pyrethroid-based products as well as plant-derived alternatives including oil of lemon eucalyptus and garlic oil barrier products for clients who prefer botanical-based approaches. Our barrier treatments create a protective zone that typically reduces mosquito populations by 75Ã¢ÂÂ90% within 24Ã¢ÂÂ48 hours and maintains effectiveness for 21Ã¢ÂÂ30 days, depending on rainfall and temperature. For Lafayette's mosquito season (March through October), we recommend monthly service visits to maintain continuous protection.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-number">04</div>
             <div class="step-content">
               <h3>Automated Misting System Installation (Optional)</h3>
-              <p>For properties with persistent high mosquito pressure â particularly those near Bayou Vermilion, adjacent to rice fields in the Crowley corridor, or with large lots â we offer professional installation of automated mosquito misting systems. These permanent systems feature a network of nozzles mounted around the perimeter of your yard, connected to a reservoir tank filled with botanical or pyrethrin-based insecticide. The system is programmed to spray automatically at dawn and dusk â peak mosquito activity times â for 30â60 second intervals. Most systems include a remote control or smartphone app for on-demand activation before outdoor events. Automated misting systems provide daily, consistent protection without the need for monthly service calls and are particularly popular in Youngsville, Broussard, and Carencro neighborhoods with large entertainment-style outdoor spaces. Our technicians handle all plumbing and installation, and we offer ongoing refill and maintenance contracts.</p>
+              <p>For properties with persistent high mosquito pressure Ã¢ÂÂ particularly those near Bayou Vermilion, adjacent to rice fields in the Crowley corridor, or with large lots Ã¢ÂÂ we offer professional installation of automated mosquito misting systems. These permanent systems feature a network of nozzles mounted around the perimeter of your yard, connected to a reservoir tank filled with botanical or pyrethrin-based insecticide. The system is programmed to spray automatically at dawn and dusk Ã¢ÂÂ peak mosquito activity times Ã¢ÂÂ for 30Ã¢ÂÂ60 second intervals. Most systems include a remote control or smartphone app for on-demand activation before outdoor events. Automated misting systems provide daily, consistent protection without the need for monthly service calls and are particularly popular in Youngsville, Broussard, and Carencro neighborhoods with large entertainment-style outdoor spaces. Our technicians handle all plumbing and installation, and we offer ongoing refill and maintenance contracts.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-number">05</div>
             <div class="step-content">
               <h3>Special Event Treatments</h3>
-              <p>Planning a backyard wedding in Breaux Bridge? Hosting a crawfish boil for 100 people in Scott? Throwing a graduation party at your Youngsville home? Acadiana Pest Solutions offers one-time special event mosquito treatments designed to give you a comfortable, mosquito-reduced outdoor environment for your big day. We perform the treatment 24 hours before your event to allow products to dry and settle while maximizing residual activity. Event treatments cover all yard vegetation, patio surrounds, and perimeter areas. We can also deploy CO2-baited mosquito traps to capture and reduce adult populations in the days leading up to your event. Call us at least 5â7 days in advance for event treatment scheduling to ensure availability during peak season.</p>
+              <p>Planning a backyard wedding in Breaux Bridge? Hosting a crawfish boil for 100 people in Scott? Throwing a graduation party at your Youngsville home? Acadiana Pest Solutions offers one-time special event mosquito treatments designed to give you a comfortable, mosquito-reduced outdoor environment for your big day. We perform the treatment 24 hours before your event to allow products to dry and settle while maximizing residual activity. Event treatments cover all yard vegetation, patio surrounds, and perimeter areas. We can also deploy CO2-baited mosquito traps to capture and reduce adult populations in the days leading up to your event. Call us at least 5Ã¢ÂÂ7 days in advance for event treatment scheduling to ensure availability during peak season.</p>
             </div>
           </div>
           <div class="step">
@@ -297,17 +298,17 @@
           <div class="tip-card">
             <div class="tip-icon">&#9898;</div>
             <h3>Manage Ornamental Water Features</h3>
-            <p>Fountains, koi ponds, and other water features are beautiful additions to Lafayette landscapes but can become significant mosquito nurseries if not properly managed. Keep fountains running â moving water does not support mosquito egg rafts. For ponds, introduce Bti mosquito dunks or stock with Gambusia (mosquitofish), which are available free from many Louisiana parishes as part of mosquito control programs. Change birdbath water every 3â4 days and scrub the basin to remove any egg rafts before refilling.</p>
+            <p>Fountains, koi ponds, and other water features are beautiful additions to Lafayette landscapes but can become significant mosquito nurseries if not properly managed. Keep fountains running Ã¢ÂÂ moving water does not support mosquito egg rafts. For ponds, introduce Bti mosquito dunks or stock with Gambusia (mosquitofish), which are available free from many Louisiana parishes as part of mosquito control programs. Change birdbath water every 3Ã¢ÂÂ4 days and scrub the basin to remove any egg rafts before refilling.</p>
           </div>
           <div class="tip-card">
             <div class="tip-icon">&#9973;</div>
             <h3>Maintain Your Lawn &amp; Landscaping</h3>
-            <p>Overgrown grass, dense ground cover, and unpruned shrubs create the shady, humid micro-environments that adult mosquitoes use for daytime resting. Keeping your lawn mowed short reduces resting habitat dramatically. Trim the lower branches of ornamental shrubs to improve air circulation and reduce shading at the soil level. Clear leaf litter and debris from under hedges and along fence lines where mosquitoes congregate. In Acadiana's heat, well-maintained landscaping can reduce adult mosquito populations by 30â40% just through habitat modification.</p>
+            <p>Overgrown grass, dense ground cover, and unpruned shrubs create the shady, humid micro-environments that adult mosquitoes use for daytime resting. Keeping your lawn mowed short reduces resting habitat dramatically. Trim the lower branches of ornamental shrubs to improve air circulation and reduce shading at the soil level. Clear leaf litter and debris from under hedges and along fence lines where mosquitoes congregate. In Acadiana's heat, well-maintained landscaping can reduce adult mosquito populations by 30Ã¢ÂÂ40% just through habitat modification.</p>
           </div>
           <div class="tip-card">
             <div class="tip-icon">&#128056;</div>
             <h3>Maintain Screens &amp; Seal Entry Points</h3>
-            <p>Louisiana evenings can be beautiful, but open windows and doors without intact screens are an open invitation for mosquitoes â particularly the evening-active Culex species. Inspect all window and door screens for holes, tears, or poor-fitting frames. Repair or replace damaged screens promptly. If you enjoy outdoor evening entertaining on a screened porch or lanai, make sure door sweeps and frame seals are tight. Keep exterior lighting away from doorways when possible, as light attracts night-flying insects including mosquitoes.</p>
+            <p>Louisiana evenings can be beautiful, but open windows and doors without intact screens are an open invitation for mosquitoes Ã¢ÂÂ particularly the evening-active Culex species. Inspect all window and door screens for holes, tears, or poor-fitting frames. Repair or replace damaged screens promptly. If you enjoy outdoor evening entertaining on a screened porch or lanai, make sure door sweeps and frame seals are tight. Keep exterior lighting away from doorways when possible, as light attracts night-flying insects including mosquitoes.</p>
           </div>
           <div class="tip-card">
             <div class="tip-icon">&#127808;</div>
@@ -330,17 +331,17 @@
           <div class="why-card">
             <div class="why-icon">&#127968;</div>
             <h3>Deep Local Knowledge</h3>
-            <p>We've treated mosquito problems in every corner of Acadiana â from tight Carencro subdivision lots to large rural properties in the Duson and Scott corridors bordering rice fields and cypress swamps. We understand the seasonal patterns, the drainage infrastructure quirks, and the specific mosquito species pressures that vary across Lafayette Parish and into Iberia, St. Martin, and St. Landry parishes. This local expertise means our treatments are calibrated to your specific environment, not a generic national formula.</p>
+            <p>We've treated mosquito problems in every corner of Acadiana Ã¢ÂÂ from tight Carencro subdivision lots to large rural properties in the Duson and Scott corridors bordering rice fields and cypress swamps. We understand the seasonal patterns, the drainage infrastructure quirks, and the specific mosquito species pressures that vary across Lafayette Parish and into Iberia, St. Martin, and St. Landry parishes. This local expertise means our treatments are calibrated to your specific environment, not a generic national formula.</p>
           </div>
           <div class="why-card">
             <div class="why-icon">&#9989;</div>
             <h3>Family &amp; Pet Safe Products</h3>
-            <p>We exclusively use EPA-registered products applied according to label directions by trained, licensed applicators. Our barrier spray formulations include low-toxicity synthetic pyrethroids and botanical options. We always advise clients on the appropriate re-entry interval (typically 30â60 minutes after treatment, once the spray has dried) and provide full product information on request. We take special care around vegetable gardens, fruit trees, pollinator gardens, and aquatic areas to protect non-target species.</p>
+            <p>We exclusively use EPA-registered products applied according to label directions by trained, licensed applicators. Our barrier spray formulations include low-toxicity synthetic pyrethroids and botanical options. We always advise clients on the appropriate re-entry interval (typically 30Ã¢ÂÂ60 minutes after treatment, once the spray has dried) and provide full product information on request. We take special care around vegetable gardens, fruit trees, pollinator gardens, and aquatic areas to protect non-target species.</p>
           </div>
           <div class="why-card">
             <div class="why-icon">&#128197;</div>
             <h3>Flexible Scheduling &amp; Commitment-Free Estimates</h3>
-            <p>We offer month-to-month seasonal programs with no long-term contracts required, as well as one-time and event treatments. We work around your schedule, including weekend appointments and same-week availability during most of the season. Every program begins with a free, no-obligation property inspection and personalized quote. We believe in transparent pricing with no hidden fees â your quote covers everything for that treatment visit.</p>
+            <p>We offer month-to-month seasonal programs with no long-term contracts required, as well as one-time and event treatments. We work around your schedule, including weekend appointments and same-week availability during most of the season. Every program begins with a free, no-obligation property inspection and personalized quote. We believe in transparent pricing with no hidden fees Ã¢ÂÂ your quote covers everything for that treatment visit.</p>
           </div>
           <div class="why-card">
             <div class="why-icon">&#127891;</div>
@@ -350,12 +351,12 @@
           <div class="why-card">
             <div class="why-icon">&#128176;</div>
             <h3>Results Guarantee</h3>
-            <p>We stand behind every treatment we perform. If you experience unsatisfactory mosquito control within 14 days of a treatment visit under normal rainfall conditions, we will return and re-treat at no charge. Our goal is that you can host a backyard gathering any night of the week without mosquitoes driving everyone inside. If we're not achieving that outcome, we want to know â and we'll make it right.</p>
+            <p>We stand behind every treatment we perform. If you experience unsatisfactory mosquito control within 14 days of a treatment visit under normal rainfall conditions, we will return and re-treat at no charge. Our goal is that you can host a backyard gathering any night of the week without mosquitoes driving everyone inside. If we're not achieving that outcome, we want to know Ã¢ÂÂ and we'll make it right.</p>
           </div>
           <div class="why-card">
             <div class="why-icon">&#127807;</div>
             <h3>Integrated Pest Management Approach</h3>
-            <p>We don't just spray â we manage. Our IPM approach means we use chemical treatments as one tool within a comprehensive strategy that also includes source reduction, biological control (larvicides, mosquitofish), habitat modification recommendations, and ongoing monitoring. This means fewer chemical applications overall, better long-term results, and reduced environmental impact compared to spray-only approaches. It also means our programs build in effectiveness over time as we progressively reduce the breeding sites and resting habitat that sustain mosquito populations on your property.</p>
+            <p>We don't just spray Ã¢ÂÂ we manage. Our IPM approach means we use chemical treatments as one tool within a comprehensive strategy that also includes source reduction, biological control (larvicides, mosquitofish), habitat modification recommendations, and ongoing monitoring. This means fewer chemical applications overall, better long-term results, and reduced environmental impact compared to spray-only approaches. It also means our programs build in effectiveness over time as we progressively reduce the breeding sites and resting habitat that sustain mosquito populations on your property.</p>
           </div>
         </div>
         <div class="section-cta">
@@ -379,7 +380,7 @@
             </button>
             <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <div itemprop="text">
-                <p>For continuous protection throughout Lafayette's mosquito season, we recommend monthly barrier treatments from March through October â approximately 8 treatments per year. Lafayette's warm, humid climate and abundant rainfall mean that residual products degrade faster than in drier climates, and new mosquitoes from breeding sites in neighboring areas are constantly attempting to colonize your yard. Monthly visits maintain a consistent barrier and allow our technicians to monitor breeding site development and adjust their approach seasonally. During the wettest months â typically June through September â some properties with especially high pressure (near bayous, rice fields, or large retention ponds) may benefit from every-3-weeks service. We also offer one-time event treatments and seasonal packages to fit different budgets and needs.</p>
+                <p>For continuous protection throughout Lafayette's mosquito season, we recommend monthly barrier treatments from March through October Ã¢ÂÂ approximately 8 treatments per year. Lafayette's warm, humid climate and abundant rainfall mean that residual products degrade faster than in drier climates, and new mosquitoes from breeding sites in neighboring areas are constantly attempting to colonize your yard. Monthly visits maintain a consistent barrier and allow our technicians to monitor breeding site development and adjust their approach seasonally. During the wettest months Ã¢ÂÂ typically June through September Ã¢ÂÂ some properties with especially high pressure (near bayous, rice fields, or large retention ponds) may benefit from every-3-weeks service. We also offer one-time event treatments and seasonal packages to fit different budgets and needs.</p>
               </div>
             </div>
           </div>
@@ -390,7 +391,7 @@
             </button>
             <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <div itemprop="text">
-                <p>Yes, with appropriate precautions. The products we use for mosquito barrier treatments are EPA-registered and approved for residential use around people and pets when applied correctly. We ask that you, your children, and your pets stay off treated areas until the spray has fully dried â typically 30 to 60 minutes after application on a warm Louisiana day. Once dry, the treated surfaces are safe for normal contact. For vegetable gardens and fruit trees, we take extra care to avoid direct application to edible plant material. We can offer botanical-based barrier products (using garlic oil or cedarwood oil active ingredients) for clients who want a fully organic approach, though these require more frequent reapplication. Always let our technician know about any special areas of concern â beehives, koi ponds, vegetable beds â before treatment begins so we can adjust our application accordingly.</p>
+                <p>Yes, with appropriate precautions. The products we use for mosquito barrier treatments are EPA-registered and approved for residential use around people and pets when applied correctly. We ask that you, your children, and your pets stay off treated areas until the spray has fully dried Ã¢ÂÂ typically 30 to 60 minutes after application on a warm Louisiana day. Once dry, the treated surfaces are safe for normal contact. For vegetable gardens and fruit trees, we take extra care to avoid direct application to edible plant material. We can offer botanical-based barrier products (using garlic oil or cedarwood oil active ingredients) for clients who want a fully organic approach, though these require more frequent reapplication. Always let our technician know about any special areas of concern Ã¢ÂÂ beehives, koi ponds, vegetable beds Ã¢ÂÂ before treatment begins so we can adjust our application accordingly.</p>
               </div>
             </div>
           </div>
@@ -401,7 +402,7 @@
             </button>
             <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <div itemprop="text">
-                <p>Absolutely â and this is actually one of the most common situations we treat in Lafayette. Properties adjacent to drainage canals, bayou tributaries, irrigation ditches, and wetland areas face higher-than-average mosquito pressure because the adjacent water bodies provide unlimited breeding habitat that we cannot treat or eliminate. In these situations, our strategy focuses on creating the most robust possible barrier between the wild breeding area and your living spaces. This means treating a wider perimeter, focusing on the vegetation corridor along the fence or property line facing the water, and potentially using supplemental tools like CO2 mosquito traps or additional larvicide treatments in any edge water on your side of the property line. We may also recommend an automated misting system for properties with persistent high pressure. Our technicians can also coordinate with or provide information to the Lafayette Mosquito Abatement District about public drainage canal treatment needs in your area.</p>
+                <p>Absolutely Ã¢ÂÂ and this is actually one of the most common situations we treat in Lafayette. Properties adjacent to drainage canals, bayou tributaries, irrigation ditches, and wetland areas face higher-than-average mosquito pressure because the adjacent water bodies provide unlimited breeding habitat that we cannot treat or eliminate. In these situations, our strategy focuses on creating the most robust possible barrier between the wild breeding area and your living spaces. This means treating a wider perimeter, focusing on the vegetation corridor along the fence or property line facing the water, and potentially using supplemental tools like CO2 mosquito traps or additional larvicide treatments in any edge water on your side of the property line. We may also recommend an automated misting system for properties with persistent high pressure. Our technicians can also coordinate with or provide information to the Lafayette Mosquito Abatement District about public drainage canal treatment needs in your area.</p>
               </div>
             </div>
           </div>
@@ -412,7 +413,7 @@
             </button>
             <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <div itemprop="text">
-                <p>Most clients notice a significant reduction in mosquito activity within 24â48 hours of the first barrier treatment. The initial knockdown effect from the adulticide component works quickly on mosquitoes that are present and active at the time of treatment. The residual component continues working as new mosquitoes land on treated vegetation over the following weeks. It's important to note that the first treatment rarely achieves the same level of control as treatments 2 or 3 in a program, because the initial visit cannot address all the mosquitoes that are still in larval stages in nearby breeding water and will emerge as adults in the days following treatment. This is why we pair larvicide application with the barrier spray at the first visit. By the second monthly visit, most clients report a dramatic difference compared to untreated conditions. If you have a specific outdoor event coming up, we recommend scheduling treatment 24â48 hours before the event for maximum effectiveness.</p>
+                <p>Most clients notice a significant reduction in mosquito activity within 24Ã¢ÂÂ48 hours of the first barrier treatment. The initial knockdown effect from the adulticide component works quickly on mosquitoes that are present and active at the time of treatment. The residual component continues working as new mosquitoes land on treated vegetation over the following weeks. It's important to note that the first treatment rarely achieves the same level of control as treatments 2 or 3 in a program, because the initial visit cannot address all the mosquitoes that are still in larval stages in nearby breeding water and will emerge as adults in the days following treatment. This is why we pair larvicide application with the barrier spray at the first visit. By the second monthly visit, most clients report a dramatic difference compared to untreated conditions. If you have a specific outdoor event coming up, we recommend scheduling treatment 24Ã¢ÂÂ48 hours before the event for maximum effectiveness.</p>
               </div>
             </div>
           </div>
@@ -423,7 +424,7 @@
             </button>
             <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <div itemprop="text">
-                <p>This is one of the most common concerns for Lafayette homeowners given our reputation for afternoon thunderstorms. Once the barrier spray has dried on the foliage â which takes 30â60 minutes under normal conditions â it binds to the leaf surface and is significantly more rain-resistant than in its wet form. A brief afternoon shower that occurs more than 1â2 hours after treatment will not wash away the residual effectiveness. However, a heavy, extended rain event within a few hours of application can reduce its effectiveness. Our technicians monitor local weather forecasts and will not perform treatments when significant rain is expected within 2â4 hours. If a heavy rainstorm occurs unusually soon after your treatment, contact us and we'll evaluate whether a complimentary reapplication is warranted. Under normal Lafayette weather patterns â including the typical pattern of clear mornings with afternoon storms â our barrier treatments consistently deliver 21â30 days of residual activity.</p>
+                <p>This is one of the most common concerns for Lafayette homeowners given our reputation for afternoon thunderstorms. Once the barrier spray has dried on the foliage Ã¢ÂÂ which takes 30Ã¢ÂÂ60 minutes under normal conditions Ã¢ÂÂ it binds to the leaf surface and is significantly more rain-resistant than in its wet form. A brief afternoon shower that occurs more than 1Ã¢ÂÂ2 hours after treatment will not wash away the residual effectiveness. However, a heavy, extended rain event within a few hours of application can reduce its effectiveness. Our technicians monitor local weather forecasts and will not perform treatments when significant rain is expected within 2Ã¢ÂÂ4 hours. If a heavy rainstorm occurs unusually soon after your treatment, contact us and we'll evaluate whether a complimentary reapplication is warranted. Under normal Lafayette weather patterns Ã¢ÂÂ including the typical pattern of clear mornings with afternoon storms Ã¢ÂÂ our barrier treatments consistently deliver 21Ã¢ÂÂ30 days of residual activity.</p>
               </div>
             </div>
           </div>
@@ -437,11 +438,11 @@
         <div class="emergency-cta-inner">
           <div class="emergency-cta-text">
             <h2>Ready to Reclaim Your Backyard?</h2>
-            <p>Don't let mosquitoes ruin another Louisiana evening. Whether you're dealing with an overwhelming infestation near Bayou Teche, planning a big outdoor event, or simply ready to start a reliable seasonal mosquito protection program for your Lafayette home, Acadiana Pest Solutions is here to help. Our friendly, knowledgeable staff can schedule a free property inspection and provide a transparent, no-obligation quote â often within the same week you call.</p>
+            <p>Don't let mosquitoes ruin another Louisiana evening. Whether you're dealing with an overwhelming infestation near Bayou Teche, planning a big outdoor event, or simply ready to start a reliable seasonal mosquito protection program for your Lafayette home, Acadiana Pest Solutions is here to help. Our friendly, knowledgeable staff can schedule a free property inspection and provide a transparent, no-obligation quote Ã¢ÂÂ often within the same week you call.</p>
             <ul class="emergency-features">
               <li>&#10003; Same-week service available throughout Lafayette &amp; Acadiana</li>
               <li>&#10003; Free property inspection and personalized quote</li>
-              <li>&#10003; Monthly seasonal programs â no long-term contracts</li>
+              <li>&#10003; Monthly seasonal programs Ã¢ÂÂ no long-term contracts</li>
               <li>&#10003; Event treatments for parties, weddings &amp; gatherings</li>
               <li>&#10003; Serving Lafayette, Scott, Broussard, Youngsville, Carencro, Duson &amp; Breaux Bridge</li>
             </ul>
@@ -493,59 +494,63 @@
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-col footer-about">
-            <h3>Acadiana Pest Solutions</h3>
-            <p>Lafayette's trusted pest control professionals serving all of Acadiana. Family-safe treatments, licensed technicians, and guaranteed results for every home and business we serve.</p>
-            <a href="tel:+13375550199" class="footer-phone">&#128222; (337) 555-0199</a>
-          </div>
-          <div class="footer-col">
-            <h4>Our Services</h4>
-            <ul>
-              <li><a href="termite-control.html">Termite Control</a></li>
-              <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
-              <li><a href="rodent-control.html">Rodent Control</a></li>
-              <li><a href="ant-extermination.html">Ant Extermination</a></li>
-              <li><a href="cockroach-control.html">Cockroach Control</a></li>
-              <li><a href="mosquito-control.html">Mosquito Control</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Areas We Serve</h4>
-            <ul>
-              <li><a href="lafayette.html">Lafayette, LA</a></li>
-              <li><a href="scott.html">Scott, LA</a></li>
-              <li><a href="broussard.html">Broussard, LA</a></li>
-              <li><a href="youngsville.html">Youngsville, LA</a></li>
-              <li><a href="carencro.html">Carencro, LA</a></li>
-              <li><a href="duson.html">Duson, LA</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="contact.html">Free Estimate</a></li>
-            </ul>
-            <h4 style="margin-top:20px;">Service Hours</h4>
-            <p class="footer-hours">MonâFri: 7:00am â 6:00pm<br>Saturday: 8:00am â 4:00pm<br>Sunday: Emergency only</p>
-          </div>
-        </div>
-      </div>
+  
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-col__title">Acadiana Pest Solutions</div>
+      <p>Professional pest control serving Lafayette and the Acadiana region. Licensed, insured, and committed to protecting your home and business.</p>
+      <a href="tel:+13375550199" class="btn btn-accent" style="margin-top:1rem;display:inline-block;">(337) 555-0199</a>
     </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>&copy; 2024 Acadiana Pest Solutions. All rights reserved. Serving Lafayette, LA and all of Acadiana.</p>
-        <p class="footer-disclaimer">Licensed by the Louisiana Department of Agriculture and Forestry. All pest control services performed by licensed applicators.</p>
-      </div>
+    <div class="footer-col">
+      <div class="footer-col__title">Our Services</div>
+      <ul>
+        <li><a href="termite-control.html">Termite Control</a></li>
+        <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+        <li><a href="rodent-control.html">Rodent Control</a></li>
+        <li><a href="ant-extermination.html">Ant Extermination</a></li>
+        <li><a href="cockroach-control.html">Cockroach Control</a></li>
+        <li><a href="mosquito-control.html">Mosquito Control</a></li>
+      </ul>
     </div>
-  </footer>
+    <div class="footer-col">
+      <div class="footer-col__title">Service Areas</div>
+      <ul>
+        <li><a href="scott.html">Scott, LA</a></li>
+        <li><a href="broussard.html">Broussard, LA</a></li>
+        <li><a href="youngsville.html">Youngsville, LA</a></li>
+        <li><a href="carencro.html">Carencro, LA</a></li>
+        <li><a href="duson.html">Duson, LA</a></li>
+        <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col__title">Contact</div>
+      <ul>
+        <li>Lafayette, LA</li>
+        <li><a href="tel:+13375550199">(337) 555-0199</a></li>
+        <li><a href="contact.html">Get a Free Quote</a></li>
+        <li>Mon-Fri: 7AM - 7PM</li>
+        <li>Sat: 8AM - 5PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 Acadiana Pest Solutions. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
-  <script src="js/main.js"></script>
+<!-- Mobile CTA Bar -->
+<div class="mobile-cta-bar">
+  <a href="tel:+13375550199" class="mobile-cta__btn mobile-cta__btn--call">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11.4 11.4 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.5.6 3.6a1 1 0 01-.2 1L6.6 10.8z"/></svg>
+    Call Now
+  </a>
+  <a href="contact.html" class="mobile-cta__btn mobile-cta__btn--quote">Free Quote</a>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
