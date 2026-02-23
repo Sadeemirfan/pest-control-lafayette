@@ -39,60 +39,61 @@
 </head>
 <body>
 
-  <!-- Sticky Mobile CTA Bar -->
-  <div class="mobile-cta-bar">
-    <a href="tel:+13375550199" class="mobile-cta-link">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-      Call Now: (337) 555-0199
-    </a>
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <span>Serving All of Acadiana - Call Now for Same-Day Service:</span>
+    <a href="tel:+13375550199">(337) 555-0199</a>
   </div>
+</div>
 
-  <!-- Header & Navigation -->
-  <header class="site-header">
-    <div class="header-inner container">
-      <div class="logo">
-        <a href="index.html">
-          <span class="logo-main">Acadiana Pest Solutions</span>
-          <span class="logo-tag">Lafayette, LA &amp; Surrounding Areas</span>
-        </a>
-      </div>
-      <nav class="main-nav" aria-label="Main Navigation">
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li class="has-dropdown">
-            <a href="#services" aria-haspopup="true">Services <span class="arrow">&#9660;</span></a>
-            <ul class="dropdown">
-              <li><a href="termite-control.html">Termite Control</a></li>
-              <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
-              <li><a href="rodent-control.html">Rodent Control</a></li>
-              <li><a href="ant-extermination.html">Ant Extermination</a></li>
-              <li><a href="cockroach-control.html">Cockroach Control</a></li>
-              <li><a href="mosquito-control.html">Mosquito Control</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <a href="#areas" aria-haspopup="true">Areas We Serve <span class="arrow">&#9660;</span></a>
-            <ul class="dropdown">
-              <li><a href="lafayette.html">Lafayette</a></li>
-              <li><a href="scott.html">Scott</a></li>
-              <li><a href="broussard.html">Broussard</a></li>
-              <li><a href="youngsville.html">Youngsville</a></li>
-              <li><a href="carencro.html">Carencro</a></li>
-              <li><a href="duson.html">Duson</a></li>
-            </ul>
-          </li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="tel:+13375550199" class="header-cta">Call (337) 555-0199</a>
-    </div>
-  </header>
+<!-- SITE HEADER -->
+<header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">
+      <span class="logo-text">Acadiana<br>Pest Solutions</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Services <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="termite-control.html">Termite Control</a></li>
+            <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+            <li><a href="rodent-control.html">Rodent Control</a></li>
+            <li><a href="ant-extermination.html">Ant Extermination</a></li>
+            <li><a href="cockroach-control.html">Cockroach Control</a></li>
+            <li><a href="mosquito-control.html">Mosquito Control</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Areas We Serve <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="scott.html">Scott, LA</a></li>
+            <li><a href="broussard.html">Broussard, LA</a></li>
+            <li><a href="youngsville.html">Youngsville, LA</a></li>
+            <li><a href="carencro.html">Carencro, LA</a></li>
+            <li><a href="duson.html">Duson, LA</a></li>
+            <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+13375550199" class="header-phone">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11.4 11.4 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.5.6 3.6a1 1 0 01-.2 1L6.6 10.8z"/></svg>
+      (337) 555-0199
+    </a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
 
-  <main>
+<main>
 
     <!-- Breadcrumb -->
     <nav aria-label="Breadcrumb" class="breadcrumb-nav">
@@ -362,150 +363,63 @@
           <blockquote class="testimonial-card testimonial-large">
             <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             <p class="testimonial-text">&ldquo;We&rsquo;ve lived in our Scott home for over 20 years and had a terrible fire ant problem every single spring. I mean, the whole backyard was covered in mounds. I also had what I suspected were termites near my back porch. I called Acadiana Pest Solutions based on a neighbor&rsquo;s recommendation, and I&rsquo;m so glad I did. The technician showed up on time, did a thorough inspection, explained everything clearly, and gave me a treatment plan I could actually afford. Within two weeks, the fire ants were gone and I haven&rsquo;t seen a single mound since. They found active termite activity near my back steps too &mdash; early enough that we avoided major structural damage. These folks actually care about doing the job right. I&rsquo;ve already referred three of my neighbors to them.&rdquo;</p>
-            <footer class="testimonial-author">
-              <strong>Marie T.</strong>
-              <span>Scott, Louisiana &mdash; Longtime Resident</span>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section faq-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Frequently Asked Questions &mdash; Pest Control in Scott, LA</h2>
-          <p class="section-sub">Got questions specific to pest control in Scott? Here are the ones we hear most often from our Scott customers.</p>
-        </div>
-        <div class="faq-list">
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Do older Scott homes have a higher risk for termites than newer construction?
-              <span class="faq-arrow">&#9660;</span>
-            </button>
-            <div class="faq-answer">
-              <p>Yes, in general, older homes in Scott carry a higher termite risk &mdash; but no home is immune. Homes built prior to the 1990s may have wood-to-soil contact, older pier-and-beam foundations, or construction gaps that give subterranean termites easier access. Additionally, many treatments applied decades ago have long since worn off. That said, Formosan termites &mdash; the most destructive species found throughout south Louisiana &mdash; will target any wooden structure given the right conditions. We strongly recommend annual termite inspections for all Scott properties, regardless of age. Catching an infestation early can save you thousands of dollars in repairs.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Are fire ants a year-round problem in Scott, or just during warmer months?
-              <span class="faq-arrow">&#9660;</span>
-            </button>
-            <div class="faq-answer">
-              <p>In Scott and throughout south Louisiana, fire ants are essentially a year-round concern &mdash; though their activity does slow slightly during the coolest winter months of December and January. Thanks to Acadiana&rsquo;s mild winters, fire ant colonies often remain active and can resume aggressive surface mound building as early as February when temperatures climb. The peak seasons for fire ant problems in Scott are spring through fall. We recommend treating in early spring before colonies expand, and again in late summer if needed. Our broadcast bait treatments combined with individual mound treatments deliver the most comprehensive, long-lasting control.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              My Scott home is near commercial restaurants and food businesses. Does that increase my rodent risk?
-              <span class="faq-arrow">&#9660;</span>
-            </button>
-            <div class="faq-answer">
-              <p>Absolutely, and this is a concern we address frequently for Scott homeowners who live near or on streets adjacent to Cameron Street&rsquo;s restaurant corridor and the Highway 90 commercial district. Commercial food establishments attract rodents due to the abundance of accessible food, and populations can spread outward into nearby neighborhoods &mdash; particularly as temperatures drop in the fall. Rodents can travel significant distances nightly following scent trails. The best protection is a combination of home exclusion work (sealing gaps, cracks, and utility penetrations) and ongoing monitoring. We offer rodent management programs specifically designed for residential properties near commercial areas.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              How quickly can you respond to a pest emergency in Scott?
-              <span class="faq-arrow">&#9660;</span>
-            </button>
-            <div class="faq-answer">
-              <p>Because our Lafayette office is only 5 miles from Scott, we are one of the fastest-responding pest control providers in the area. In most cases, we can schedule same-day service for urgent pest situations. When you call (337) 555-0199, you&rsquo;ll speak directly with our scheduling team &mdash; not an automated system &mdash; and we&rsquo;ll do our best to accommodate your timeline. For true emergencies like active wasp nests near children or a sudden large rodent intrusion, we prioritize getting a technician to you as quickly as possible. We know pest problems are stressful, and we don&rsquo;t believe in making you wait days for help.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class="section cta-section bg-amber">
-      <div class="container cta-inner">
-        <div class="cta-text">
-          <h2>Ready to Solve Your Pest Problem in Scott?</h2>
-          <p>Don&rsquo;t let pests take over your home or business. Acadiana Pest Solutions is just minutes away, ready to provide fast, effective, locally expert pest control right here in Scott, LA. Call us today for a free inspection or same-day service appointment.</p>
-        </div>
-        <div class="cta-actions">
-          <a href="tel:+13375550199" class="btn btn-dark btn-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-            Call (337) 555-0199
-          </a>
-          <a href="contact.html" class="btn btn-outline-dark btn-lg">Request Online Quote</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-
-        <div class="footer-col footer-brand">
-          <h3>Acadiana Pest Solutions</h3>
-          <p>Locally owned and operated pest control serving Lafayette, Scott, and all of the Acadiana region. Fast response, guaranteed results, family-safe treatments.</p>
-          <a href="tel:+13375550199" class="footer-phone">(337) 555-0199</a>
-        </div>
-
-        <div class="footer-col">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="termite-control.html">Termite Control</a></li>
-            <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
-            <li><a href="rodent-control.html">Rodent Control</a></li>
-            <li><a href="ant-extermination.html">Ant Extermination</a></li>
-            <li><a href="cockroach-control.html">Cockroach Control</a></li>
-            <li><a href="mosquito-control.html">Mosquito Control</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Areas We Serve</h4>
-          <ul>
-            <li><a href="lafayette.html">Lafayette, LA</a></li>
-            <li><a href="scott.html">Scott, LA</a></li>
-            <li><a href="broussard.html">Broussard, LA</a></li>
-            <li><a href="youngsville.html">Youngsville, LA</a></li>
-            <li><a href="carencro.html">Carencro, LA</a></li>
-            <li><a href="duson.html">Duson, LA</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-          <h4 style="margin-top:1.5rem;">Service Hours</h4>
-          <ul>
-            <li>Mon &ndash; Fri: 7:00 AM &ndash; 6:00 PM</li>
-            <li>Saturday: 8:00 AM &ndash; 4:00 PM</li>
-            <li>Emergency: Available</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; <span id="footer-year"></span> Acadiana Pest Solutions. All rights reserved. Serving Lafayette, Scott, and all of Acadiana, Louisiana.</p>
-        <p style="margin-top:0.5rem; font-size:0.8rem; color:rgba(255,255,255,0.5);">Licensed Louisiana Pest Control Operator. <a href="privacy.html" style="color:rgba(255,255,255,0.6);">Privacy Policy</a> | <a href="terms.html" style="color:rgba(255,255,255,0.6);">Terms of Service</a></p>
-      </div>
+            
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-col__title">Acadiana Pest Solutions</div>
+      <p>Professional pest control serving Lafayette and the Acadiana region. Licensed, insured, and committed to protecting your home and business.</p>
+      <a href="tel:+13375550199" class="btn btn-accent" style="margin-top:1rem;display:inline-block;">(337) 555-0199</a>
     </div>
-  </footer>
+    <div class="footer-col">
+      <div class="footer-col__title">Our Services</div>
+      <ul>
+        <li><a href="termite-control.html">Termite Control</a></li>
+        <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+        <li><a href="rodent-control.html">Rodent Control</a></li>
+        <li><a href="ant-extermination.html">Ant Extermination</a></li>
+        <li><a href="cockroach-control.html">Cockroach Control</a></li>
+        <li><a href="mosquito-control.html">Mosquito Control</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col__title">Service Areas</div>
+      <ul>
+        <li><a href="scott.html">Scott, LA</a></li>
+        <li><a href="broussard.html">Broussard, LA</a></li>
+        <li><a href="youngsville.html">Youngsville, LA</a></li>
+        <li><a href="carencro.html">Carencro, LA</a></li>
+        <li><a href="duson.html">Duson, LA</a></li>
+        <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col__title">Contact</div>
+      <ul>
+        <li>Lafayette, LA</li>
+        <li><a href="tel:+13375550199">(337) 555-0199</a></li>
+        <li><a href="contact.html">Get a Free Quote</a></li>
+        <li>Mon-Fri: 7AM - 7PM</li>
+        <li>Sat: 8AM - 5PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 Acadiana Pest Solutions. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
-  <script src="js/main.js"></script>
-  <script>
-    document.getElementById('footer-year').textContent = new Date().getFullYear();
-  </script>
+<!-- Mobile CTA Bar -->
+<div class="mobile-cta-bar">
+  <a href="tel:+13375550199" class="mobile-cta__btn mobile-cta__btn--call">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11.4 11.4 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.5.6 3.6a1 1 0 01-.2 1L6.6 10.8z"/></svg>
+    Call Now
+  </a>
+  <a href="contact.html" class="mobile-cta__btn mobile-cta__btn--quote">Free Quote</a>
+</div>
 
+<script src="js/main.js"></script>
 </body>
 </html>
