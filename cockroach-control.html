@@ -3,64 +3,794 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cockroach Control Lafayette LA | Acadiana Pest Solutions</title>
-  <meta name="description" content="Professional cockroach control in Lafayette, LA. American & German roach elimination. Health-safe treatments. Same-day service: (337) 555-0199">
-  <link rel="canonical" href="https://www.acadianapestsolutions.com/cockroach-control.html">
-  <meta property="og:title" content="Cockroach Control Lafayette LA | Acadiana Pest Solutions">
-  <meta property="og:description" content="Professional cockroach control in Lafayette, LA. American & German roach elimination. Health-safe treatments. Same-day service: (337) 555-0199">
-  <meta property="og:url" content="https://www.acadianapestsolutions.com/cockroach-control.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Acadiana Pest Solutions">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Cockroach Control Lafayette LA | Acadiana Pest Solutions">
-  <meta name="twitter:description" content="Professional cockroach control in Lafayette, LA. American & German roach elimination. Health-safe treatments. Same-day service: (337) 555-0199">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <title>Cockroach Control Lafayette LA | German &amp; American Roach Treatment</title>
+  <meta name="description" content="Expert cockroach control in Lafayette, LA. German roaches, American roaches, palmetto bugs. Call (337) 555-0199.">
   <link rel="stylesheet" href="css/style.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Cockroach Control",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Acadiana Pest Solutions",
-      "telephone": "+13375550199",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Lafayette",
-        "addressRegion": "LA",
-        "addressCountry": "US"
+  <style>
+    /* Page-specific overrides and enhancements */
+    .service-hero {
+      background: linear-gradient(135deg, #1a3a1a 0%, #2d5a27 60%, #3a7a30 100%);
+      padding: 60px 0 50px;
+      color: #fff;
+    }
+    .service-hero .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .service-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+    .service-hero p.hero-lead {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.88);
+      max-width: 600px;
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .breadcrumb {
+      background: #f5f5f2;
+      border-bottom: 1px solid #e0e0d8;
+      padding: 10px 0;
+      font-size: 0.85rem;
+      color: #666;
+    }
+    .breadcrumb ol {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 0;
+      padding: 0;
+    }
+    .breadcrumb ol li + li::before {
+      content: '/';
+      margin-right: 6px;
+      color: #999;
+    }
+    .breadcrumb a {
+      color: #2d7a27;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    .service-page__layout {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 40px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .service-page__layout {
+        grid-template-columns: 1fr;
       }
-    },
-    "areaServed": ["Lafayette", "Scott", "Broussard", "Youngsville", "Carencro", "Duson", "Breaux Bridge"],
-    "description": "Professional cockroach elimination services for residential and commercial properties in Lafayette, LA and the Acadiana region."
-  }
-  </script>
+      .service-page__sidebar {
+        order: -1;
+      }
+    }
+    .service-page__main h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #1a3a1a;
+      margin: 36px 0 14px;
+      border-left: 4px solid #2d7a27;
+      padding-left: 14px;
+    }
+    .service-page__main h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #2d5a27;
+      margin: 24px 0 10px;
+    }
+    .service-page__main p {
+      color: #444;
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .service-page__main ul, .service-page__main ol {
+      color: #444;
+      line-height: 1.75;
+      margin-bottom: 16px;
+      padding-left: 22px;
+    }
+    .service-page__main ul li, .service-page__main ol li {
+      margin-bottom: 8px;
+    }
+    .species-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin: 24px 0;
+    }
+    .species-card {
+      background: #f8faf6;
+      border: 1px solid #d4e8cf;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .species-card h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a3a1a;
+      margin-bottom: 8px;
+    }
+    .species-card p {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 0;
+    }
+    .species-label {
+      display: inline-block;
+      background: #2d7a27;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+    }
+    .risk-box {
+      background: #fff5f5;
+      border: 1px solid #f5c6c6;
+      border-left: 4px solid #c0392b;
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .risk-box h3 {
+      color: #c0392b !important;
+      margin-top: 0 !important;
+    }
+    .risk-box ul {
+      margin-bottom: 0;
+    }
+    .treatment-step {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      align-items: flex-start;
+    }
+    .treatment-step__num {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      background: #2d7a27;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .treatment-step__body h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a3a1a;
+      margin: 0 0 6px;
+    }
+    .treatment-step__body p {
+      font-size: 0.93rem;
+      color: #555;
+      margin: 0;
+      line-height: 1.65;
+    }
+    .signs-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin: 20px 0;
+    }
+    .sign-item {
+      background: #fff;
+      border: 1px solid #dde8d9;
+      border-radius: 6px;
+      padding: 14px 16px;
+      font-size: 0.9rem;
+      color: #333;
+      font-weight: 500;
+    }
+    .sign-item::before {
+      content: '! ';
+      color: #c0392b;
+      font-weight: 800;
+    }
+    .maintenance-plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 24px 0;
+    }
+    .plan-card {
+      border: 2px solid #d4e8cf;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      background: #fff;
+    }
+    .plan-card.featured {
+      border-color: #2d7a27;
+      background: #f0f8ed;
+    }
+    .plan-card h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a3a1a;
+      margin-bottom: 6px;
+    }
+    .plan-card .plan-freq {
+      font-size: 0.82rem;
+      color: #2d7a27;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+    .plan-card p {
+      font-size: 0.88rem;
+      color: #555;
+      margin: 0;
+      line-height: 1.55;
+    }
+    .plan-badge {
+      display: inline-block;
+      background: #e07b00;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+    }
+    .sidebar-widget {
+      background: #fff;
+      border: 1px solid #dde8d9;
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .sidebar-widget__title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a3a1a;
+      margin: 0 0 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e8f4e5;
+    }
+    .sidebar-cta {
+      background: linear-gradient(135deg, #1a3a1a 0%, #2d7a27 100%);
+      color: #fff;
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .sidebar-cta h3 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin: 0 0 10px;
+    }
+    .sidebar-cta p {
+      color: rgba(255,255,255,0.85);
+      font-size: 0.9rem;
+      margin: 0 0 16px;
+      line-height: 1.55;
+    }
+    .sidebar-cta .btn {
+      width: 100%;
+      display: block;
+      text-align: center;
+      padding: 12px;
+      border-radius: 6px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .sidebar-cta .btn-call {
+      background: #fff;
+      color: #1a3a1a;
+      margin-bottom: 10px;
+    }
+    .sidebar-cta .btn-quote {
+      background: #e07b00;
+      color: #fff;
+    }
+    .sidebar-cta .phone-big {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+      display: block;
+      margin-bottom: 14px;
+      text-decoration: none;
+    }
+    .sidebar-services ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar-services ul li {
+      border-bottom: 1px solid #f0f0eb;
+    }
+    .sidebar-services ul li:last-child {
+      border-bottom: none;
+    }
+    .sidebar-services ul li a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 0;
+      color: #2d5a27;
+      text-decoration: none;
+      font-size: 0.93rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .sidebar-services ul li a:hover {
+      color: #1a3a1a;
+    }
+    .sidebar-services ul li a.active {
+      color: #1a3a1a;
+      font-weight: 700;
+    }
+    .sidebar-services ul li a::after {
+      content: '\203A';
+      color: #2d7a27;
+      font-size: 1.1rem;
+    }
+    .sidebar-areas ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .sidebar-areas ul li a {
+      display: inline-block;
+      background: #f0f8ed;
+      border: 1px solid #d4e8cf;
+      border-radius: 4px;
+      padding: 4px 12px;
+      font-size: 0.85rem;
+      color: #2d5a27;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .sidebar-areas ul li a:hover {
+      background: #2d7a27;
+      color: #fff;
+    }
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 24px 0;
+    }
+    .trust-chip {
+      background: #f0f8ed;
+      border: 1px solid #d4e8cf;
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 0.82rem;
+      color: #2d5a27;
+      font-weight: 600;
+    }
+    .stars {
+      color: #e07b00;
+      font-size: 1rem;
+    }
+    .review-snippet {
+      background: #f8faf6;
+      border-left: 3px solid #2d7a27;
+      border-radius: 0 6px 6px 0;
+      padding: 14px 16px;
+      margin: 20px 0;
+      font-style: italic;
+      color: #444;
+      font-size: 0.93rem;
+      line-height: 1.65;
+    }
+    .review-snippet cite {
+      display: block;
+      font-style: normal;
+      font-weight: 700;
+      color: #1a3a1a;
+      margin-top: 6px;
+      font-size: 0.85rem;
+    }
+    .faq-item {
+      border: 1px solid #dde8d9;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-question {
+      background: #f8faf6;
+      padding: 14px 18px;
+      font-weight: 700;
+      color: #1a3a1a;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+    }
+    .faq-answer {
+      padding: 14px 18px;
+      color: #555;
+      font-size: 0.93rem;
+      line-height: 1.7;
+      border-top: 1px solid #e8f4e5;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .cta-band {
+      background: linear-gradient(135deg, #1a3a1a 0%, #2d7a27 100%);
+      padding: 60px 0;
+      text-align: center;
+      color: #fff;
+    }
+    .cta-band__title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .cta-band__text {
+      color: rgba(255,255,255,0.88);
+      font-size: 1.05rem;
+      margin-bottom: 28px;
+    }
+    .cta-band__actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 13px 28px;
+      border-radius: 6px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.97rem;
+      transition: opacity 0.2s, transform 0.15s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+    .btn-primary {
+      background: #2d7a27;
+      color: #fff;
+    }
+    .btn-accent {
+      background: #e07b00;
+      color: #fff;
+    }
+    .btn-white {
+      background: #fff;
+      color: #1a3a1a;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+    .btn-lg {
+      padding: 15px 34px;
+      font-size: 1.05rem;
+    }
+    .top-bar {
+      background: #1a3a1a;
+      color: #fff;
+      text-align: center;
+      padding: 7px 16px;
+      font-size: 0.83rem;
+    }
+    .top-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .top-bar-phone {
+      color: #8fde7e;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .site-header {
+      background: #fff;
+      border-bottom: 2px solid #e8f4e5;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .header-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      gap: 16px;
+    }
+    .logo {
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: #1a3a1a;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .site-nav .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 4px;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+    .site-nav .nav-list > li > a {
+      display: block;
+      padding: 8px 12px;
+      color: #1a3a1a;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      border-radius: 4px;
+      position: relative;
+    }
+    .site-nav .nav-list > li > a:hover {
+      background: #f0f8ed;
+      color: #2d7a27;
+    }
+    .has-dropdown {
+      position: relative;
+    }
+    .has-dropdown .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      border: 1px solid #dde8d9;
+      border-radius: 6px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+      min-width: 200px;
+      padding: 6px 0;
+      list-style: none;
+      z-index: 200;
+    }
+    .has-dropdown:hover .dropdown,
+    .has-dropdown:focus-within .dropdown {
+      display: block;
+    }
+    .has-dropdown .dropdown li a {
+      display: block;
+      padding: 8px 18px;
+      color: #1a3a1a;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .has-dropdown .dropdown li a:hover {
+      background: #f0f8ed;
+      color: #2d7a27;
+    }
+    .header-phone-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #2d7a27;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #1a3a1a;
+      border-radius: 2px;
+    }
+    .nav-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: #fff;
+      z-index: 300;
+      overflow-y: auto;
+      padding: 24px 20px;
+    }
+    .nav-overlay-close {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: #1a3a1a;
+      float: right;
+    }
+    .nav-overlay-list {
+      list-style: none;
+      padding: 0;
+      margin: 40px 0 0;
+    }
+    .nav-overlay-list > li {
+      border-bottom: 1px solid #e8f4e5;
+      padding: 12px 0;
+    }
+    .nav-overlay-list a {
+      color: #1a3a1a;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .nav-overlay-list ul {
+      list-style: none;
+      padding-left: 16px;
+      margin-top: 8px;
+    }
+    .nav-overlay-list ul li a {
+      font-weight: 400;
+      font-size: 0.93rem;
+      color: #2d5a27;
+    }
+    @media (max-width: 860px) {
+      .site-nav, .header-phone-btn { display: none; }
+      .hamburger { display: flex; }
+    }
+    .site-footer {
+      background: #0f2610;
+      color: #ccc;
+      padding: 60px 0 0;
+    }
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 32px;
+      padding-bottom: 40px;
+    }
+    .footer-col h3, .footer-col h4 {
+      color: #fff;
+      margin-bottom: 14px;
+      font-size: 1rem;
+    }
+    .footer-col p, .footer-col li {
+      font-size: 0.88rem;
+      color: #aaa;
+      line-height: 1.7;
+    }
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-col ul li + li {
+      margin-top: 6px;
+    }
+    .footer-col a {
+      color: #8fde7e;
+      text-decoration: none;
+    }
+    .footer-col a:hover {
+      text-decoration: underline;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #666;
+    }
+    .mobile-cta-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #1a3a1a;
+      z-index: 200;
+      padding: 10px 16px;
+      gap: 10px;
+    }
+    @media (max-width: 860px) {
+      .mobile-cta-bar {
+        display: flex;
+      }
+    }
+    .mobile-cta-bar .btn {
+      flex: 1;
+      text-align: center;
+      padding: 11px 10px;
+      font-size: 0.92rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .mobile-cta-bar .btn-call {
+      background: #2d7a27;
+      color: #fff;
+    }
+    .mobile-cta-bar .btn-quote {
+      background: #e07b00;
+      color: #fff;
+    }
+    @media (max-width: 860px) {
+      body {
+        padding-bottom: 64px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<!-- TOP BAR -->
 <div class="top-bar">
-  <div class="container">
-    <span>Serving All of Acadiana - Call Now for Same-Day Service:</span>
-    <a href="tel:+13375550199">(337) 555-0199</a>
+  <div class="top-bar-inner">
+    <span>Serving All of Acadiana &mdash; Call Now for Same-Day Service:</span>
+    <a href="tel:3375550199" class="top-bar-phone">(337) 555-0199</a>
   </div>
 </div>
-
-<!-- SITE HEADER -->
 <header class="site-header">
-  <div class="container header-container">
-    <a href="index.html" class="logo">
-      <span class="logo-text">Acadiana<br>Pest Solutions</span>
-    </a>
-    <nav class="main-nav" id="mainNav">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Acadiana Pest Solutions</a>
+    <nav class="site-nav">
       <ul class="nav-list">
-        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li class="has-dropdown">
-          <a href="#" class="nav-link dropdown-toggle">Services <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
-          <ul class="dropdown-menu">
+          <a href="#" aria-haspopup="true" aria-expanded="false">Services <span class="arrow" aria-hidden="true">&#9662;</span></a>
+          <ul class="dropdown">
             <li><a href="termite-control.html">Termite Control</a></li>
             <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
             <li><a href="rodent-control.html">Rodent Control</a></li>
@@ -70,391 +800,36 @@
           </ul>
         </li>
         <li class="has-dropdown">
-          <a href="#" class="nav-link dropdown-toggle">Areas We Serve <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
-          <ul class="dropdown-menu">
-            <li><a href="scott.html">Scott, LA</a></li>
-            <li><a href="broussard.html">Broussard, LA</a></li>
-            <li><a href="youngsville.html">Youngsville, LA</a></li>
-            <li><a href="carencro.html">Carencro, LA</a></li>
-            <li><a href="duson.html">Duson, LA</a></li>
-            <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
+          <a href="#" aria-haspopup="true" aria-expanded="false">Areas <span class="arrow" aria-hidden="true">&#9662;</span></a>
+          <ul class="dropdown">
+            <li><a href="scott.html">Scott</a></li>
+            <li><a href="broussard.html">Broussard</a></li>
+            <li><a href="youngsville.html">Youngsville</a></li>
+            <li><a href="carencro.html">Carencro</a></li>
+            <li><a href="duson.html">Duson</a></li>
+            <li><a href="breaux-bridge.html">Breaux Bridge</a></li>
           </ul>
         </li>
-        <li><a href="blog.html" class="nav-link">Blog</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <a href="tel:+13375550199" class="header-phone">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11.4 11.4 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.5.6 3.6a1 1 0 01-.2 1L6.6 10.8z"/></svg>
+    <a href="tel:3375550199" class="header-phone-btn" aria-label="Call (337) 555-0199">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 4.2 2 2 0 0 1 5.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L9 9.9a16 16 0 0 0 6 6l1.5-1.3a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7A2 2 0 0 1 22 16.9z"/></svg>
       (337) 555-0199
     </a>
-    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-overlay">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
   </div>
 </header>
-<div class="nav-overlay" id="navOverlay"></div>
-
-<main>
-
-    <!-- Hero Section -->
-    <section class="service-hero" style="background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 60%, #388E3C 100%);">
-      <div class="container">
-        <nav aria-label="Breadcrumb" class="breadcrumb">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li aria-hidden="true">&#8250;</li>
-            <li><a href="index.html#services">Services</a></li>
-            <li aria-hidden="true">&#8250;</li>
-            <li aria-current="page">Cockroach Control</li>
-          </ol>
-        </nav>
-        <div class="hero-content">
-          <div class="hero-badge">&#9888; Serving All of Acadiana</div>
-          <h1>Cockroach Control in Lafayette, LA</h1>
-          <p class="hero-subtitle">Don't let cockroaches take over your home or business. Our expert technicians eliminate American roaches, German roaches, and smokybrown roaches using the most advanced, health-safe methods available Ã¢ÂÂ backed by a satisfaction guarantee.</p>
-          <div class="hero-actions">
-            <a href="tel:+13375550199" class="btn btn-accent btn-lg">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12 19.79 19.79 0 0 1 1.15 3.37 2 2 0 0 1 3.12 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              Call (337) 555-0199 Now
-            </a>
-            <a href="contact.html" class="btn btn-outline-white btn-lg">Get a Free Estimate</a>
-          </div>
-          <div class="hero-trust">
-            <span>&#10003; Same-Day Service Available</span>
-            <span>&#10003; Satisfaction Guaranteed</span>
-            <span>&#10003; Family &amp; Pet-Safe Treatments</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Identification Section -->
-    <section class="section section-light" id="identification">
-      <div class="container">
-        <div class="section-grid">
-          <div class="section-content">
-            <span class="section-label">Identification</span>
-            <h2>Recognizing Louisiana's Most Common Cockroaches</h2>
-            <p>Louisiana's warm, humid climate creates nearly ideal year-round conditions for cockroaches to thrive. The Acadiana region Ã¢ÂÂ including Lafayette, Scott, Broussard, Youngsville, Carencro, and the surrounding parishes Ã¢ÂÂ regularly ranks among the most cockroach-prone areas in the entire country. If you've spotted roaches in your home or business, you're not alone, and you're not at fault. These resilient insects exploit the tiniest gaps and moisture sources to invade even the cleanest properties.</p>
-            <p>Understanding which species you're dealing with is the first step toward effective elimination. Our technicians are trained to identify the exact cockroach species present, because treatment methods and harborage patterns differ significantly between species.</p>
-
-            <div class="pest-cards">
-              <div class="pest-card">
-                <div class="pest-card-icon">&#128027;</div>
-                <h3>American Cockroach (Palmetto Bug)</h3>
-                <p>The <em>Periplaneta americana</em>, locally known as the "palmetto bug," is the largest common cockroach species in Louisiana, reaching 1.5 to 2 inches in length. Reddish-brown with a distinctive yellowish figure-8 pattern behind the head, these roaches thrive in warm, moist environments like sewers, crawl spaces, utility tunnels, and underneath kitchen appliances. Despite their intimidating size, American cockroaches are actually more of an outdoor species that ventures indoors seeking food and water Ã¢ÂÂ particularly during heavy rains and our hot Louisiana summers when conditions outside become unfavorable. They're especially common in older Lafayette neighborhoods with mature landscaping, palmetto trees, and aging sewer infrastructure.</p>
-              </div>
-              <div class="pest-card">
-                <div class="pest-card-icon">&#128027;</div>
-                <h3>German Cockroach</h3>
-                <p>Despite its name, the German cockroach (<em>Blattella germanica</em>) is the most problematic indoor cockroach species in North America, and Lafayette is no exception. Smaller than the American cockroach at just 0.5 to 0.6 inches, German roaches are light brown with two dark parallel stripes running behind their heads. What makes them especially difficult to control is their extraordinary reproductive rate Ã¢ÂÂ a single female can produce up to 400 offspring in her lifetime, and populations can explode from a handful of insects to thousands within just a few months. German roaches prefer kitchens and bathrooms, hiding in cracks near stoves, under refrigerators, inside cabinet hinges, and behind wall switch plates. They rarely fly and prefer to run quickly to dark, tight harborages. If you see German roaches during the day, it's a strong indicator of a severe infestation, as daytime activity usually means harborage areas are overcrowded.</p>
-              </div>
-              <div class="pest-card">
-                <div class="pest-card-icon">&#128027;</div>
-                <h3>Smokybrown Cockroach</h3>
-                <p>The smokybrown cockroach (<em>Periplaneta fuliginosa</em>) is extremely prevalent in Louisiana and thrives specifically in the hot, humid conditions of the Gulf South. Uniform mahogany-brown in color and slightly smaller than the American cockroach at about 1.25 inches, smokybrown roaches are highly susceptible to dehydration despite their love of moisture Ã¢ÂÂ which is why they seek the humid micro-environments found around gutters, wood piles, ivy, mulch beds, and tree holes so common in Lafayette yards. They are strong fliers and are frequently attracted to outdoor lighting at night. Smokybrown roaches enter homes through gaps around utility penetrations, weep holes in brick, attic vents, and gaps in soffits. In the Acadiana region, heavy summer rains often drive large numbers indoors almost simultaneously, causing what many homeowners describe as a sudden infestation.</p>
-              </div>
-              <div class="pest-card">
-                <div class="pest-card-icon">&#128027;</div>
-                <h3>Brown-Banded Cockroach</h3>
-                <p>Less common but still found in Lafayette homes and commercial properties, the brown-banded cockroach (<em>Supella longipalpa</em>) is small Ã¢ÂÂ about 0.5 inches Ã¢ÂÂ and tan with distinctive lighter bands across its wings and abdomen. Unlike German roaches that concentrate near moisture, brown-banded roaches prefer drier, warmer locations throughout the home: inside electronics, behind picture frames, inside furniture, and in upper cabinet areas. This scattered distribution makes them particularly challenging to treat without a thorough inspection. Our technicians know exactly where to look for brown-banded harborages that homeowners often miss entirely.</p>
-              </div>
-            </div>
-
-            <div class="warning-box">
-              <h4>&#9888; Signs of a Cockroach Infestation</h4>
-              <ul>
-                <li>Seeing live roaches, especially during daylight hours</li>
-                <li>Finding cockroach droppings (small dark specks resembling coffee grounds or black pepper)</li>
-                <li>A musty, oily odor in kitchen cabinets, under appliances, or in bathrooms</li>
-                <li>Discovering egg cases (oothecae) Ã¢ÂÂ brown, purse-shaped capsules Ã¢ÂÂ behind appliances or in cabinet corners</li>
-                <li>Smear marks along walls and baseboards near moisture sources</li>
-                <li>Shed cockroach skins (exoskeletons) in hidden areas</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Health Risks Section -->
-    <section class="section section-white" id="health-risks">
-      <div class="container">
-        <span class="section-label">Health &amp; Safety</span>
-        <h2>The Serious Health Risks Cockroaches Pose to Your Family</h2>
-        <p class="section-intro">Many Lafayette residents underestimate cockroaches as merely a nuisance pest. The reality is far more serious. Cockroaches are one of the most significant public health pests in the United States, and their presence in your home or workplace carries genuine medical risks that affect people of all ages Ã¢ÂÂ especially children, the elderly, and anyone with respiratory conditions.</p>
-
-        <div class="risk-grid">
-          <div class="risk-card">
-            <div class="risk-icon" style="color:#c62828;">&#129656;</div>
-            <h3>Asthma and Respiratory Illness</h3>
-            <p>Cockroach allergens Ã¢ÂÂ found in their saliva, feces, shed skins, and decomposing bodies Ã¢ÂÂ are among the most potent triggers of asthma and allergic rhinitis in urban environments. Research published by the National Institute of Environmental Health Sciences found that cockroach allergen exposure significantly increases asthma attack frequency in sensitized individuals. In Louisiana, where humidity keeps allergen particles airborne longer and cockroach populations are larger, this is a particularly serious concern. Children living in homes with cockroach infestations are far more likely to develop and experience worsening asthma symptoms. If anyone in your Lafayette home has asthma or chronic respiratory issues, a cockroach infestation requires immediate professional attention.</p>
-          </div>
-          <div class="risk-card">
-            <div class="risk-icon" style="color:#e65100;">&#9760;</div>
-            <h3>Bacterial Contamination and Food-Borne Illness</h3>
-            <p>Cockroaches travel through sewers, garbage, and other filth before crawling across your kitchen countertops, food preparation surfaces, utensils, and stored pantry items. In doing so, they mechanically transmit dozens of dangerous pathogens including Salmonella, E. coli, Shigella, Listeria, Staphylococcus, and Streptococcus. They also carry organisms responsible for typhoid fever, dysentery, and gastroenteritis. Cockroach legs are covered in tiny spines and sticky pads that effectively transfer bacteria from contaminated surfaces directly to your food. In commercial food service settings in Lafayette Ã¢ÂÂ restaurants, catering kitchens, grocery stores Ã¢ÂÂ a cockroach infestation is not only a health crisis but a regulatory violation that can result in immediate closure by the Louisiana Department of Health.</p>
-          </div>
-          <div class="risk-card">
-            <div class="risk-icon" style="color:#1B5E20;">&#128137;</div>
-            <h3>Parasites and Disease Vectors</h3>
-            <p>Cockroaches are known to carry parasitic worms including hookworms, pinworms, and tapeworm eggs in their gut and on their body surfaces. They can also harbor and transmit the protozoa responsible for giardia and amoebic dysentery. While direct transmission to humans is less common than bacterial spread, the risk is real and significant Ã¢ÂÂ particularly for households with young children who may come into contact with contaminated surfaces and then put their hands in their mouths. Cockroaches also bite on rare occasions, particularly when populations are very large and food sources are scarce, which can cause skin irritation and minor infections.</p>
-          </div>
-          <div class="risk-card">
-            <div class="risk-icon" style="color:#4a148c;">&#128565;</div>
-            <h3>Psychological Stress and Sleep Disruption</h3>
-            <p>The psychological impact of a cockroach infestation is often overlooked but very real. Many Lafayette homeowners report significant anxiety, sleep disturbances, and general distress knowing cockroaches are active in their homes at night. This is a legitimate public health concern Ã¢ÂÂ chronic stress has measurable negative health effects, and the constant vigilance required to live in an infested home takes a genuine toll. Children in particular can develop lasting fears and anxieties. Resolving the infestation completely and quickly is the only solution, and that's precisely what our professional treatments are designed to achieve.</p>
-          </div>
-        </div>
-
-        <div class="info-callout">
-          <p><strong>Important for Lafayette food businesses:</strong> Louisiana state law requires immediate action when cockroaches are found in licensed food service establishments. Our commercial cockroach control programs are specifically designed to achieve and maintain regulatory compliance, with documentation available for health department inspections.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Treatment Approach Section -->
-    <section class="section section-light" id="treatment">
-      <div class="container">
-        <span class="section-label">Our Process</span>
-        <h2>Our Comprehensive Cockroach Treatment Approach</h2>
-        <p class="section-intro">Effective cockroach control is never a one-size-fits-all proposition. Generic spray treatments applied by under-trained technicians often disperse cockroach populations without eliminating them, making the problem worse. Our integrated pest management (IPM) approach targets cockroach biology, behavior, and harborage sites with precision Ã¢ÂÂ delivering lasting results, not temporary relief.</p>
-
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-number">01</div>
-            <h3>Thorough Inspection &amp; Species Identification</h3>
-            <p>Every cockroach treatment begins with a detailed inspection conducted by one of our experienced technicians. We examine all potential harborage sites including kitchen appliances, cabinet interiors and hinges, plumbing penetrations, electrical outlets, crawl spaces, attic access points, exterior perimeter gaps, and utility entry points. We use professional-grade flashlights and inspection mirrors to access tight spaces. This inspection allows us to accurately identify the cockroach species present, estimate population size, locate primary and secondary harborage areas, and determine entry points. This information is essential Ã¢ÂÂ a German cockroach infestation in a kitchen requires completely different treatment protocols than American cockroaches entering from a crawl space, and treating the wrong species incorrectly is one of the most common reasons DIY treatments fail.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">02</div>
-            <h3>Professional Gel Bait Application</h3>
-            <p>For German cockroaches and brown-banded cockroaches, professional-grade gel baits are the cornerstone of effective treatment and represent the most significant advancement in cockroach control in the past 30 years. Unlike the consumer-grade baits available at hardware stores, our professional formulations use highly attractive food-based matrices combined with active ingredients that cockroaches cannot detect or avoid. Small, precise placements are made directly in harborage zones Ã¢ÂÂ inside cabinet hinges, behind switch plates, along appliance motors, under sink plumbing, and in other critical locations. The key advantage of gel bait over spray treatments is that cockroaches actively seek it out, consume it, and then return to the harborage where they die Ã¢ÂÂ transferring bait residue to other cockroaches through contact and by other individuals consuming the carcass. This "cascade effect" can eliminate deep within harborage populations that sprays never reach. We rotate bait formulations to prevent resistance development, a real concern with German cockroaches that have been documented to develop behavioral and physiological resistance to certain bait matrices.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">03</div>
-            <h3>Insect Growth Regulators (IGR)</h3>
-            <p>Insect growth regulators are one of the most powerful tools in modern cockroach management and a component that most homeowners have never heard of. IGRs are synthetic compounds that mimic or disrupt cockroach juvenile hormones, preventing nymphs from developing into reproductive adults and sterilizing adult females. When IGRs are incorporated into our treatment programs, we are essentially attacking the cockroach population's ability to reproduce Ã¢ÂÂ collapsing the population over time even as it continues to be impacted by baits and residual products. This is particularly important for German cockroach infestations where reproductive rates are extremely high. IGRs are applied as crack and crevice sprays, surface sprays in harborage zones, and are sometimes available in bait formulations. They have an excellent safety profile and are specifically approved for use in kitchens and food-handling areas.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">04</div>
-            <h3>Residual Perimeter and Crack &amp; Crevice Treatments</h3>
-            <p>For large cockroach species like American and smokybrown cockroaches entering from outdoors, targeted residual insecticide applications are highly effective. We apply professional-grade residual products to the exterior perimeter of your home Ã¢ÂÂ including foundation walls, around utility penetrations, weep holes, door and window frames, and along expansion joints in concrete slabs. These products create a lasting barrier that cockroaches contact as they attempt to enter. Interior crack and crevice treatments using appropriately labeled materials address roaches already present inside walls, under cabinets, and along baseboards. We carefully select products and formulations appropriate for specific indoor zones, always following label requirements and prioritizing family and pet safety. We use ready-to-use and professional concentrate products from leading manufacturers like Bayer, BASF, FMC, and Syngenta Ã¢ÂÂ the same lines used by pest management professionals nationwide.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">05</div>
-            <h3>Dust Applications in Voids and Attics</h3>
-            <p>Insecticidal dusts including boric acid-based products and pyrethroid dusts provide excellent long-term residual activity in wall voids, attic spaces, under bath tubs, and in other hard-to-reach areas where roaches travel. Unlike liquid sprays that degrade in a few weeks, dust applications in dry, undisturbed voids can remain active for months or even years. Our technicians are trained in proper dust application techniques Ã¢ÂÂ the key is applying very thin layers that roaches walk through rather than heavy clumps they avoid. We also use food-grade diatomaceous earth as a supplemental treatment in specific locations where chemical applications are not appropriate, providing a mechanical kill method by damaging the waxy cuticle of cockroaches causing them to dehydrate.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">06</div>
-            <h3>Follow-Up Monitoring and Retreatment</h3>
-            <p>A single treatment visit is rarely sufficient for moderate to severe cockroach infestations, particularly with German cockroaches. Our programs include scheduled follow-up visits at critical intervals Ã¢ÂÂ typically 2 weeks and 4-6 weeks after the initial treatment Ã¢ÂÂ to assess progress, replenish baits, and address any areas requiring additional attention. We use monitoring glue boards placed in strategic locations to track cockroach activity levels and verify the treatment is working. This scientific, data-driven approach allows us to adapt our strategy based on real results rather than guesswork. Once the infestation has been eliminated, we offer quarterly maintenance programs to prevent reinfestation Ã¢ÂÂ particularly important for Lafayette homes that are subjected to year-round cockroach pressure due to our climate.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Prevention Tips Section -->
-    <section class="section section-white" id="prevention">
-      <div class="container">
-        <span class="section-label">Prevention</span>
-        <h2>Cockroach Prevention Tips for Lafayette Homeowners</h2>
-        <p class="section-intro">While professional treatment is the only reliable way to eliminate an active infestation, there is a great deal Lafayette and Acadiana homeowners can do to make their properties less hospitable to cockroaches and reduce the risk of reinfestation after treatment.</p>
-
-        <div class="prevention-grid">
-          <div class="prevention-category">
-            <h3>&#127768; Moisture Control Ã¢ÂÂ Critical in Louisiana</h3>
-            <p>Cockroaches require moisture to survive, and Louisiana's climate means moisture management is especially important. Fix all dripping faucets and pipe leaks immediately Ã¢ÂÂ even a slow drip under a sink provides enough water to sustain a large cockroach population. Ensure your A/C unit's condensate drain is functioning properly and not creating standing water in or under your home. Use bathroom exhaust fans during and after showers. Check that your HVAC air handler drip pan is draining freely. In crawl spaces Ã¢ÂÂ extremely common in older Lafayette homes Ã¢ÂÂ ensure proper ventilation and consider vapor barrier installation to reduce ground moisture. Clean gutters regularly so water doesn't pool near your foundation. Grade soil around your home so water flows away from the foundation rather than pooling against it.</p>
-          </div>
-          <div class="prevention-category">
-            <h3>&#128721; Exclusion Ã¢ÂÂ Sealing Entry Points</h3>
-            <p>American and smokybrown cockroaches enter Lafayette homes through surprisingly small gaps. A thorough exclusion effort can dramatically reduce cockroach pressure. Inspect all utility penetrations Ã¢ÂÂ pipes, conduits, cables entering the home Ã¢ÂÂ and seal gaps with caulk or copper mesh. Replace damaged door sweeps and weatherstripping. Seal gaps around window frames with exterior-grade caulk. Inspect and screen weep holes in brick veneer with appropriately sized wire mesh (available at hardware stores). Ensure attic vents and soffit vents have intact screening with no damage. Check that expansion joints in concrete slabs around your home's perimeter are intact and not providing a pathway underneath the slab. Our technicians will identify and note these entry points during the inspection and can advise on the most critical ones to address.</p>
-          </div>
-          <div class="prevention-category">
-            <h3>&#127975; Sanitation Ã¢ÂÂ Eliminating Food Sources</h3>
-            <p>Remove cockroach food sources wherever possible. Store all dry goods Ã¢ÂÂ flour, cereal, pasta, rice, pet food Ã¢ÂÂ in sealed containers with tight-fitting lids rather than in original cardboard or paper packaging, which cockroaches easily chew through. Clean up food spills and crumbs immediately. Don't leave dirty dishes in the sink overnight, as this is a major food source for German roaches. Empty and clean pet food bowls each evening. Keep garbage in sealed containers with lids both inside and outside. Clean behind and underneath the refrigerator and stove regularly Ã¢ÂÂ grease accumulation behind stoves is a major German cockroach attractant. Vacuum regularly in kitchen areas. Wipe down counters nightly. Reduce clutter, especially cardboard boxes which provide both harborage and food for cockroaches.</p>
-          </div>
-          <div class="prevention-category">
-            <h3>&#127795; Outdoor Habitat Reduction</h3>
-            <p>The subtropical landscaping that makes Lafayette homes beautiful also provides ideal cockroach habitat right outside your door. Keep mulch beds at least 12 inches away from your home's foundation Ã¢ÂÂ moist mulch is prime smokybrown and American cockroach habitat. Store firewood away from the home and elevated off the ground. Trim back tree branches and shrubs that contact the home's exterior, as these serve as cockroach highways to the structure. Remove piles of dead leaves and debris from around the foundation. Repair or remove rotting wood structures, including damaged fence posts, landscape timbers, and wood debris, as decaying wood provides ideal nesting conditions. Replace outdoor lighting with yellow or sodium vapor bulbs which attract fewer insects including cockroaches than white or LED bulbs.</p>
-          </div>
-          <div class="prevention-category">
-            <h3>&#128722; Inspection of Incoming Items</h3>
-            <p>German cockroaches are almost always introduced into homes via infested items Ã¢ÂÂ particularly secondhand furniture, appliances, and electronics, but also grocery bags, cardboard delivery boxes, and even purses and bags left at cockroach-infested locations. Carefully inspect used appliances and furniture before bringing them indoors. Open and break down cardboard boxes outside rather than storing them inside. When returning from restaurants, hotels, or other locations that may have cockroach issues, check bags and purses. Inspect grocery bags, especially paper bags. When visiting Breaux Bridge, Duson, or other Acadiana communities known for older commercial properties, be aware that cockroach hitchhiking is a real route of introduction.</p>
-          </div>
-          <div class="prevention-category">
-            <h3>&#128203; Regular Professional Monitoring</h3>
-            <p>Given Lafayette's climate and the persistent cockroach pressure Acadiana residents face year-round, a quarterly preventive pest control program is one of the most effective long-term investments a homeowner can make. Regular professional inspections catch problems while they're small and manageable, before they grow into major infestations requiring intensive treatment. Our preventive programs include perimeter treatments, interior inspections, monitoring glue board placement and assessment, and immediate response if cockroach activity is detected. Many Lafayette homeowners who previously spent hundreds on repeated infestation treatments find that a proactive maintenance program actually costs less over time while providing continuous peace of mind.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="section section-green" id="why-us">
-      <div class="container">
-        <span class="section-label label-light">Why Acadiana Pest Solutions</span>
-        <h2 style="color:#fff;">Why Lafayette Chooses Us for Cockroach Control</h2>
-        <p class="section-intro" style="color:rgba(255,255,255,0.88);">When it comes to cockroach elimination in Lafayette and the Acadiana region, experience, proper training, and the right products make the difference between a temporary fix and lasting results.</p>
-        <div class="why-grid">
-          <div class="why-card">
-            <div class="why-icon">&#127775;</div>
-            <h3>Local Louisiana Expertise</h3>
-            <p>We're not a national chain unfamiliar with South Louisiana's specific pest pressure. Our technicians understand the unique cockroach challenges posed by Lafayette's humid subtropical climate, the types of structures common in Acadiana, and the cockroach species most prevalent in this region. We know that smokybrown roach pressure intensifies after summer rains, that older homes in historic Lafayette neighborhoods face different challenges than new construction in Youngsville, and that commercial kitchens in Breaux Bridge face different pressures than residential homes in Carencro.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">&#128203;</div>
-            <h3>Licensed &amp; Certified Technicians</h3>
-            <p>All Acadiana Pest Solutions technicians hold current Louisiana Department of Agriculture &amp; Forestry pesticide applicator licenses and receive ongoing continuing education in integrated pest management. We stay current with the latest cockroach control science, including resistance management strategies and new product developments. You'll never have an unlicensed or inadequately trained person treating your home.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">&#9989;</div>
-            <h3>Satisfaction Guarantee</h3>
-            <p>We stand behind our work with a genuine satisfaction guarantee. If cockroach activity continues after our treatment within the covered warranty period, we return and retreat at no additional charge. We don't consider the job done until you're truly roach-free. This is the confidence that comes from using the right products, the right techniques, and employing trained professionals who care about the outcome.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">&#128100;</div>
-            <h3>Family &amp; Pet-Safe Methods</h3>
-            <p>We understand that your family's safety is your first priority. Our integrated pest management approach emphasizes targeted application methods Ã¢ÂÂ gel baits, crack and crevice treatments, and precision exterior applications Ã¢ÂÂ that minimize exposure to untargeted areas. We discuss preparation requirements with you before every service, explain what products we're using and why, and provide clear post-treatment guidance. We use products with established safety profiles and apply them according to all label requirements.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">&#9201;</div>
-            <h3>Same-Day &amp; Emergency Service</h3>
-            <p>Cockroach infestations don't wait for convenient timing, and neither do we. We offer same-day service appointments for urgent cockroach problems throughout Lafayette, Scott, Broussard, Youngsville, Carencro, Duson, and Breaux Bridge. For commercial properties facing health department inspections or regulatory issues, we prioritize immediate response. Call us at <a href="tel:+13375550199" style="color:#F9A825;">(337) 555-0199</a> and our team will work to get a technician to your property as quickly as possible.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">&#127968;</div>
-            <h3>Residential &amp; Commercial Service</h3>
-            <p>We serve both homeowners and businesses throughout the Acadiana region. Our commercial cockroach control programs are designed for restaurants, food processing facilities, grocery stores, hotels, healthcare facilities, schools, and other commercial properties with specific regulatory and operational requirements. We provide treatment documentation and can work with your schedule to minimize operational disruption.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section section-light" id="faq">
-      <div class="container">
-        <span class="section-label">FAQ</span>
-        <h2>Frequently Asked Questions About Cockroach Control in Lafayette</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              How long does it take to get rid of a cockroach infestation in my Lafayette home?
-              <span class="faq-arrow">&#9660;</span>
-            </button>
-            <div class="faq-answer">
-              <p>Treatment timelines depend heavily on the species involved and the severity of the infestation. For American or smokybrown cockroach problems entering from outdoors, a single comprehensive perimeter and interior treatment often provides significant relief within 1-2 weeks, though follow-up is recommended to address any residual activity. German cockroach infestations are more complex due to their extremely high reproductive rate and preference for tight harborage areas inside the home. A moderate German cockroach infestation typically requires 2-3 treatment visits over 4-6 weeks to achieve full control. Severe infestations may require additional visits. We'll give you a realistic expectation during the initial inspection based on what we observe Ã¢ÂÂ we believe in transparency over overpromising. The single most important thing you can do to speed up the process is follow all preparation instructions provided before the first treatment.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Why do I keep seeing palmetto bugs (American cockroaches) even after treating my home?
-              <span class="faq-arrow">&#9660;</span>
-            </button>
-            <div class="faq-answer">
-              <p>This is one of the most common questions we receive from Lafayette homeowners, and it's a great one. Persistent American cockroach entry typically indicates an ongoing access problem rather than a treatment failure. American cockroaches live outdoors in enormous populations throughout Louisiana Ã¢ÂÂ in sewers, storm drains, landscaping, and the surrounding environment Ã¢ÂÂ and they continuously attempt to enter structures. If exclusion work (sealing entry points) has not been completed alongside the treatment, new cockroaches will keep entering even as treated ones die. The most likely entry points are gaps around plumbing penetrations in the slab, deteriorated pipe seals, gaps at the base of exterior doors, weep holes in brick, and damaged soffit or attic venting. Our technicians will identify these during inspection. Also, after a residual treatment, you may actually see more cockroaches briefly as they flee treated areas and come into the open Ã¢ÂÂ this is a sign the treatment is working, not that it's failing.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Is cockroach treatment safe for my children and pets?
-              <span class="faq-arrow">&#9660;</span>
-            </button>
-            <div class="faq-answer">
-              <p>Family and pet safety is a primary consideration in how we design every cockroach treatment. The professional gel baits and IGRs that form the core of our German cockroach treatment are applied in tiny amounts in crack and crevice locations inaccessible to children and pets, and these products have a very favorable safety profile. Exterior perimeter sprays are applied to foundation walls and other outdoor locations and are dry within 30-60 minutes, after which children and pets can be in the area safely. For interior spray applications, we ask that people and pets remain out of treated rooms for a period specified on the product label, typically 1-4 hours. We will provide you with specific re-entry instructions before every service visit. If anyone in the household has specific chemical sensitivities or health conditions, please let us know in advance so we can plan accordingly. We always have your family's safety in mind, and we're happy to answer any questions about the specific products we're using before we begin.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Can I treat cockroaches myself instead of hiring a professional?
-              <span class="faq-arrow">&#9660;</span>
-            </button>
-            <div class="faq-answer">
-              <p>For very minor American cockroach activity (occasional sightings, 1-2 roaches per week), careful attention to exclusion and sanitation combined with retail bait products can sometimes manage the problem. However, for German cockroach infestations, DIY treatment is almost always unsuccessful and often makes the problem worse. Here's why: the spray products available at retail stores are repellent to cockroaches and scatter them throughout the structure when applied broadly, spreading the infestation rather than concentrating and eliminating it. Consumer-grade baits are often lower quality and less attractive than professional formulations. Without professional knowledge of cockroach harborage locations, most DIY efforts miss the primary population. And critically, without IGRs and follow-up monitoring, even a good initial knockdown will be quickly overcome by new nymphs from egg cases the treatment didn't reach. We regularly treat homes where well-intentioned DIY efforts turned a small problem into a large, dispersed infestation that required significantly more time and effort to resolve. If you have any doubt about the severity of your roach problem, a professional assessment is always worth it.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Do you offer cockroach control for restaurants and commercial kitchens in Lafayette?
-              <span class="faq-arrow">&#9660;</span>
-            </button>
-            <div class="faq-answer">
-              <p>Absolutely Ã¢ÂÂ commercial cockroach control is one of our core service offerings for the Lafayette and Acadiana business community. We work with restaurants, catering operations, food trucks, grocery stores, convenience stores, bakeries, hotels, hospitals, schools, office buildings, and other commercial properties throughout the region. Our commercial programs are designed around the specific requirements of food service and handling environments: we use only products and application methods approved for use in commercial food handling areas, we provide detailed service reports and product safety data sheets for your records, and we can schedule service during off-hours to avoid disruption to your operation. We understand Louisiana's food service licensing requirements and can help ensure your property meets Department of Health standards. For urgent situations Ã¢ÂÂ pre-inspection preparation, active inspection findings, or sudden infestation discovery Ã¢ÂÂ we offer same-day emergency response. Call us directly at (337) 555-0199 to discuss your commercial property's needs.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Service Areas Section -->
-    <section class="section section-white">
-      <div class="container">
-        <span class="section-label">Coverage Area</span>
-        <h2>Cockroach Control Throughout the Acadiana Region</h2>
-        <p class="section-intro">We provide professional cockroach elimination services to homeowners and businesses across Lafayette Parish and the surrounding communities. Wherever you are in Acadiana, we can get a technician to your property quickly.</p>
-        <div class="areas-grid">
-          <a href="lafayette.html" class="area-card">
-            <h3>Lafayette</h3>
-            <p>Our home base Ã¢ÂÂ we serve all Lafayette neighborhoods including Oil Center, Freetown, Duson Road corridor, and surrounding areas.</p>
-          </a>
-          <a href="scott.html" class="area-card">
-            <h3>Scott</h3>
-            <p>Complete cockroach control services for Scott residents and businesses along the I-10 corridor.</p>
-          </a>
-          <a href="broussard.html" class="area-card">
-            <h3>Broussard</h3>
-            <p>Serving Broussard's growing residential communities and commercial properties for cockroach elimination.</p>
-          </a>
-          <a href="youngsville.html" class="area-card">
-            <h3>Youngsville</h3>
-            <p>Professional roach control for Youngsville's newer subdivisions and established neighborhoods.</p>
-          </a>
-          <a href="carencro.html" class="area-card">
-            <h3>Carencro</h3>
-            <p>Cockroach treatment services for all Carencro homes and businesses, including commercial kitchens.</p>
-          </a>
-          <a href="duson.html" class="area-card">
-            <h3>Duson &amp; Breaux Bridge</h3>
-            <p>Reliable cockroach control extending to Duson, Breaux Bridge, and surrounding St. Martin Parish communities.</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Emergency CTA Section -->
-    <section class="section cta-section" style="background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%);">
-      <div class="container">
-        <div class="cta-content">
-          <div class="cta-badge">&#128222; Immediate Help Available</div>
-          <h2 style="color:#fff;">Roaches in Your Home? Call Us Right Now.</h2>
-          <p style="color:rgba(255,255,255,0.9); font-size:1.15rem; max-width:600px; margin:0 auto 2rem;">Don't wait for a small cockroach problem to become a major infestation. Our Lafayette-based team is ready to schedule a same-day inspection and begin treatment immediately. Get your home roach-free Ã¢ÂÂ call Acadiana Pest Solutions today.</p>
-          <div class="cta-actions">
-            <a href="tel:+13375550199" class="btn btn-accent btn-xl">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12 19.79 19.79 0 0 1 1.15 3.37 2 2 0 0 1 3.12 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              Call (337) 555-0199 Now
-            </a>
-            <a href="contact.html" class="btn btn-outline-white btn-xl">Schedule Online</a>
-          </div>
-          <p style="color:rgba(255,255,255,0.7); margin-top:1.5rem; font-size:0.95rem;">Serving Lafayette, Scott, Broussard, Youngsville, Carencro, Duson &amp; Breaux Bridge</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-col">
-      <div class="footer-col__title">Acadiana Pest Solutions</div>
-      <p>Professional pest control serving Lafayette and the Acadiana region. Licensed, insured, and committed to protecting your home and business.</p>
-      <a href="tel:+13375550199" class="btn btn-accent" style="margin-top:1rem;display:inline-block;">(337) 555-0199</a>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col__title">Our Services</div>
+<div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+  <button class="nav-overlay-close" aria-label="Close navigation menu">&times;</button>
+  <ul class="nav-overlay-list">
+    <li><a href="index.html">Home</a></li>
+    <li><strong>Services</strong>
       <ul>
         <li><a href="termite-control.html">Termite Control</a></li>
         <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
@@ -463,45 +838,404 @@
         <li><a href="cockroach-control.html">Cockroach Control</a></li>
         <li><a href="mosquito-control.html">Mosquito Control</a></li>
       </ul>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col__title">Service Areas</div>
+    </li>
+    <li><strong>Areas</strong>
       <ul>
-        <li><a href="scott.html">Scott, LA</a></li>
-        <li><a href="broussard.html">Broussard, LA</a></li>
-        <li><a href="youngsville.html">Youngsville, LA</a></li>
-        <li><a href="carencro.html">Carencro, LA</a></li>
-        <li><a href="duson.html">Duson, LA</a></li>
-        <li><a href="breaux-bridge.html">Breaux Bridge, LA</a></li>
+        <li><a href="scott.html">Scott</a></li>
+        <li><a href="broussard.html">Broussard</a></li>
+        <li><a href="youngsville.html">Youngsville</a></li>
+        <li><a href="carencro.html">Carencro</a></li>
+        <li><a href="duson.html">Duson</a></li>
+        <li><a href="breaux-bridge.html">Breaux Bridge</a></li>
       </ul>
+    </li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Breadcrumb -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li aria-current="page">Cockroach Control</li>
+    </ol>
+  </div>
+</nav>
+
+<!-- Service Hero -->
+<section class="service-hero">
+  <div class="container">
+    <span class="hero-badge">Professional Cockroach Extermination</span>
+    <h1>Cockroach Control in Lafayette, LA</h1>
+    <p class="hero-lead">German roaches in your kitchen. American roaches in the bathroom. Palmetto bugs sneaking under the door. Acadiana&rsquo;s heat and humidity make cockroach infestations one of the most common &mdash; and most stubborn &mdash; pest problems in Lafayette Parish. Our licensed technicians use proven, science-backed treatments to eliminate roaches fast and keep them from coming back.</p>
+    <div class="hero-actions">
+      <a href="tel:3375550199" class="btn btn-accent btn-lg">Call (337) 555-0199 Now</a>
+      <a href="contact.html" class="btn btn-outline btn-lg">Get a Free Quote</a>
     </div>
-    <div class="footer-col">
-      <div class="footer-col__title">Contact</div>
-      <ul>
-        <li>Lafayette, LA</li>
-        <li><a href="tel:+13375550199">(337) 555-0199</a></li>
-        <li><a href="contact.html">Get a Free Quote</a></li>
-        <li>Mon-Fri: 7AM - 7PM</li>
-        <li>Sat: 8AM - 5PM</li>
-      </ul>
+    <div class="trust-row">
+      <span class="trust-chip">&#9733; 4.9 Stars on Google</span>
+      <span class="trust-chip">Same-Day Service Available</span>
+      <span class="trust-chip">Licensed &amp; Insured</span>
+      <span class="trust-chip">Locally Owned Since 2008</span>
+      <span class="trust-chip">Satisfaction Guaranteed</span>
     </div>
   </div>
-  <div class="footer-bottom">
-    <div class="container">
+</section>
+
+<!-- Main Content + Sidebar -->
+<section class="section">
+  <div class="container">
+    <div class="service-page__layout">
+
+      <!-- Main Content -->
+      <main class="service-page__main">
+
+        <h2>Cockroach Infestations in Acadiana: Why They&rsquo;re So Persistent</h2>
+        <p>Lafayette, Louisiana sits in one of the most cockroach-friendly climates on the continent. Warm temperatures that rarely dip below freezing, high ambient humidity, abundant food sources, and older construction with countless entry points all combine to create ideal conditions for roach populations to explode. Unlike northern states where a hard winter kills off many insect pests, Acadiana&rsquo;s mild winters allow cockroaches to breed year-round, making it nearly impossible to solve a roach problem with a single treatment.</p>
+        <p>At Acadiana Pest Solutions, we have been eliminating cockroach infestations in Lafayette, Youngsville, Broussard, Scott, Carencro, Duson, Breaux Bridge, and surrounding communities since 2008. We understand the specific species common to this region, the conditions that allow them to thrive, and the integrated treatment strategies that produce lasting results. Whether you are dealing with a minor nuisance or a full-blown infestation, our technicians have the training and the products to handle it safely and effectively.</p>
+
+        <h2>Cockroach Species Common to the Acadiana Region</h2>
+        <p>Not all cockroaches are the same. Different species have different habits, different harborage preferences, and respond differently to treatment products. Correct identification is the first step toward effective control. Our inspectors are trained to identify the species present and tailor a treatment plan accordingly.</p>
+
+        <div class="species-grid">
+          <div class="species-card">
+            <span class="species-label">Most Common</span>
+            <h4>German Cockroach (<em>Blattella germanica</em>)</h4>
+            <p>The number-one cockroach pest in homes and restaurants across Louisiana. Small (half to five-eighths of an inch), tan to light brown, with two parallel dark stripes behind the head. German roaches reproduce extremely rapidly &mdash; a single female can produce over 30,000 descendants per year. They prefer warm, humid spaces near food and water: kitchen cabinets, under appliances, behind stoves and refrigerators, and inside walls near plumbing. German roaches are notoriously difficult to eliminate without professional treatment.</p>
+          </div>
+          <div class="species-card">
+            <span class="species-label">Large Invader</span>
+            <h4>American Cockroach (<em>Periplaneta americana</em>)</h4>
+            <p>Often called the &ldquo;palmetto bug&rdquo; in Louisiana, this is the largest common roach in the region, reaching 1.5 to 2 inches in length. Reddish-brown with a yellowish figure-eight pattern on the back of the head. American roaches typically live outdoors in humid environments &mdash; mulch beds, tree holes, leaf litter, utility tunnels &mdash; and enter homes through gaps under doors, around pipes, and through sewer systems. They are particularly active during warm months and at night.</p>
+          </div>
+          <div class="species-card">
+            <span class="species-label">Wood &amp; Yard</span>
+            <h4>Smokybrown Cockroach (<em>Periplaneta fuliginosa</em>)</h4>
+            <p>Common in the humid Gulf Coast region, the smokybrown roach is shiny dark mahogany to black in color and slightly smaller than the American cockroach. It is strongly attracted to light and is often found flying toward exterior lights at night. Outdoors, it harborages in wood piles, attic vents, tree holes, and dense landscaping. It enters structures through gaps and vents and is commonly found in attics, garages, and wall voids.</p>
+          </div>
+          <div class="species-card">
+            <span class="species-label">Outdoor Species</span>
+            <h4>Brown-Banded Cockroach (<em>Supella longipalpa</em>)</h4>
+            <p>Smaller than the German roach and often confused with it, the brown-banded cockroach has distinctive light tan bands across its wings. Unlike German roaches, it does not require the same level of moisture and can be found throughout the home &mdash; inside electronics, in closets, under furniture, behind picture frames, and in bedrooms. This species can be particularly challenging to control because it spreads widely and lays eggs in hard-to-reach locations.</p>
+          </div>
+          <div class="species-card">
+            <span class="species-label">Sewer Dweller</span>
+            <h4>Oriental Cockroach (<em>Blatta orientalis</em>)</h4>
+            <p>Dark brown to nearly black and roughly one inch long, the Oriental cockroach prefers very damp conditions and is commonly associated with drains, sewers, crawl spaces, and basements. It is sometimes called the &ldquo;water bug.&rdquo; While less common than German and American roaches in Acadiana, it is found in commercial properties, older homes with crawl spaces, and buildings near bayous and drainage ditches. It produces a strong, musty odor and is considered one of the dirtiest of all cockroach species.</p>
+          </div>
+          <div class="species-card">
+            <span class="species-label">Outdoor Flyer</span>
+            <h4>Florida Woods Cockroach (<em>Eurycotis floridana</em>)</h4>
+            <p>Known locally as the &ldquo;stinking roach&rdquo; or &ldquo;Florida skunk roach,&rdquo; this species is found in the more southeastern parts of Acadiana near wooded and swampy areas. It is large, dark, and almost wingless. While it does not typically infest indoors, it can enter homes by accident and is notable for emitting a foul-smelling defensive secretion when disturbed. Landscaping management and perimeter treatment are the keys to keeping this species outside.</p>
+          </div>
+        </div>
+
+        <div class="risk-box">
+          <h3>Health Risks of Cockroach Infestations</h3>
+          <p>Cockroaches are more than a nuisance &mdash; they pose serious, documented health risks to your family. They carry and transmit dozens of pathogenic organisms including:</p>
+          <ul>
+            <li><strong>Salmonella typhi</strong> &mdash; the bacterium responsible for typhoid fever, transmitted by roaches contaminating food preparation surfaces.</li>
+            <li><strong>Escherichia coli (E. coli)</strong> &mdash; spread via roach feces and body contact with food and utensils.</li>
+            <li><strong>Staphylococcus</strong> and other bacteria that cause food poisoning and gastrointestinal illness.</li>
+            <li><strong>Allergens and asthma triggers</strong> &mdash; cockroach saliva, feces, shed skins, and egg cases are potent allergens. Studies consistently link cockroach infestations to elevated rates of asthma, particularly in children. The Asthma and Allergy Foundation of America identifies cockroach allergens as one of the most significant indoor asthma triggers.</li>
+            <li><strong>Poliomyelitis virus</strong> &mdash; cockroaches have been documented as mechanical vectors in environments with poor sanitation.</li>
+            <li><strong>Dysentery, diarrhea, and cholera</strong> organisms have all been isolated from cockroach bodies in field studies.</li>
+          </ul>
+          <p>Beyond pathogen transmission, cockroaches contaminate food with their feces and shed skins, damage paper goods and fabrics, and cause psychological distress. In restaurant and food-service settings, a cockroach sighting can result in health department citations, temporary closure, and lasting reputational damage. Act quickly &mdash; call Acadiana Pest Solutions today.</p>
+        </div>
+
+        <h2>Signs You Have a Cockroach Infestation</h2>
+        <p>Cockroaches are nocturnal and expert at hiding. By the time you see live roaches during daylight hours, the infestation is usually well established. Learn to recognize the early warning signs so you can call for treatment before the population explodes.</p>
+
+        <div class="signs-list">
+          <div class="sign-item">Live roaches seen during the day</div>
+          <div class="sign-item">Dark, pepper-like droppings on shelves or under appliances</div>
+          <div class="sign-item">Musty or oily odor in the kitchen or bathroom</div>
+          <div class="sign-item">Egg cases (oothecae) behind appliances or in cracks</div>
+          <div class="sign-item">Shed skins (exuviae) in dark corners or cabinets</div>
+          <div class="sign-item">Smear marks on walls along roach pathways</div>
+          <div class="sign-item">Chewed or damaged food packaging</div>
+          <div class="sign-item">Scratch marks on soap or wax candles</div>
+          <div class="sign-item">Dead roaches in hidden areas</div>
+          <div class="sign-item">Neighbors reporting roach problems</div>
+        </div>
+
+        <p>German cockroach infestations, in particular, can grow from a handful of insects to thousands in just a few months because their reproductive rate is so high. If you notice any of these signs, do not wait. Call (337) 555-0199 for a same-day inspection. Our trained technicians will assess the extent of the infestation and recommend an appropriate treatment plan.</p>
+
+        <div class="review-snippet">
+          &ldquo;We had a terrible German roach problem in our kitchen that we had been trying to tackle ourselves for months with store-bought sprays. Nothing worked. Acadiana Pest Solutions came out the next day, did a thorough inspection, and placed gel baits in all the right spots. Within two weeks the roaches were gone. That was eight months ago and we have not seen a single one since. Absolutely worth every penny.&rdquo;
+          <cite>&mdash; Maria T., Lafayette, LA &bull; &#9733;&#9733;&#9733;&#9733;&#9733;</cite>
+        </div>
+
+        <h2>Our Cockroach Treatment Process</h2>
+        <p>We do not simply spray and hope for the best. Our cockroach control program uses an Integrated Pest Management (IPM) approach that combines thorough inspection, targeted treatment products, and follow-up monitoring. Every treatment plan is customized to the species involved, the severity of the infestation, and the specific layout of your home or business.</p>
+
+        <div class="treatment-step">
+          <div class="treatment-step__num">1</div>
+          <div class="treatment-step__body">
+            <h4>Comprehensive Inspection</h4>
+            <p>Before we apply a single product, we perform a detailed inspection of your entire property. We check behind and under all appliances, inside cabinets and pantries, along plumbing penetrations, inside electrical outlets and junction boxes, under sinks, in crawl spaces, and along the exterior perimeter. We identify the species present, locate primary harborage areas, assess entry points, and evaluate conducive conditions (food and moisture sources) that are sustaining the population. Our inspection report becomes the roadmap for your treatment plan.</p>
+          </div>
+        </div>
+        <div class="treatment-step">
+          <div class="treatment-step__num">2</div>
+          <div class="treatment-step__body">
+            <h4>Precision Gel Bait Applications</h4>
+            <p>For German cockroaches and brown-banded roaches, professional-grade gel baits are among the most effective tools available. We apply small, targeted placements of slow-acting bait gel directly in roach harborage areas &mdash; inside cabinet hinges, along crack-and-crevice areas, behind appliances, and near plumbing. Cockroaches consume the bait, return to the harborage, and die. Nestmates consume the dead and dying roaches and are also killed through secondary poisoning. Unlike sprays, gels do not cause roaches to scatter and can eliminate entire colonies. We use professional-grade products not available in retail stores, rotating active ingredients regularly to prevent resistance development.</p>
+          </div>
+        </div>
+        <div class="treatment-step">
+          <div class="treatment-step__num">3</div>
+          <div class="treatment-step__body">
+            <h4>Residual Insecticide Applications</h4>
+            <p>For American roaches, smokybrown roaches, and perimeter control, we apply professional residual insecticides to harborage zones and entry points. These products leave a lasting residual barrier that kills roaches on contact for weeks after application. We treat exterior foundation walls, entry points around pipes and conduits, garage doors, expansion joints, mulch beds, and other outdoor harborage areas. Interior residual treatments are applied in attic spaces, wall voids, crawl spaces, and utility areas as appropriate. All products used by Acadiana Pest Solutions are EPA-registered, applied according to label directions by licensed professionals.</p>
+          </div>
+        </div>
+        <div class="treatment-step">
+          <div class="treatment-step__num">4</div>
+          <div class="treatment-step__body">
+            <h4>Insect Growth Regulator (IGR) Treatment</h4>
+            <p>Insect Growth Regulators are one of the most powerful tools in the professional pest control arsenal, yet they remain largely unknown to consumers. IGRs mimic juvenile insect hormones, disrupting the normal development of cockroach nymphs and preventing them from reaching reproductive maturity. Even if an adult roach survives the initial treatment, IGR exposure ensures its offspring cannot reproduce. We apply IGR products as a spray, aerosol, or incorporated into bait formulations depending on the situation. IGRs are extremely low in mammalian toxicity, making them an excellent fit for homes with children and pets. Used in combination with bait and residuals, IGRs dramatically accelerate the collapse of cockroach populations and help prevent re-infestation.</p>
+          </div>
+        </div>
+        <div class="treatment-step">
+          <div class="treatment-step__num">5</div>
+          <div class="treatment-step__body">
+            <h4>Dust Treatments for Voids and Cracks</h4>
+            <p>For cockroaches living deep inside wall voids, electrical panels, under-floor spaces, and attics, dust formulations (boric acid and professional insecticidal dusts) provide long-lasting control in areas that liquid products cannot reach effectively. Our technicians inject dust into void spaces using specialized equipment to ensure even distribution. These dust treatments remain effective for months in dry, protected voids, providing ongoing control even after other products have broken down.</p>
+          </div>
+        </div>
+        <div class="treatment-step">
+          <div class="treatment-step__num">6</div>
+          <div class="treatment-step__body">
+            <h4>Exclusion and Sanitation Recommendations</h4>
+            <p>Treatment without addressing root causes leads to re-infestation. After each service visit, your technician provides a written report identifying conditions that are contributing to the problem and recommending corrective actions. Common recommendations include sealing gaps around plumbing penetrations, fixing dripping faucets or condensation issues, eliminating food debris from hard-to-clean areas, properly sealing food storage containers, and reducing clutter that provides harborage. For major entry points such as gaps under doors, around utility conduits, or in the foundation, we can provide exclusion services or refer you to trusted contractors.</p>
+          </div>
+        </div>
+        <div class="treatment-step">
+          <div class="treatment-step__num">7</div>
+          <div class="treatment-step__body">
+            <h4>Follow-Up Monitoring and Re-Treatment</h4>
+            <p>We do not consider our job done until your cockroach problem is fully resolved. Heavy German roach infestations in particular may require two or three treatment visits over four to six weeks to achieve complete control. Between visits, we use monitoring glue boards strategically placed in harborage areas to track roach activity, confirm the treatment is working, and identify any remaining hotspots that need additional attention. Our technicians review the traps at each visit and adjust the treatment strategy accordingly. We stand behind our work &mdash; if you see roaches between scheduled service visits, call us and we will return at no additional charge.</p>
+          </div>
+        </div>
+
+        <h2>Ongoing Cockroach Maintenance Plans</h2>
+        <p>A single treatment can solve an active infestation, but in Acadiana&rsquo;s climate, cockroaches will inevitably attempt to re-enter your home from the surrounding environment. The most cost-effective strategy &mdash; and the one we recommend to virtually all our residential clients &mdash; is enrollment in a recurring maintenance plan. Ongoing service keeps product levels active at your perimeter and harborage areas year-round, catches new activity before it becomes a problem, and gives you peace of mind knowing that your home is always protected.</p>
+
+        <div class="maintenance-plans">
+          <div class="plan-card">
+            <h4>One-Time Treatment</h4>
+            <div class="plan-freq">Single Service</div>
+            <p>A complete inspection and full treatment for an active infestation. Best for rental properties, new homebuyers, or customers who prefer to schedule as needed. Includes a 30-day warranty with a free re-treatment if activity persists.</p>
+          </div>
+          <div class="plan-card featured">
+            <div class="plan-badge">Most Popular</div>
+            <h4>Quarterly Protection Plan</h4>
+            <div class="plan-freq">Every 3 Months</div>
+            <p>Four service visits per year timed to seasonal pest pressure peaks. Each visit includes exterior perimeter treatment, interior spot treatments as needed, monitoring board checks, and a detailed service report. Includes unlimited free re-service calls between visits. This is our most popular residential plan.</p>
+          </div>
+          <div class="plan-card">
+            <h4>Bi-Monthly Plan</h4>
+            <div class="plan-freq">Every 2 Months</div>
+            <p>Six visits per year for homes with ongoing pest pressure, pets, or young children. Provides closer monitoring intervals and more frequent product refreshes. Recommended for homes with a history of German roach problems or properties that back up to bayous, drainage areas, or dense vegetation.</p>
+          </div>
+          <div class="plan-card">
+            <h4>Monthly Commercial Plan</h4>
+            <div class="plan-freq">Every Month</div>
+            <p>Designed for restaurants, food-service establishments, multi-family housing, healthcare facilities, and other commercial properties with zero-tolerance pest requirements. Monthly visits ensure continuous monitoring and treatment, detailed digital service records, and rapid response to any activity observed between visits.</p>
+          </div>
+        </div>
+
+        <p>All recurring maintenance plans include free re-service calls between scheduled visits, written service documentation at every visit, and access to our technicians by phone for advice and consultation. Prices vary based on the size of the structure and the level of service required. Call (337) 555-0199 or complete our online form for a customized quote.</p>
+
+        <h2>Commercial Cockroach Control in Lafayette</h2>
+        <p>Cockroaches in a commercial setting are not just unpleasant &mdash; they are a liability. Restaurants, food processing facilities, grocery stores, hotels, apartment complexes, schools, and healthcare facilities are all subject to strict health and safety standards. A single roach sighting can result in a failed health inspection, negative online reviews, lost customers, and in serious cases, temporary closure orders from the Louisiana Department of Health or local inspectors.</p>
+        <p>Acadiana Pest Solutions is experienced in commercial cockroach control across all industry sectors. We provide detailed service logs that satisfy health inspector requirements, work around your business hours to minimize disruption, use products that meet food-handling safety standards, and offer emergency response services for situations that cannot wait for a scheduled visit. Our commercial accounts include many of Lafayette&rsquo;s most respected restaurants, hotels, and apartment communities. We are fully insured and can provide certificates of insurance upon request.</p>
+        <p>For restaurant and food-service clients specifically, we follow the FDA Food Safety Modernization Act (FSMA) guidelines and can integrate our pest management documentation with your HACCP plan. Contact us to schedule a no-cost commercial consultation and facility walkthrough.</p>
+
+        <h2>Why Over-the-Counter Products Fail</h2>
+        <p>Walk down the pest control aisle at any home improvement store and you will find dozens of cockroach sprays, traps, bombs, and bait products. Many homeowners spend significant time and money on these products before finally calling a professional &mdash; often after the infestation has grown substantially larger than it was when they first noticed it. There are several reasons why DIY approaches frequently fail for cockroach control.</p>
+        <ul>
+          <li><strong>Repellent sprays scatter roaches</strong> rather than killing them at the source. When you spray a cabinet with a repellent product, the roaches simply move to another part of the structure. The population is not reduced &mdash; it is just redistributed.</li>
+          <li><strong>Consumer-grade baits use lower-concentration active ingredients</strong> than professional products and may not be placed in the optimal locations. Proper bait placement requires knowledge of roach behavior and harborage patterns.</li>
+          <li><strong>Bug bombs and foggers rarely reach harborage areas</strong> where roaches actually live. Cockroaches retreat deep into cracks and voids when they detect the fog, surviving the treatment. Foggers also leave a residue on exposed surfaces that can be a health concern and may actually repel future bait placements.</li>
+          <li><strong>No IGR component</strong> means that surviving roaches and egg cases continue to produce new generations, quickly replenishing any population reduction achieved by consumer products.</li>
+          <li><strong>Resistance</strong> is a real problem. Some German cockroach populations in Louisiana have developed resistance to pyrethrins and other active ingredients commonly found in retail products. Professional products include a broader range of active ingredients, and professional applicators rotate chemistries to manage resistance.</li>
+        </ul>
+        <p>The bottom line: for anything beyond a minor, isolated occurrence, professional cockroach treatment is almost always faster, more cost-effective over time, and longer-lasting than repeated DIY attempts. Call Acadiana Pest Solutions and get it done right the first time.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <div class="faq-question">How long does it take to eliminate a cockroach infestation? <span class="faq-question__icon">+</span></div>
+          <div class="faq-answer">For a moderate German roach infestation, most customers see 70 to 90 percent reduction within the first week after treatment, with complete elimination typically achieved within two to four weeks. Severe infestations may require two or three treatment visits over four to six weeks. American and smokybrown roaches respond more quickly because they are not reproducing inside the structure at the same rate. Your technician will give you a realistic timeline after the initial inspection.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Is cockroach treatment safe for my children and pets? <span class="faq-question__icon">+</span></div>
+          <div class="faq-answer">Yes, when applied by a licensed professional according to label directions. We use EPA-registered products with well-established safety profiles. After treatment, we advise keeping children and pets out of treated areas until they are completely dry (typically 30 to 60 minutes for liquid applications). Gel bait products are applied in small, targeted placements inside cracks and behind appliances where children and pets cannot easily access them. We are always happy to discuss the specific products we are using and answer any questions you have about safety before, during, or after treatment.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Do I need to leave my home during treatment? <span class="faq-question__icon">+</span></div>
+          <div class="faq-answer">For a standard gel bait and residual treatment, it is not necessary to leave your home, though we do ask that you keep children and pets out of rooms being treated until the product dries. If we are performing a more intensive treatment such as a void dust application or treating a heavily infested kitchen, we may ask you to stay out of certain areas for a short period. We will discuss preparation requirements and any temporary restrictions with you when you schedule your appointment.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Why am I seeing MORE roaches after treatment? <span class="faq-question__icon">+</span></div>
+          <div class="faq-answer">This is completely normal and is actually a sign that the treatment is working. Gel baits cause cockroaches to come out of hiding to feed on the bait, and insecticides cause them to flee harborage areas. You may see increased activity for the first three to seven days after treatment. After that, activity should decline rapidly. If you are still seeing significant activity after ten to fourteen days, contact us and we will schedule a follow-up visit at no additional charge.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can I clean my kitchen after cockroach treatment? <span class="faq-question__icon">+</span></div>
+          <div class="faq-answer">We recommend waiting at least 48 to 72 hours before mopping floors or wiping down surfaces in treated areas to allow the residual products to cure properly. Do not wipe down the areas where gel bait has been placed &mdash; doing so will remove the bait and reduce effectiveness. Light surface cleaning of food preparation areas is fine. Your technician will give you specific aftercare instructions based on the products used in your home.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Are German roaches and palmetto bugs the same? <span class="faq-question__icon">+</span></div>
+          <div class="faq-answer">&ldquo;Palmetto bug&rdquo; is a common colloquial name used throughout the Gulf South, but it typically refers to the American cockroach &mdash; the large, reddish-brown roach that comes in from outside and is found in bathrooms, kitchens, and garages. German cockroaches are much smaller (about half an inch), light tan, and are almost always found indoors living in tight harborage areas near food and moisture. They are separate species that require different treatment approaches. Both are very common in Acadiana, and many homes have both species present simultaneously.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What preparation do I need to do before cockroach treatment? <span class="faq-question__icon">+</span></div>
+          <div class="faq-answer">For best results, we ask that you pull appliances slightly away from the wall if possible, remove items from under sinks, empty the lower shelves of kitchen cabinets, and secure or remove pet food. Avoid spraying any over-the-counter pesticides for at least five to seven days before your appointment, as repellent products can interfere with bait acceptance. The more accessible the harborage areas are, the more thoroughly we can treat. Our office staff will provide a complete preparation checklist when you schedule your appointment.</div>
+        </div>
+
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="service-page__sidebar">
+
+        <div class="sidebar-cta">
+          <h3>Get Rid of Roaches Today</h3>
+          <p>Same-day service available. Free inspection and no-obligation quote for your home or business.</p>
+          <a href="tel:3375550199" class="phone-big">(337) 555-0199</a>
+          <a href="tel:3375550199" class="btn btn-call">Call Now &mdash; Same Day Available</a>
+          <br>
+          <a href="contact.html" class="btn btn-quote" style="margin-top:10px;">Request a Free Quote</a>
+        </div>
+
+        <div class="sidebar-widget sidebar-services">
+          <h2 class="sidebar-widget__title">All Pest Control Services</h2>
+          <ul>
+            <li><a href="termite-control.html">Termite Control</a></li>
+            <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+            <li><a href="rodent-control.html">Rodent Control</a></li>
+            <li><a href="ant-extermination.html">Ant Extermination</a></li>
+            <li><a href="cockroach-control.html" class="active">Cockroach Control</a></li>
+            <li><a href="mosquito-control.html">Mosquito Control</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget sidebar-areas">
+          <h2 class="sidebar-widget__title">Areas We Serve</h2>
+          <ul>
+            <li><a href="scott.html">Scott</a></li>
+            <li><a href="broussard.html">Broussard</a></li>
+            <li><a href="youngsville.html">Youngsville</a></li>
+            <li><a href="carencro.html">Carencro</a></li>
+            <li><a href="duson.html">Duson</a></li>
+            <li><a href="breaux-bridge.html">Breaux Bridge</a></li>
+          </ul>
+          <p style="font-size:0.83rem;color:#666;margin-top:12px;margin-bottom:0;">Serving all of Lafayette Parish and surrounding Acadiana communities. Call to confirm service in your area.</p>
+        </div>
+
+        <div class="sidebar-widget">
+          <h2 class="sidebar-widget__title">Why Choose Acadiana Pest Solutions</h2>
+          <ul style="list-style:none;padding:0;margin:0;">
+            <li style="padding:8px 0;border-bottom:1px solid #f0f0eb;font-size:0.9rem;color:#444;"><strong style="color:#1a3a1a;">&#10003;</strong> Licensed by Louisiana Dept. of Agriculture</li>
+            <li style="padding:8px 0;border-bottom:1px solid #f0f0eb;font-size:0.9rem;color:#444;"><strong style="color:#1a3a1a;">&#10003;</strong> Fully insured &mdash; $2 million liability coverage</li>
+            <li style="padding:8px 0;border-bottom:1px solid #f0f0eb;font-size:0.9rem;color:#444;"><strong style="color:#1a3a1a;">&#10003;</strong> Locally owned and operated since 2008</li>
+            <li style="padding:8px 0;border-bottom:1px solid #f0f0eb;font-size:0.9rem;color:#444;"><strong style="color:#1a3a1a;">&#10003;</strong> Same-day and emergency service</li>
+            <li style="padding:8px 0;border-bottom:1px solid #f0f0eb;font-size:0.9rem;color:#444;"><strong style="color:#1a3a1a;">&#10003;</strong> Free re-service between scheduled visits</li>
+            <li style="padding:8px 0;border-bottom:1px solid #f0f0eb;font-size:0.9rem;color:#444;"><strong style="color:#1a3a1a;">&#10003;</strong> Satisfaction guarantee on all services</li>
+            <li style="padding:8px 0;font-size:0.9rem;color:#444;"><strong style="color:#1a3a1a;">&#10003;</strong> Pet-safe and family-friendly products</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h2 class="sidebar-widget__title">Customer Reviews</h2>
+          <div style="margin-bottom:14px;">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p style="font-size:0.88rem;color:#444;margin:6px 0 4px;font-style:italic;">&ldquo;Incredible results on a heavy German roach infestation. Fast, professional, and thorough.&rdquo;</p>
+            <p style="font-size:0.8rem;color:#888;margin:0;">-- Kevin R., Broussard</p>
+          </div>
+          <div style="margin-bottom:14px;">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p style="font-size:0.88rem;color:#444;margin:6px 0 4px;font-style:italic;">&ldquo;The palmetto bug problem around our back patio is completely gone. Very happy with the quarterly plan.&rdquo;</p>
+            <p style="font-size:0.8rem;color:#888;margin:0;">-- Sandra M., Scott</p>
+          </div>
+          <div>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p style="font-size:0.88rem;color:#444;margin:6px 0 4px;font-style:italic;">&ldquo;Used them for our restaurant. Always on time, great documentation, and we have sailed through every health inspection since.&rdquo;</p>
+            <p style="font-size:0.8rem;color:#888;margin:0;">-- J. Fontenot, Lafayette Restaurant Owner</p>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Band -->
+<section class="cta-band">
+  <div class="container">
+    <h2 class="cta-band__title">Ready to Eliminate Your Cockroach Problem?</h2>
+    <p class="cta-band__text">Don&rsquo;t let roaches take over your home or business. Acadiana Pest Solutions offers same-day service, expert treatments, and a satisfaction guarantee. Call now or request your free inspection online.</p>
+    <div class="cta-band__actions">
+      <a href="tel:3375550199" class="btn btn-white btn-lg">Call (337) 555-0199</a>
+      <a href="contact.html" class="btn btn-accent btn-lg">Request Free Inspection</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Acadiana Pest Solutions</h3>
+        <p>Protecting homes and businesses across all of Acadiana. Licensed, insured, and locally owned.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="termite-control.html">Termite Control</a></li>
+          <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+          <li><a href="rodent-control.html">Rodent Control</a></li>
+          <li><a href="ant-extermination.html">Ant Extermination</a></li>
+          <li><a href="cockroach-control.html">Cockroach Control</a></li>
+          <li><a href="mosquito-control.html">Mosquito Control</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Areas We Serve</h4>
+        <ul>
+          <li><a href="scott.html">Scott</a></li>
+          <li><a href="broussard.html">Broussard</a></li>
+          <li><a href="youngsville.html">Youngsville</a></li>
+          <li><a href="carencro.html">Carencro</a></li>
+          <li><a href="duson.html">Duson</a></li>
+          <li><a href="breaux-bridge.html">Breaux Bridge</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p><a href="tel:3375550199">(337) 555-0199</a></p>
+        <p>Mon &mdash; Sat: 7am &mdash; 7pm</p>
+        <p>Same-Day Service Available</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
       <p>&copy; 2026 Acadiana Pest Solutions. All rights reserved.</p>
     </div>
   </div>
 </footer>
-
-<!-- Mobile CTA Bar -->
 <div class="mobile-cta-bar">
-  <a href="tel:+13375550199" class="mobile-cta__btn mobile-cta__btn--call">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11.4 11.4 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.5.6 3.6a1 1 0 01-.2 1L6.6 10.8z"/></svg>
+  <a href="tel:3375550199" class="btn btn-call">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 4.2 2 2 0 0 1 5.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L9 9.9a16 16 0 0 0 6 6l1.5-1.3a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7A2 2 0 0 1 22 16.9z"/></svg>
     Call Now
   </a>
-  <a href="contact.html" class="mobile-cta__btn mobile-cta__btn--quote">Free Quote</a>
+  <a href="contact.html" class="btn btn-quote">Free Quote</a>
 </div>
-
 <script src="js/main.js"></script>
+
 </body>
 </html>
